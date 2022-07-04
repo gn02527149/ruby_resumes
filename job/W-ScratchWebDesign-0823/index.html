@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>澳門永利</title>
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=yes" /> -->
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/3d.css">
+</head>
+
+<body>
+
+    <div class="container-fluild navbar">
+        <div class="container menu">
+            <div class="menubox">
+                <a href="">官方首页</a>
+                <a href="">最新优惠</a>
+                <a href="" data-toggle="modal" data-target="#iqModal" class="Inquire">中奖查询</a>
+                <a href="">自助客服</a>
+                <a href="">VIP查询</a>
+                <a href="">一键入款</a>
+                <a href="">在线客服</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container-fluild banner">
+        <div class="container banner_content">
+            <p>
+                一路走来，离不开广大会员的支持。
+                <br> 周年庆典之际，回馈新老顾客，
+                <br> 活动期间存款1元以上，即可获得1次刮奖机会，
+                <br> 存的越多，机会越多，中奖越多，
+                <br> 转发好友，更可增加刮奖次数，中奖率100%，
+            </p>
+            <button type="button" id="reset" class="btn-sc" data-toggle="modal" data-target="#loginModal"></button>
+        </div>
+    </div>
+
+
+
+    <div class="container wrapper">
+
+        <div id="showcase" class="scratchs">
+            <div class="box">
+                <div class="box-con"> <span class="prev"></span> <span class="next"></span>
+                    <ul class="list">
+                        <li class="" data-id="3">
+                            <a href="javascript:;"></a><img src="images/label03.png">
+                        </li>
+                        <li class="" data-id="4">
+                            <a href="javascript:;"></a><img src="images/label04.png">
+                        </li>
+                        <li class="" data-id="5">
+                            <a href="javascript:;"></a><img src="images/label05.png">
+                        </li>
+                        <li class="" data-id="1">
+                            <a href="javascript:;"></a><img src="images/label01.png">
+                        </li>
+                        <li class="" data-id="2">
+                            <a href="javascript:;"></a><img src="images/label02.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="receive"></button>
+
+            <!-- /刮刮樂 -->
+            <div class="cardbox h" id="cardBox">
+                <div class="card" id="cardOne">
+                    <canvas id="myCanvas1" width="424" height="196"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- carousel3 -->
+        <div id="abgne-block-20110406">
+            <div class="slidersbox">
+                <div class="slides">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/02.jpg" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/02.jpg" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/02.jpg" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/02.jpg" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/02.jpg" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#" class="prev">&lt;</a>
+            <a href="#" class="next">&gt;</a>
+        </div>
+
+        <!-- 
+        <div class="col-xs-12 winner">
+            <div class="title02">中奖名单</div>
+            <div class="namebox">
+                <marquee direction="up" scrollamount="4" class="marquee">
+                    <div>
+                        <span>恭喜会员：</span>
+                        <span class="name">d13***</span>
+                        <span>刮中</span>
+                        <span class="gift">一奖 1888元现金筹码 ！！！ </span>
+                    </div>
+                    <div>
+                        <span>恭喜会员：</span>
+                        <span class="name">d13***</span>
+                        <span>刮中</span>
+                        <span class="gift">一奖 1888元现金筹码 ！！！ </span>
+                    </div>
+                    <div>
+                        <span>恭喜会员：</span>
+                        <span class="name">d13***</span>
+                        <span>刮中</span>
+                        <span class="gift">一奖 1888元现金筹码 ！！！ </span>
+                    </div>
+                    <div>
+                        <span>恭喜会员：</span>
+                        <span class="name">d13***</span>
+                        <span>刮中</span>
+                        <span class="gift">一奖 1888元现金筹码 ！！！ </span>
+                    </div>
+                </marquee>
+            </div>
+        </div> -->
+        <div class="col-sm-12 rule">
+            <img src="images/title07.png">
+            <h4>
+                <span style="color: #ff1111;display: block;">澳门永利12周年庆与您相约，不一样的周年庆，史诗般的回馈，2018，让您一路旺到底。</span>北京时间9月4日至9月30日，凡是在澳门永利每日累计存款达到10元及以上，次日即可获得刮刮乐一张，存款越多，刮得越多，刮出不一样的人生。
+            </h4>
+            <table class="tableInfo">
+                <tr>
+                    <td>活动对象</td>
+                    <td>当天存款金额</td>
+                    <td>刮刮乐次数</td>
+                    <td>最高奖励</td>
+                    <td>流水要求</td>
+                    <td>刮刮乐时间</td>
+                    <td>派送时间</td>
+                </tr>
+                <tr>
+                    <td rowspan="10">北京时间<br>9月4日-9月30日
+                        <br>当日累计存款<br>达10元及<br>以上的会员
+                    </td>
+                    <td>10+</td>
+                    <td>1</td>
+                    <td rowspan="10">欧洲豪华7日游<br>（可折现）</td>
+                    <td rowspan="10">一倍流水</td>
+                    <td rowspan="10">符合的会员次日<br>18:00-21:00<br>即可登入<br>GGL4951.COM<br>进行刮奖
+                    </td>
+                    <td rowspan="10">活动结束<br>30分钟内<br>自动派送
+                    </td>
+                </tr>
+                <tr>
+                    <td>1000+</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5000+</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>10000+</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>50000+</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>100000+</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>500000+</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>1000000+</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>5000000+</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10000000+</td>
+                    <td>10</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-xs-12 rule02">
+            <img src="images/title08.png">
+            <ul>
+                <li>1. 获得奖品后，请在24小内联系在线客服提供您的收货地址，及收货人信息、电话，逾期视为自动放弃。</li>
+                <li>2. 所有获得彩金皆可同价值提现，折现彩金或安慰奖彩金只需一倍流水即可出款。</li>
+                <li>3. 澳门永利现金红包通过网络计算以及系统概率设定由计算机自主运行，红包运行过程不涉及任何人工干预 ，抢红包的结果公平公正！
+                </li>
+                <li>4. 符合活动条件的会员若未在次日指定时间参与活动，视为自动放弃，会员不得以任何理由要求公司特殊处 理此次优惠，否则公司有权取消该会员参与资格！
+                </li>
+                <li>5. 公司若发现会员利用非法程序抽奖或是下注套利等行为，公司有权利将所得之优惠全数取回,保证正常玩家 的利益！
+                </li>
+                <li>6. 为确保双方利益，优惠部门会不定期抽查核实会员账号信息，澳门永利有权要求会员向我们提供充足有效 的资料，用以确认信息是否属实及享有该优惠的资格！
+                </li>
+                <li>7. 本活动与其它优惠活动可同时享有，参与本活动视为您已经同意该《刮刮乐规则》 ！
+                </li>
+                <li>8. 澳门永利保留对活动的最终解释权及处理权，并保留随时终止此活动的权利，并不做提前通知！
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="container footer"></div>
+
+
+
+    <!-- 登入框（Modal） -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-xs-8">
+                            <input type="text" class="form-control" id="idname" placeholder="请输入会员帐号">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="login-ok" id="loginInBtn" data-toggle="modal" data-target="#memberTime">
+					</button>
+                    <button type="button" class="login-del" data-dismiss="modal">
+                    </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+
+
+
+    <!-- 確認框（Modal） -->
+    <div class="modal fade" id="checkChoose" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h4 class="modal-title" style="opacity:0;">
+                        您確定選擇此張嗎?
+                    </h4>
+                </div>
+                <div class="modal-body">
+
+
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="login-ok" id="sureBtn">
+									</button>
+                    <button type="button" class="login-del" data-dismiss="modal" id="notSure">
+				                    </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+
+
+    <!-- 中奖框（Modal） -->
+    <div class="modal fade" id="giftModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="images/winnerTitle.png" alt="" srcset="">
+                </div>
+                <div class="modal-body">
+                    <div class="popgift">
+                        <h1>iPhone X</h1>
+                    </div>
+
+                    <p>
+                        本次刮刮卡已刮完<br> 您可以在<span class="yellow">「中奖查询」</span>查询派彩进度
+                        <br> 您还有<span class="oddsNum yellow">　5　</span>次的刮卡机会
+                    </p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="gift-ok" data-dismiss="modal">
+                    </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+
+
+    <!-- 中奖查询框（Modal） -->
+    <div class="modal fade" id="iqModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header"></div>
+                <div class="modal-body">
+                    <h6>亲爱的会员<span class="useId yellow"> xxxxxxxxx </span>, 您的中奖记录如下：</h6>
+                    <table class="table-bordered iqtable">
+                        <tr>
+                            <td>奖品名称</td>
+                            <td>中奖时间</td>
+                        </tr>
+                        <tr>
+                            <td>18元现金筹码</td>
+                            <td>2018-02-15 03:24:31</td>
+                        </tr>
+                        <tr>
+                            <td>18元现金筹码</td>
+                            <td>2018-02-15 03:24:31</td>
+                        </tr>
+                        <tr>
+                            <td>18元现金筹码</td>
+                            <td>2018-02-15 03:24:31</td>
+                        </tr>
+                        <tr>
+                            <td>18元现金筹码</td>
+                            <td>2018-02-15 03:24:31</td>
+                        </tr>
+                        <tr>
+                            <td>18元现金筹码</td>
+                            <td>2018-02-15 03:24:31</td>
+                        </tr>
+                        <tr>
+                            <td>18元现金筹码</td>
+                            <td>2018-02-15 03:24:31</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer text-center">
+                    <img src="images/hr.png">
+                    <div class="pagelist">
+                        <span class="pageleft">＜</span>
+                        <span class="pageNum" data-id="1">1</span>
+                        <span class="pageNum" data-id="2">2</span>
+                        <span class="pageNum" data-id="3">3</span>
+                        <span class="pageNum" data-id="4">4</span>
+                        <span class="pageNum" data-id="5">5</span>
+                        <span class="pageright">＞</span>
+                    </div>
+                    <button type="button" class="table-ok" data-dismiss="modal">
+                    </button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+
+
+
+    <!-- 刮刮卡（Modal） -->
+    <div class="modal fade" id="chooseOne" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h4 class="modal-title">
+                        按住不放開始刮開
+                    </h4>
+                </div>
+                <div class="modal-body">
+
+
+
+
+                </div>
+                <div class="modal-footer text-center">
+
+
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+
+
+
+    </div>
+
+
+
+
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- 輪播 -->
+    <script src="js/carousel.js"></script>
+
+    <!-- 刮刮乐使用 -->
+    <script src="js/jquery.reflection.js"></script>
+    <script src="js/jquery.cloud9carousel.js"></script>
+    <script src="js/3d.js"></script>
+    <script src="js/3ddata.js"></script>
+    <script src="js/scratch.js"></script>
+    <!-- <script src="js/control.js"></script> -->
+    <script src="js/control-test.js"></script>
+
+
+</body>
+
+</html>

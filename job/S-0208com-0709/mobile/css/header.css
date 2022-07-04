@@ -1,0 +1,237 @@
+.top_center {
+    width: 100%;
+    height: 63px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(../images/headerBg.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 9999;
+}
+
+.hamburger img {
+    width: 44px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: -500px;
+    width: 80%;
+    height: calc(100% - 60px);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    transition: 0.5s;
+}
+
+.sidebar.block {
+    left: 0;
+}
+
+.sidebar li {
+    width: 100%;
+    padding-left: 20px;
+    color: #ffe98e;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #403f3f;
+    cursor: pointer;
+}
+
+.sidebar li span {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.sidebar li span img {
+    width: 26px;
+}
+
+#vipModal {
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 100%;
+    height: 400px;
+    background: transparent;
+    background-image: url(../images/xinxi.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.modal-body div {
+    width: 95%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+    max-width: initial;
+    position: relative;
+}
+
+.modal-body div input {
+    float: left;
+    border-radius: 40px;
+    width: 80%;
+    margin: 0px 36px 0;
+    height: 50px;
+    background-color: #1b1717;
+    color: #fddf89;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.modal-body div input::placeholder {
+    color: #fddf89;
+    opacity: 1;
+    letter-spacing: 4px;
+    /* Firefox */
+}
+
+.modal-body div input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fddf89;
+    letter-spacing: 4px;
+}
+
+.modal-body div input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fddf89;
+    letter-spacing: 4px;
+}
+
+.modal-body .passcode {
+    float: left;
+    width: 80px;
+    height: 35px;
+    border: 1px solid #948c85;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 45px;
+    bottom: 8px;
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 14px #fff;
+}
+
+.modal-body .passcode::before {
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: -8px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/reflesh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-body .passcode img {
+    width: 80px;
+    height: 35px;
+    margin-top: -8px;
+    border-radius: 20px;
+}
+
+.modal-body .keyverification input {
+    width: 80%;
+    margin-right: 10px;
+}
+
+.modal-footer div {
+    margin-bottom: 10px;
+    width: 60%;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.modal-footer div a {
+    width: 80px;
+}
+
+#vipModal .closeBtn {
+    outline: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.modal-header button {
+    background: transparent;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 999;
+    color: #f6e1b2;
+    font-size: 30px;
+}
+
+.modal-header img {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.modal-body .keyverificationWrong {
+    font-size: 14px;
+    color: #fffe9d;
+    text-align: left;
+    letter-spacing: 1px;
+    display: none;
+    position: absolute;
+    left: 74px;
+    bottom: 106px;
+}
+
+.modal-body {
+    height: 104%;
+}
+
+#vipModal .closeBtn.login {
+    background-image: url(../images/modal-login.png);
+    background-size: cover;
+}
+
+#vipModal .closeBtn.pass {
+    background-image: url(../images/modal-pass.png);
+    background-size: cover;
+}
+
+.forget {
+    font-size: 12px;
+    position: absolute;
+    right: 60px;
+    bottom: 130px;
+    color: #ffe98e !important;
+    letter-spacing: 2px;
+}

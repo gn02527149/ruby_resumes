@@ -1,0 +1,153 @@
+/* 基本設定 */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #B2B2B2;
+    font-size: 15px;
+    text-align: center;
+    background: #333;
+    margin: 0;
+}
+
+.zh-cn {
+    font-family: STHeiti, "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "SimSun", "\5B8B\4F53", arial;
+}
+
+.zh-tw {
+    font-family: "Microsoft JhengHei", "\5FAE\8EDF\6B63\9ED1\9AD4", arial, helvetica, sans-serif;
+}
+
+
+/* 動畫效果 */
+
+.noservice-bg-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.noservice-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    margin: -125px 0 0 -125px;
+    background: #FFF;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    animation: circleAnimation 4.5s infinite ease-out;
+    transform: scale(0, 0);
+}
+
+.noservice-bg-2 {
+    animation-delay: 0.7s;
+}
+
+.noservice-bg-3 {
+    animation-delay: 2s;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes circleAnimation {
+    from {
+        transform: scale(0, 0);
+    }
+    to {
+        transform: scale(4, 4);
+        background: #FFF;
+        background: transparent;
+    }
+}
+
+@keyframes circleAnimation {
+    from {
+        transform: scale(0, 0);
+    }
+    to {
+        transform: scale(4, 4);
+        background: #FFF;
+        background: transparent;
+    }
+}
+
+
+/* 外層 */
+
+.noservice-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+/* 標題 */
+
+.title-pic {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+}
+
+.title-pic img {
+    max-width: 100%;
+    padding-left: 16px;
+}
+
+
+/* LOGO */
+
+.noservice-logo {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -85px;
+}
+
+
+/* IP */
+
+.ip-text {
+    position: absolute;
+    top: 62%;
+    width: 100%;
+    line-height: 1.67em;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.ip-text p {
+    margin: 0;
+    color: #FFC500;
+}
+
+
+/* 控端設定顯示文字 */
+
+.service-info {
+    padding-top: 20px;
+    color: #FFF;
+}
+
+@media screen and (max-width: 480px) {
+    .title-pic img {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .noservice-wrap {
+        min-height: 568px;
+    }
+    .title-pic {
+        top: 10%;
+    }
+}

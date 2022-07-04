@@ -1,0 +1,31 @@
+{
+    "errorCode": 0,
+    "message": "操作成功",
+    "result": {
+        "businessCode": 0,
+        "message": "操作成功",
+        "data": {
+            "preDrawCode": "2,6,6",
+            "drawIssue": 181015052,
+            "drawTime": "2018-11-17 17:09:00",
+            "preDrawTime": "2018-11-17 16:59:00",
+            "preDrawIssue": 181015051,
+            "drawCount": 51,
+            "sumNum": 14,
+            "sumBigSmall": 0,
+            "sumSingleDouble": 1,
+            "firstSeafood": 2,
+            "secondSeafood": 6,
+            "thirdSeafood": 6,
+            "frequency": "",
+            "totalCount": 82,
+            "lotCode": 10007,
+            "iconUrl": "http://webapp.1680180.com/images/icon/3x/jsks@3x.png",
+            "shelves": 0,
+            "groupCode": 5,
+            "lotName": "江苏快3",
+            "serverTime": "2018-10-15 17:04:00",
+            "index": 100
+        }
+    }
+}

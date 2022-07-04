@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="香港赛马会">
+    <meta name="description" content="香港赛马会">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./src/bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./src/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./src/bootstrap3/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //判断手机还是PC
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM)) {
+
+            } else {
+                window.location.href = 'mobile/index.html';
+            }
+        }
+        browserRedirect();
+    </script>
+
+
+
+</head>
+
+<body style="overflow-x:hidden;">
+
+    <!--头部-->
+    <header>
+        <div class="header_title">
+            <div>
+                <span class="left">最新VIP会员：
+                    <div>
+                        <span class="content prev">
+                            <span class="vipid">{{vipid}}</span><span class="viplv">{{viplv}}</span><span class="vipm">月俸禄
+                                {{vipm}} 元</span><span class="vipw">周工资 {{vipw}} 元</span>
+                        </span>
+                        <span class="content curr">
+                        </span>
+                    </div>
+                </span>
+                <span class="right">
+                    <a href="http://VIP1104.COM" target="_blank">VIP查询</a>
+                    <a href="javascript:alert('升级中!!!！');" target="_blank">刮刮乐</a>
+                    <a href="http://RK1104.COM" target="_blank">一键入款</a>
+                    <a href="https://static.meiqia.com/dist/standalone.html?_=t&eid=103644" target="_blank">在线客服</a>
+                </span>
+            </div>
+        </div>
+        <div class="header_logo">
+            <div>
+                <a href=""><img src="./src/images/logo.jpg" alt=""></a>
+                <a href=""><img src="./src/images/gif1.gif" alt=""></a>
+                <a><img src="./src/images/du.png" alt=""></a>
+                <p>香港(Hongkong)赛马会始创于1884年<span class="red">11月04日</span>，是全球规模最大的速度马竞赛营办机构之，旗下产品包括香港六合彩及全球规模最大的速度马竞赛营办机构之一。同时是全球最大慈善捐助机构之一。<a
+                        href="https://zh.wikipedia.org/wiki/%E9%A6%99%E6%B8%AF%E8%B3%BD%E9%A6%AC%E6%9C%83" target="_blank"><span
+                            class='red'>[点击查看更多]</span></a></p>
+                <a href="" class="fr int_btn">
+                    <img src="./src/images/open_web.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="header_nav">
+            <ul>
+                <li><a href="http://1104020.com" target="_blank">首页</a></li>
+                <li><a href="http://1104021.com" target="_blank">重庆时时彩</a></li>
+                <li><a href="http://1104022.com" target="_blank">北京PK10</a></li>
+                <li><a href="http://1104023.com" target="_blank">广西快三</a></li>
+                <li><a href="http://1104025.com/Mobile" target="_blank">手机购彩</a></li>
+                <li><a href="http://1104025.com/Result/index?game=7" target="_blank">开奖记录</a></li>
+                <li><a href="http://1104025.com/result/index?game=26" target="_blank">趋势图表</a></li>
+                <li><a href="http://1104035.com/Activity" target="_blank">优惠活动</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!--section-->
+    <div class="section">
+        <div class="main_box">
+            <div class="test">
+                <!--banner-->
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active test_detail">
+                            <a href="http://www.1104.com" target="_blank">
+                                <div class="test_title">
+                                    香港赛马会始创于<span>1884年11月04日</span> <br><b>易记官网:1104.com</b>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span class="speed fl" id="em_1">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">1104 </span><span
+                                                class="test_r" class="c-red">001</span>.com</span>
+                                        <a class="fr enter_btn" href="http://1104021.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_2">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">1104 </span><span
+                                                class="test_g" class="c-red">002</span>.com</span>
+                                        <a class="fr enter_btn" href="http://1104022.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_3">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">1104 </span><span
+                                                class="test_r" class="c-red">003</span>.com</span>
+                                        <a class="fr enter_btn" href="http://1104023.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_4">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">1104 </span><span
+                                                class="test_g" class="c-red">004</span>.com</span>
+                                        <a class="fr enter_btn" href="http://1104024.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_5">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">1104 </span><span
+                                                class="test_r" class="c-red">005</span>.com</span>
+                                        <a class="fr enter_btn" href="http://1104025.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_6">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">1104 </span><span
+                                                class="test_g" class="c-red">006</span>.com</span>
+                                        <a class="fr enter_btn" href="http://1104026.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_7">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">1104 </span><span
+                                                class="test_r" class="c-red">007</span>.com</span>
+                                        <a class="fr enter_btn" href="http://1104027.com" target="_blank">进入官网</a>
+                                    </li>
+
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="item test_detail">
+                            <a href="http://www.hk.cc">
+                                <div class="test_title">
+                                    <span> 香港(Hongkong)简称 </span> <br><b>易记官网:HK.cc</b>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <span class="speed fl" id="em_1">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">HK </span><span
+                                                class="test_r" class="c-red">001</span>.CC</span>
+                                        <a class="fr enter_btn" href="http://1104021.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_2">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">HK </span><span
+                                                class="test_g" class="c-red">002</span>.CC</span>
+                                        <a class="fr enter_btn" href="http://1104022.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_3">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">HK </span><span
+                                                class="test_r" class="c-red">003</span>.CC</span>
+                                        <a class="fr enter_btn" href="http://1104023.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_4">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">HK </span><span
+                                                class="test_g" class="c-red">004</span>.CC</span>
+                                        <a class="fr enter_btn" href="http://1104024.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_5">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">HK </span><span
+                                                class="test_r" class="c-red">006</span>.CC</span>
+                                        <a class="fr enter_btn" href="http://1104025.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_6">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">HK </span><span
+                                                class="test_g" class="c-red">007</span>.CC</span>
+                                        <a class="fr enter_btn" href="http://1104026.com" target="_blank">进入官网</a>
+                                    </li>
+                                    <li>
+                                        <span class="speed fl" id="em_7">测速中</span>
+                                        <span class="int_address fl">http://www.<span class="c-y2">HK </span><span
+                                                class="test_r" class="c-red">009</span>.CC</span>
+                                        <a class="fr enter_btn" href="http://1104027.com" target="_blank">进入官网</a>
+                                    </li>
+
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--六合彩开奖结果-->
+                <div class="test_right">
+                    <div class="liuhe">
+                        <div class="count-number">
+                            <div class="countdown" id="js-countdown">
+                                <p>距下期开奖</p>
+                                <div class="countdown__item">
+                                    <div class="countdown__timer js-countdown-days" aria-labelledby="day-countdown">
+                                    </div>
+                                    <div class="countdown__label" id="day-countdown"> 天 </div>
+                                </div>
+                                <div class="countdown__item">
+                                    <div class="countdown__timer js-countdown-hours" aria-labelledby="hour-countdown">
+                                    </div>
+                                    <div class="countdown__label" id="hour-countdown"> 时 </div>
+                                </div>
+                                <div class="countdown__item">
+                                    <div class="countdown__timer js-countdown-minutes" aria-labelledby="minute-countdown">
+                                    </div>
+                                    <div class="countdown__label" id="minute-countdown"> 分 </div>
+                                </div>
+                                <div class="countdown__item">
+                                    <div class="countdown__timer js-countdown-seconds" aria-labelledby="second-countdown">
+                                    </div>
+                                    <div class="countdown__label" id="second-countdown"> 秒 </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lh_top">
+                            <span class="lh_t">六合彩</span>
+                            <span class="lh_time">2018-01-02</span>
+                            <span class="lh_periods">第<span class="lh_periods_num"></span>期 开奖结果</span>
+                            <span class="lh_score"></span>
+                        </div>
+                        <div class="lh_result">
+                            <ul>
+                                <!-- <li>
+                                    <span></span>
+                                    <div><br></div>
+                                </li>
+
+                                <li class="cur">+</li>
+                                <li>
+                                    <span></span>
+                                    <div><br></div>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="lh_li">
+                            <ul>
+                                <li><a href="http://1104028.com/result/index?game=1" target="_blank">开奖纪录</a></li>
+                                <li><a href="http://1104028.com/result/index?game=1" target="_blank">一肖走势</a></li>
+                                <li><a href="http://1104028.com/result/index?game=1" target="_blank">特码走势</a></li>
+                                <li><a href="http://1104028.com/result/index?game=1" target="_blank">一肖走势</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="download_img">
+                        <div class="down_item">
+                            <img src="./src/images/IOS.png" alt="">
+                            <div class="down_item_detail">
+                                <p class="d_name">苹果APP</p>
+                                <p>适用于ios6.0以上平台</p>
+                                <p class="d_warn">扫描二维码下载</p>
+                            </div>
+                        </div>
+                        <div class="down_item">
+                            <img src="./src/images/IOS.png" alt="">
+                            <div class="down_item_detail">
+                                <p class="d_name">安卓APP</p>
+                                <p>适用于Android4.0及以上平台</p>
+                                <p class="d_warn">扫描二维码下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--圖形顯示-->
+            <div class="icon-box">
+                <p class="icon-box-p"><img src="./src/images/hhtp.png" /></p>
+                <a href="">
+                    <!--<span class="glyphicon glyphicon-usd"></span>-->
+                    <p class="hhIndex">如何<br><b>1元入驻<br /> 终身有礼</b></p>
+                </a>
+                <a href="http://1104021.com/Register?Intr=" target="_blank">
+                    <span>
+                        <img src="./src/images/hh1.png" />
+                    </span>
+                    <p>免费注册</p>
+                </a>
+                <a href="http://rk1104.com" target="_blank">
+                    <span>
+                        <img src="./src/images/hh2.png" />
+                    </span>
+                    <p>账号存款</p>
+                </a>
+                <a href="http://11040022.com" target="_blank">
+                    <span>
+                        <img src="./src/images/hh3.png" />
+                    </span>
+                    <p>资料绑定</p>
+                </a>
+                <a href="http://1104023.com" target="_blank">
+                    <span>
+                        <img src="./src/images/hh4.png" />
+                    </span>
+                    <p>1元投注</p>
+                </a>
+                <a href="http://1104024.com" target="_blank">
+                    <span>
+                        <img src="./src/images/hh5.png" />
+                    </span>
+                    <p>提款到账</p>
+                </a>
+                <a href="http://1104025.com" target="_blank">
+                    <span>
+                        <img src="./src/images/hh6.png" />
+                    </span>
+                    <p>成为VIP</p>
+                </a>
+                <a href="http://1104026.com" target="_blank">
+                    <span>
+                        <img src="./src/images/hh7.png" />
+                    </span>
+                    <p>周周拿工资</p>
+                </a>
+                <a href="http://1104027.com" target="_blank">
+                    <span>
+                        <img src="./src/images/hh8.png" />
+                    </span>
+                    <p>月月拿俸禄</p>
+                </a>
+            </div>
+            <!--各种彩票结果-->
+            <div class="msg">
+
+                <!--左侧-->
+                <div class="fl msg_left">
+                    <div id="myCarousel" class="carousel2 slide">
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="./src/images/lun1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./src/images/lun2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./src/images/lun3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./src/images/lun4.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./src/images/lun5.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="./src/images/lun6.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- 轮播（Carousel）导航 -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
+
+
+                    <div class="data_box">
+                        <div class="data_item " id="pk">
+                            <div class="data_item_top">
+                                <img class="fl" src="./src/images/b1.jpg" alt="">
+                                <div class="data_item_msg fl">
+                                    <div class="data_item_msg_tltle">北京PK10第 <span class="data_item_msg_tltle_num"></span>
+                                        期开奖</div>
+                                    <div class="data_item_msg_num"></div>
+
+
+                                    <!-- <iframe scrolling="no" src="https://kj.kai861.com/view/pk10.html?1?10001?none?s?1680210.com"  frameborder="0" id="pkbox"></iframe> -->
+                                </div>
+                            </div>
+                            <div class="data_item_nav">
+                                <div>
+                                    走势图表：
+                                    <a href="http://1104029.com/result/index?game=15" target="_blank">开奖结果</a>
+                                    <a href="http://1104029.com/result/index?game=29" target="_blank">综合分析</a>
+                                </div>
+                                <div>
+                                    新手推荐：
+                                    <a href="http://1104029.com/Help/Betq?gameId=15" target="_blank">玩法规则</a>
+                                    <a href="javascript:alert('升级中!!!！');" class="cur">计划</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data_item " id="cqssc">
+                            <div class="data_item_top">
+                                <img class="fl" src="./src/images/b2.jpg" alt="">
+                                <div class="data_item_msg fl">
+                                    <div class="data_item_msg_tltle">重庆时时彩第 <span class="data_item_msg_tltle_num"></span>
+                                        期开奖</div>
+                                    <div class="data_item_msg_num">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_item_nav">
+                                <div>
+                                    走势图表：
+                                    <a href="http://1104029.com/Result/index?game=7" target="_blank">路珠分析</a>
+                                    <a href="http://1104029.com/result/index?game=26" target="_blank">综合分析</a>
+                                </div>
+                                <div>
+                                    新手推荐：
+                                    <a href="http://1104029.com/Help/Betq?gameId=7" target="_blank">玩法规则</a>
+                                    <a href="javascript:alert('升级中!!!！');" class="cur">计划</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data_item " id="tjssc">
+                            <div class="data_item_top">
+                                <img class="fl" src="./src/images/b3.png" alt="">
+                                <div class="data_item_msg fl">
+                                    <div class="data_item_msg_tltle">广西快三第 <span class="data_item_msg_tltle_num"></span>
+                                        期开奖</div>
+                                    <div class="data_item_msg_num">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_item_nav">
+                                <div>
+                                    走势图表：
+                                    <a href="http://1104023.com/Result/Index?game=91" target="_blank">路珠分析</a>
+                                    <a href="http://1104023.com/Result/Index?game=90" target="_blank">综合分析</a>
+                                </div>
+                                <div>
+                                    新手推荐：
+                                    <a href="http://1104023.com/Help/Betq?gameId=91" target="_blank">玩法规则</a>
+                                    <a href="javascript:alert('升级中!!!！');" class="cur">计划</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data_item " id="xjssc">
+                            <div class="data_item_top">
+                                <img class="fl" src="./src/images/b4.jpg" alt="">
+                                <div class="data_item_msg fl">
+                                    <div class="data_item_msg_tltle">新疆时时彩第 <span class="data_item_msg_tltle_num"></span>
+                                        期开奖</div>
+                                    <div class="data_item_msg_num">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_item_nav">
+                                <div>
+                                    走势图表：
+                                    <a href="http://1104030.com/result/index?game=10" target="_blank">开奖结果</a>
+                                    <a href="http://1104030.com/Result/Index?game=40" target="_blank">综合分析</a>
+                                </div>
+                                <div>
+                                    新手推荐：
+                                    <a href="http://1104030.com/Result/Index?game=45" target="_blank">玩法规则</a>
+                                    <a href="javascript:alert('升级中!!!！');" class="cur">计划</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data_item " id="klsf">
+                            <div class="data_item_top">
+                                <img class="fl" src="./src/images/b5.png" alt="">
+                                <div class="data_item_msg fl">
+                                    <div class="data_item_msg_tltle">PC蛋蛋幸运28第 <span class="data_item_msg_tltle_num"></span>
+                                        期开奖</div>
+                                    <div class="data_item_msg_num">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_item_nav">
+                                <div>
+                                    走势图表：
+                                    <a href="http://1104031.com/Result/Index?game=101" target="_blank">路珠分析</a>
+                                    <a href="http://11040031.com/Result/Index?game=101" target="_blank">综合分析</a>
+                                </div>
+                                <div>
+                                    新手推荐：
+                                    <a href="http://1104032.com/Help/Betq?gameId=101" target="_blank">玩法规则</a>
+                                    <a href="javascript:alert('升级中!!!！');" class="cur">计划</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data_item " id="syy">
+                            <div class="data_item_top">
+                                <img class="fl" src="./src/images/b6.png" alt="">
+                                <div class="data_item_msg fl">
+                                    <div class="data_item_msg_tltle">幸运农场第 <span class="data_item_msg_tltle_num"></span>
+                                        期开奖</div>
+                                    <div class="data_item_msg_num">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_item_nav">
+                                <div>
+                                    走势图表：
+                                    <a href="http://1104033.com/result/index?game=13" target="_blank">开奖结果</a>
+                                    <a href="http://1104033.com/result/index?game=13" target="_blank">综合分析</a>
+                                </div>
+                                <div>
+                                    新手推荐：
+                                    <a href="http://1104033.com/Help/Betq?gameId=13">玩法规则</a>
+                                    <a href="javascript:alert('升级中!!!！');" class="cur">计划</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data_item " id="sxw">
+                            <div class="data_item_top">
+                                <img class="fl" src="./src/images/b7.jpg" alt="">
+                                <div class="data_item_msg fl">
+                                    <div class="data_item_msg_tltle">江苏11选5第 <span class="data_item_msg_tltle_num"></span>
+                                        期开奖</div>
+                                    <div class="data_item_msg_num">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data_item_nav">
+                                <div>
+                                    走势图表：
+                                    <a href="http://1104023.com/Result/Index?game=63" target="_blank">开奖结果</a>
+                                    <a href="http://1104023.com/Result/Index?game=62" target="_blank">综合分析</a>
+                                </div>
+                                <div>
+                                    新手推荐：
+                                    <a href="http://1104023.com/Help/Betq?gameId=63" target="_blank">玩法规则</a>
+                                    <a href="javascript:alert('升级中!!!！');" class="cur">计划</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--右侧-->
+                <div class="fr msg_right">
+                    <div class="test_tab">
+                        <ul class="nav nav-tabs row" role="tablist">
+                            <li role="presentation" class="active col-sm-4"><a href="#home" aria-controls="home" role="tab"
+                                    data-toggle="tab">最新优惠</a></li>
+                            <li role="presentation" class="col-sm-4"><a href="#profile" aria-controls="profile" role="tab"
+                                    data-toggle="tab">热门游戏</a></li>
+                            <li role="presentation" class="col-sm-4"><a href="#messages" aria-controls="messages" role="tab"
+                                    data-toggle="tab">快速导航</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="discounts tab-pane active" id="home">
+                                <ul>
+                                    <li><a href="http://1104035.com/Activity" target="_blank"><span>01.</span>首次存款1元以上自动赠送最高888元彩金。</a></li>
+                                    <li><a href="http://1104035.com/Activity" target="_blank"><span>02.</span>下载APP完成任务，加赠234元新人彩金
+                                        </a></li>
+                                    <li><a href="http://vip1104.com" target="_blank"><span>03.</span>1元入驻，终身有礼，周周领工资，月月拿俸禄</a></li>
+                                    <li><a href="http://1104035.com/Activity" target="_blank"><span>04.</span>月月现金大回馈，月月回赠!惊喜不断！</a></li>
+                                    <li><a href="http://1104001.com" target="_blank"><span>05.</span>彩票玩法，应有尽有，因为专注，所以更专业!</a></li>
+                                    <li><a href="http://1104001.com" target="_blank"><span>06.</span>六合彩特码48.75倍，时时彩9.88倍；永申请秒到账不降倍.</a></li>
+                                    <li><a href="http://vip1104.com" target="_blank"><span>07.</span>投注1元自动入驻VIP，领88888元晋申请秒到账级彩金.</a></li>
+                                    <li><a href="http://vip1104.com" target="_blank"><span>08.</span>VIP周工资月薪水自动派送，一日会员申请秒到账终身有钱.</a></li>
+                                    <li><a href="http://rk1104.com" target="_blank"><span>09.</span>QQ微信支付宝充值已全面恢复，rk1104.com!</a></li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="games tab-pane " id="profile">
+                                <ul>
+                                    <li>
+                                        <a href="http://1104021.com" target="_blank"><img src="./src/images/1.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="bdr">
+                                        <a href="http://1104022.com" target="_blank"><img src="./src/images/2.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://1104023.com" target="_blank"><img src="./src/images/3.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="bdr">
+                                        <a href="http://1104024.com" target="_blank"><img src="./src/images/4.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="bdb">
+                                        <a href="http://1104025.com" target="_blank"><img src="./src/images/5.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="bdb bdr">
+                                        <a href="http://1104026.com" target="_blank"><img src="./src/images/6.png"> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="winner tab-pane " id="messages">
+                                <ul>
+                                    <li>
+                                        <a href="http://1104001.com/Register?Intr=" target="_blank"><img src="./src/images/7.png"
+                                                alt=""> </a>
+                                    </li>
+                                    <li class="bdr">
+                                        <a href="http://1104kf.com"><img src="./src/images/8.png" alt=""> </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://vip1104.com" target="_blank"><img src="./src/images/9.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="bdr">
+                                        <a href="http://rk1104.com" target="_blank"><img src="./src/images/10.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="bdb">
+                                        <a href="javascript:alert('升级中!!!！');"><img src="./src/images/11.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="bdb bdr">
+                                        <a href="https://static.meiqia.com/dist/standalone.html?_=t&eid=103644" target="_blank"><img
+                                                src="./src/images/12.png"> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="yuce">
+                        <div class="yc_title">
+                            <span>方案预测</span>
+                            <span class="fr"><a href="" style="color: #666">更多</a></span>
+                        </div>
+                        <div class="yc_item">
+                        </div>
+                    </div>
+				
+                    <div><img src="./src/images/c.jpg" alt=""></div>
+-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <!--footer-->
+    <div class="footer ">
+        <div class="footer_box">
+            <ul>
+                <li><a href="https://static.meiqia.com/dist/standalone.html?_=t&eid=103644" target="_blank">在线客服 | </a></li>
+                <li><a href="http://1104001.com" target="_blank"> 关于我们 |</a></li>
+                <li><a href="http://1104001.com/Help/Teller" target="_blank">取款帮助 |</a></li>
+                <li><a href="http://1104001.com/Help/Deposit" target="_blank">存款帮助 |</a></li>
+                <li><a href="http://1104001.com/Help/Generalq" target="_blank">常见问题 |</a></li>
+                <li><a href="http://1104001.com/Help/Betq?gameId=0" target="_blank">规则条例 |</a></li>
+                <li><a href="http://1104001.com/Mobile" target="_blank">下载客户端</a></li>
+            </ul>
+            <span>Copyright©2011- 2020香港赛马会版权所有 Reserved</span>
+        </div>
+    </div>
+
+    <div id="dd"></div>
+
+    <script src="./src/index.js"></script>
+    <script src="./ajax.js"></script>
+    <script src="./src/vip.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 5000
+        })
+        $('.carousel2').carousel({
+            interval: 4000
+        })
+        $(function () {
+            $('.test_tab a').mouseover(function (e) {
+                e.preventDefault(); //阻止a链接的跳转行为
+                $(this).tab('show'); //显示当前选中的链接及关联的content
+            })
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1334 @@
+@keyframes marquee {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: -80px;
+  }
+}
+@keyframes bg {
+  0% {
+    background: url(../img/tenup.png) 50% no-repeat;
+  }
+  30% {
+    background: url(../img/tendown.png) 50% no-repeat;
+  }
+  50% {
+    background: url(../img/tenup.png) 50% no-repeat;
+  }
+}
+@keyframes ar {
+  0% {
+    background: url(../img/arrow.png) center center no-repeat;
+  }
+  20% {
+    background: url(../img/arrow.png) bottom center no-repeat;
+  }
+  50% {
+    background: url(../img/arrow.png) center center no-repeat;
+  }
+}
+@keyframes bg02 {
+  0% {
+    background: url(../img/sbtn.png) 50% no-repeat;
+  }
+  30% {
+    background: url(../img/sbtn_r.png) 50% no-repeat;
+  }
+  50% {
+    background: url(../img/sbtn.png) 50% no-repeat;
+  }
+}
+@keyframes ar02 {
+  0% {
+    background: url(../img/arrow02.png) center center no-repeat;
+  }
+  20% {
+    background: url(../img/arrow02.png) bottom center no-repeat;
+  }
+  50% {
+    background: url(../img/arrow02.png) center center no-repeat;
+  }
+}
+@keyframes left-l {
+  0% {
+    left: -105px;
+  }
+  50% {
+    left: -135px;
+  }
+  100% {
+    left: -105px;
+  }
+}
+@keyframes left-r {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 30px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes right-r {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: -30px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes right-l {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 30px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+/* line 1, ../sass/_index.sass */
+body {
+  background: url(../img/bg.jpg) top center no-repeat, #550001;
+  font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+/* line 7, ../sass/_index.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../sass/_index.sass */
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+/* line 15, ../sass/_index.sass */
+a:hover {
+  opacity: 0.8;
+}
+
+@font-face {
+  font-family: "lcdd";
+  src: url("../fonts/lcdd.eot?rretjt");
+  src: url("../fonts/lcdd.eot?#iefixrretjt") format("embedded-opentype"), url("../fonts/lcdd.woff?rretjt") format("woff"), url("../fonts/lcdd.ttf?rretjt") format("truetype"), url("../fonts/lcdd.svg?rretjt#lcd") format("svg");
+}
+/* line 26, ../sass/_index.sass */
+.middlebox {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 31, ../sass/_index.sass */
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  height: 145px;
+}
+/* line 34, ../sass/_index.sass */
+.navbar .middlebox {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 37, ../sass/_index.sass */
+.navbar .middlebox a {
+  display: flex;
+  color: #ffff00;
+  line-height: 145px;
+  width: auto;
+  font-size: 24px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 45, ../sass/_index.sass */
+.navbar .middlebox a img {
+  width: 222px;
+  height: 103px;
+  padding-top: 15px;
+  vertical-align: -webkit-baseline-middle;
+}
+
+/* line 53, ../sass/_index.sass */
+.game {
+  position: relative;
+}
+/* line 55, ../sass/_index.sass */
+.game img {
+  width: 1000px;
+}
+/* line 58, ../sass/_index.sass */
+.game .block02 {
+  background: url(../img/t02.png) 50% no-repeat;
+  background-size: 100% 100%;
+  width: 1200px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  top: 366px;
+  margin-left: -600px;
+}
+/* line 67, ../sass/_index.sass */
+.game .block02 .secondbox {
+  position: absolute;
+  left: 390px;
+  top: 156px;
+  width: 295px;
+  text-align: right;
+}
+/* line 73, ../sass/_index.sass */
+.game .block02 .secondbox #second {
+  font-family: "lcdd", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  font-size: 110px;
+  -webkit-text-stroke: 2px white;
+  color: red;
+}
+/* line 78, ../sass/_index.sass */
+.game .block02 .start_btn {
+  background: url(../img/tenup.png) 50% no-repeat;
+  width: 371px;
+  height: 138px;
+  animation: bg 0.3s infinite;
+  -webkit-animation: bg 0.3s infinite;
+  position: absolute;
+  right: 66px;
+  top: 258px;
+  font-size: 0;
+  outline: 0;
+  border: 0;
+}
+/* line 90, ../sass/_index.sass */
+.game .block02 .arrow {
+  background: url(../img/arrow.png) center center no-repeat;
+  width: 90px;
+  height: 98px;
+  position: absolute;
+  right: 66px;
+  top: 340px;
+  font-size: 0;
+  outline: 0;
+  border: 0;
+}
+/* line 101, ../sass/_index.sass */
+.game .block02 .play_btn {
+  background: url(../img/startbtn.png) 50% no-repeat;
+  width: 371px;
+  height: 138px;
+  position: absolute;
+  right: 66px;
+  top: 258px;
+  font-size: 0;
+  outline: 0;
+  border: 0;
+}
+/* line 111, ../sass/_index.sass */
+.game .block02 .play_btn:hover {
+  opacity: 0.8;
+}
+/* line 113, ../sass/_index.sass */
+.game .block02 .stop_btn {
+  background: url(../img/stopbtn.png) 50% no-repeat;
+  width: 371px;
+  height: 138px;
+  position: absolute;
+  right: 66px;
+  top: 258px;
+  font-size: 0;
+  outline: 0;
+  border: 0;
+}
+/* line 123, ../sass/_index.sass */
+.game .block02 .stop_btn:hover {
+  opacity: 0.8;
+}
+
+/* line 128, ../sass/_index.sass */
+.content {
+  background: url(../img/cbg.png) bottom center no-repeat;
+  padding-bottom: 99px;
+  margin-top: -200px;
+  background-size: 1050px;
+}
+/* line 133, ../sass/_index.sass */
+.content .mbox {
+  background: url(../img/mbg.png) 50% no-repeat;
+  padding-top: 298px;
+  width: 885px;
+  height: 313px;
+  margin-top: 572px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -150px;
+}
+/* line 142, ../sass/_index.sass */
+.content .mbox .list {
+  width: 685px;
+  height: 150px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -88px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 170px;
+}
+/* line 152, ../sass/_index.sass */
+.content .mbox .list .marqueebox {
+  color: white;
+  top: 10px;
+  animation: marquee 6s linear infinite;
+  list-style: none;
+  font-size: 20px;
+  position: absolute;
+  line-height: 32px;
+}
+/* line 160, ../sass/_index.sass */
+.content .mbox .list .marqueebox:hover {
+  animation-play-state: paused;
+}
+/* line 162, ../sass/_index.sass */
+.content .mbox .list .marqueebox span {
+  color: #ffc314;
+}
+/* line 164, ../sass/_index.sass */
+.content .mbox .sbtn {
+  width: 196px;
+  height: 68px;
+  background: url(../img/sbtn.png) 50% no-repeat;
+  animation: bg02 0.3s infinite;
+  -webkit-animation: bg02 0.3s infinite;
+  margin: 5px auto 0 auto;
+  font-size: 0;
+}
+/* line 172, ../sass/_index.sass */
+.content .mbox .sbtn:hover {
+  opacity: 0.9;
+}
+/* line 174, ../sass/_index.sass */
+.content .mbox .arrow02 {
+  background: url(../img/arrow02.png) 50% no-repeat;
+  width: 31px;
+  height: 32px;
+  position: absolute;
+  right: 404px;
+  top: 394px;
+  font-size: 0;
+  outline: 0;
+  border: 0;
+}
+/* line 185, ../sass/_index.sass */
+.content .title {
+  width: 930px;
+  margin: 60px auto;
+  color: white;
+}
+/* line 189, ../sass/_index.sass */
+.content .title p {
+  margin-left: 1em;
+  margin-top: 15px;
+  font-size: 20px;
+}
+/* line 193, ../sass/_index.sass */
+.content .title ul {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-top: 15px;
+  margin-left: 2.2em;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* line 202, ../sass/_index.sass */
+.footer {
+  background: #3d0101;
+  color: white;
+  font-size: 20px;
+  margin-top: -55px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 213, ../sass/_index.sass */
+.l1 {
+  background: url(../img/l1.png) 50% no-repeat;
+  width: 461px;
+  height: 720px;
+  position: absolute;
+  left: -105px;
+  top: 1360px;
+  z-index: -1;
+  animation: left-l 5s infinite;
+  -webkit-animation: left-l 5s infinite;
+}
+
+/* line 223, ../sass/_index.sass */
+.l2 {
+  background: url(../img/l2.png) 50% no-repeat;
+  width: 278px;
+  height: 822px;
+  position: absolute;
+  left: 0;
+  top: 1670px;
+  z-index: -1;
+  animation: left-r 5s infinite;
+  -webkit-animation: left-r 5s infinite;
+}
+
+/* line 233, ../sass/_index.sass */
+.r1 {
+  background: url(../img/r1.png) 50% no-repeat;
+  width: 305px;
+  height: 1025px;
+  position: absolute;
+  right: 0;
+  top: 1360px;
+  z-index: -1;
+  animation: right-r 5s infinite;
+  -webkit-animation: right-r 5s infinite;
+}
+
+/* line 243, ../sass/_index.sass */
+.r2 {
+  background: url(../img/r2.png) 50% no-repeat;
+  width: 509px;
+  height: 855px;
+  position: absolute;
+  right: 0;
+  top: 1420px;
+  z-index: -1;
+  animation: right-l 5s infinite;
+  -webkit-animation: right-l 5s infinite;
+}
+
+/* line 258, ../sass/_index.sass */
+.modal__bg {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* line 268, ../sass/_index.sass */
+.modal__bg .modal {
+  background: url(../img/mbg-s.png);
+  width: 1100px;
+  height: 165px;
+  border-radius: 15px;
+  position: absolute;
+  line-height: 165px;
+  top: 50%;
+  left: 50%;
+  margin-top: -82px;
+  margin-left: -550px;
+  box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 280, ../sass/_index.sass */
+.modal__bg .modal label {
+  background: url(../img/labelbg.png) 50% no-repeat;
+  font-size: 0;
+  width: 191px;
+  height: 58px;
+  float: left;
+  margin-top: 45px;
+  margin-left: 45px;
+}
+/* line 288, ../sass/_index.sass */
+.modal__bg .modal input {
+  width: 400px;
+  height: 58px;
+  background: transparent;
+  float: left;
+  border: 0;
+  outline: 0;
+  font-size: 32px;
+  margin-top: 45px;
+  font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  color: white;
+  padding-left: 15px;
+}
+/* line 300, ../sass/_index.sass */
+.modal__bg .modal input::placeholder {
+  font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  color: white;
+  padding-left: 15px;
+}
+/* line 304, ../sass/_index.sass */
+.modal__bg .modal .login {
+  background: url(../img/loginbtn.png) 50% no-repeat;
+  width: 197px;
+  height: 70px;
+  float: left;
+  display: block;
+  border: 0;
+  outline: 0;
+  font-size: 0;
+  margin-top: 45px;
+}
+/* line 314, ../sass/_index.sass */
+.modal__bg .modal .login:hover {
+  opacity: 0.8;
+  margin-top: 48px;
+}
+/* line 317, ../sass/_index.sass */
+.modal__bg .modal .close {
+  background: url(../img/closebtn.png) 50% no-repeat;
+  width: 197px;
+  height: 70px;
+  float: left;
+  display: block;
+  border: 0;
+  outline: 0;
+  font-size: 0;
+  margin-top: 45px;
+}
+/* line 327, ../sass/_index.sass */
+.modal__bg .modal .close:hover {
+  opacity: 0.8;
+  margin-top: 48px;
+}
+
+/* line 332, ../sass/_index.sass */
+.modal__bg__miss {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* line 342, ../sass/_index.sass */
+.modal__bg__miss .modal {
+  background: url(../img/mbgb.png);
+  width: 600px;
+  height: 457px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -228px;
+  margin-left: -300px;
+  box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 354, ../sass/_index.sass */
+.modal__bg__miss .modal .imgbox {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  height: 206px;
+}
+/* line 359, ../sass/_index.sass */
+.modal__bg__miss .modal .chance {
+  background: url(../img/chance.png) 50% no-repeat;
+  height: 40px;
+  font-size: 35px;
+  color: red;
+  -webkit-text-stroke: 2px white;
+  font-family: "Aria", sans-serif;
+  font-weight: 900;
+  line-height: 35px;
+  padding-left: 250px;
+}
+/* line 369, ../sass/_index.sass */
+.modal__bg__miss .modal .again-btn {
+  background: url(../img/againbg.png) 50% no-repeat;
+  width: 197px;
+  height: 70px;
+  display: block;
+  border: 0;
+  outline: 0;
+  font-size: 0;
+  float: left;
+  margin-top: 25px;
+  margin-left: 98px;
+}
+/* line 380, ../sass/_index.sass */
+.modal__bg__miss .modal .again-btn:hover {
+  opacity: 0.8;
+  margin-top: 28px;
+}
+/* line 383, ../sass/_index.sass */
+.modal__bg__miss .modal .close {
+  background: url(../img/closebtn.png) 50% no-repeat;
+  width: 197px;
+  height: 70px;
+  display: block;
+  border: 0;
+  outline: 0;
+  font-size: 0;
+  float: left;
+  margin-top: 25px;
+}
+/* line 394, ../sass/_index.sass */
+.modal__bg__miss .modal .close:hover {
+  opacity: 0.8;
+  margin-top: 28px;
+}
+
+/* line 399, ../sass/_index.sass */
+.modal__bg__gift {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* line 409, ../sass/_index.sass */
+.modal__bg__gift .modal {
+  background: url(../img/mbgb-gift.png);
+  width: 600px;
+  height: 457px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -228px;
+  margin-left: -300px;
+  box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 421, ../sass/_index.sass */
+.modal__bg__gift .modal .imgbox {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  height: 206px;
+}
+/* line 426, ../sass/_index.sass */
+.modal__bg__gift .modal .chance {
+  background: url(../img/chance.png) 50% no-repeat;
+  height: 40px;
+  font-size: 35px;
+  color: red;
+  -webkit-text-stroke: 2px white;
+  font-family: "Aria", sans-serif;
+  font-weight: 900;
+  line-height: 35px;
+  padding-left: 250px;
+}
+/* line 436, ../sass/_index.sass */
+.modal__bg__gift .modal .again-btn {
+  background: url(../img/againbg.png) 50% no-repeat;
+  width: 197px;
+  height: 70px;
+  display: block;
+  border: 0;
+  outline: 0;
+  font-size: 0;
+  float: left;
+  margin-top: 25px;
+  margin-left: 98px;
+}
+/* line 447, ../sass/_index.sass */
+.modal__bg__gift .modal .again-btn:hover {
+  opacity: 0.8;
+  margin-top: 28px;
+}
+/* line 450, ../sass/_index.sass */
+.modal__bg__gift .modal .close {
+  background: url(../img/closebtn.png) 50% no-repeat;
+  width: 197px;
+  height: 70px;
+  display: block;
+  border: 0;
+  outline: 0;
+  font-size: 0;
+  float: left;
+  margin-top: 25px;
+}
+/* line 461, ../sass/_index.sass */
+.modal__bg__gift .modal .close:hover {
+  opacity: 0.8;
+  margin-top: 28px;
+}
+
+/* line 464, ../sass/_index.sass */
+.modal__bg__result {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* line 474, ../sass/_index.sass */
+.modal__bg__result .modal {
+  background: url(../img/mbgb.png);
+  width: 600px;
+  height: 457px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -228px;
+  margin-left: -300px;
+  box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+}
+/* line 486, ../sass/_index.sass */
+.modal__bg__result .modal h4 {
+  color: white;
+  font-size: 20px;
+  margin: 45px auto 30px 45px;
+}
+/* line 490, ../sass/_index.sass */
+.modal__bg__result .modal h4 span {
+  color: yellow;
+}
+/* line 492, ../sass/_index.sass */
+.modal__bg__result .modal .result {
+  background: url(../img/resbg.png) 50% no-repeat;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  color: white;
+  width: 455px;
+  height: 113px;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+/* line 501, ../sass/_index.sass */
+.modal__bg__result .modal .result .rBox {
+  width: 449px;
+  height: 103px;
+  overflow-y: auto;
+}
+/* line 505, ../sass/_index.sass */
+.modal__bg__result .modal .result .rBox p {
+  font-size: 20px;
+  margin-left: 1em;
+}
+/* line 508, ../sass/_index.sass */
+.modal__bg__result .modal .result .rBox p .yellow {
+  color: yellow;
+  margin-left: 30px;
+}
+/* line 511, ../sass/_index.sass */
+.modal__bg__result .modal .result .rBox p .red {
+  color: red;
+  margin-left: 30px;
+}
+/* line 514, ../sass/_index.sass */
+.modal__bg__result .modal .close {
+  background: url(../img/close02.png) 50% no-repeat;
+  width: 197px;
+  height: 70px;
+  display: block;
+  border: 0;
+  outline: 0;
+  font-size: 0;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 525, ../sass/_index.sass */
+.modal__bg__result .modal .close:hover {
+  opacity: 0.8;
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 980px) {
+  /* line 3, ../sass/_mobile.sass */
+  body {
+    background: url(../img/bg-s.jpg) top center no-repeat, #550001;
+  }
+
+  /* line 5, ../sass/_mobile.sass */
+  .middlebox {
+    width: 980px;
+  }
+
+  /* line 8, ../sass/_mobile.sass */
+  .navbar {
+    background: rgba(0, 0, 0, 0.5);
+    height: 145px;
+  }
+  /* line 12, ../sass/_mobile.sass */
+  .navbar .middlebox a {
+    display: inline-block;
+    color: #ffff00;
+    line-height: 145px;
+    width: 14%;
+    font-size: 24px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  /* line 20, ../sass/_mobile.sass */
+  .navbar .middlebox a img {
+    width: 100%;
+    vertical-align: -webkit-baseline-middle;
+  }
+
+  /* line 26, ../sass/_mobile.sass */
+  .game {
+    position: relative;
+  }
+  /* line 29, ../sass/_mobile.sass */
+  .game .block01 img {
+    width: 980px;
+  }
+  /* line 31, ../sass/_mobile.sass */
+  .game .block02 {
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 980px;
+    height: 490px;
+    left: 0;
+    top: 382px;
+    margin-left: 0;
+  }
+  /* line 37, ../sass/_mobile.sass */
+  .game .block02 .secondbox {
+    left: 272px;
+    top: 123px;
+  }
+  /* line 40, ../sass/_mobile.sass */
+  .game .block02 .secondbox #second {
+    font-family: "lcdd", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    font-size: 100px;
+    -webkit-text-stroke: 2px white;
+    color: red;
+  }
+  /* line 45, ../sass/_mobile.sass */
+  .game .block02 .start_btn {
+    background: url(../img/tenup.png) 50% no-repeat;
+    width: 371px;
+    height: 138px;
+    animation: bg 0.3s infinite;
+    -webkit-animation: bg 0.3s infinite;
+    position: absolute;
+    right: 27px;
+    top: 220px;
+    font-size: 0;
+    outline: 0;
+    border: 0;
+  }
+  /* line 57, ../sass/_mobile.sass */
+  .game .block02 .arrow {
+    background: url(../img/arrow.png) center center no-repeat;
+    width: 90px;
+    height: 98px;
+    position: absolute;
+    right: 107px;
+    top: 365px;
+    font-size: 0;
+    outline: 0;
+    border: 0;
+  }
+  /* line 69, ../sass/_mobile.sass */
+  .game .block02 .play_btn {
+    background: url(../img/startbtn.png) 50% no-repeat;
+    width: 371px;
+    height: 138px;
+    position: absolute;
+    right: 35px;
+    top: 235px;
+    font-size: 0;
+    outline: 0;
+    border: 0;
+  }
+  /* line 81, ../sass/_mobile.sass */
+  .game .block02 .stop_btn {
+    background: url(../img/stopbtn.png) 50% no-repeat;
+    width: 371px;
+    height: 138px;
+    position: absolute;
+    right: 35px;
+    top: 235px;
+    font-size: 0;
+    outline: 0;
+    border: 0;
+  }
+  /* line 91, ../sass/_mobile.sass */
+  .game .block02 .stop_btn:hover {
+    opacity: 0.8;
+  }
+
+  /* line 96, ../sass/_mobile.sass */
+  .content .mbox {
+    background: url(../img/mbg.png) 50% no-repeat;
+    width: 885px;
+    height: 313px;
+    margin-top: 510px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 103, ../sass/_mobile.sass */
+  .content .mbox .list {
+    width: 90%;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -86px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5%;
+  }
+  /* line 113, ../sass/_mobile.sass */
+  .content .mbox .list .marqueebox {
+    color: white;
+    top: 0px;
+    animation: marquee 6s linear infinite;
+    list-style: none;
+    font-size: 30px;
+    position: absolute;
+    line-height: 32px;
+  }
+  /* line 121, ../sass/_mobile.sass */
+  .content .mbox .list .marqueebox:hover {
+    animation-play-state: paused;
+  }
+  /* line 123, ../sass/_mobile.sass */
+  .content .mbox .list .marqueebox span {
+    color: #ffc314;
+  }
+  /* line 125, ../sass/_mobile.sass */
+  .content .mbox .sbtn {
+    width: 196px;
+    height: 68px;
+    background: url(../img/sbtn.png) 50% no-repeat;
+    animation: bg02 0.3s infinite;
+    -webkit-animation: bg02 0.3s infinite;
+    margin: 5px auto 0 auto;
+    font-size: 0;
+  }
+  /* line 133, ../sass/_mobile.sass */
+  .content .mbox .sbtn:hover {
+    opacity: 0.9;
+  }
+  /* line 135, ../sass/_mobile.sass */
+  .content .mbox .arrow02 {
+    background: url(../img/arrow02.png) 50% no-repeat;
+    width: 31px;
+    height: 32px;
+    position: absolute;
+    right: 395px;
+    top: 385px;
+    font-size: 0;
+    outline: 0;
+    border: 0;
+  }
+  /* line 145, ../sass/_mobile.sass */
+  .content .title {
+    width: 930px;
+    margin: 60px auto;
+    color: white;
+  }
+  /* line 149, ../sass/_mobile.sass */
+  .content .title p {
+    margin-left: 0;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  /* line 153, ../sass/_mobile.sass */
+  .content .title ul {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin-top: 15px;
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  /* line 162, ../sass/_mobile.sass */
+  .footer {
+    background: #3d0101;
+    color: white;
+    font-size: 12px;
+    margin-top: 8px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* line 171, ../sass/_mobile.sass */
+  .l1 {
+    display: none;
+  }
+
+  /* line 173, ../sass/_mobile.sass */
+  .l2 {
+    display: none;
+  }
+
+  /* line 175, ../sass/_mobile.sass */
+  .r1 {
+    display: none;
+  }
+
+  /* line 177, ../sass/_mobile.sass */
+  .r2 {
+    display: none;
+  }
+
+  /* line 181, ../sass/_mobile.sass */
+  .modal__bg {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  /* line 191, ../sass/_mobile.sass */
+  .modal__bg .modal {
+    background: url(../img/mbg-s.png);
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 165px;
+    border-radius: 15px;
+    position: absolute;
+    line-height: 165px;
+    top: 50%;
+    left: 0;
+    margin-top: -82px;
+    margin-left: 0;
+    box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+  }
+  /* line 204, ../sass/_mobile.sass */
+  .modal__bg .modal label {
+    background: url(../img/labelbg.png) 50% no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    font-size: 0;
+    width: 15%;
+    height: 58px;
+    float: left;
+    margin-top: 45px;
+    margin-left: 45px;
+  }
+  /* line 213, ../sass/_mobile.sass */
+  .modal__bg .modal input {
+    width: 34%;
+    height: 58px;
+    background: transparent;
+    float: left;
+    border: 0;
+    outline: 0;
+    font-size: 30px;
+    margin-top: 45px;
+    font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    color: white;
+    padding-left: 15px;
+  }
+  /* line 225, ../sass/_mobile.sass */
+  .modal__bg .modal input::placeholder {
+    font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    color: white;
+    padding-left: 15px;
+  }
+  /* line 229, ../sass/_mobile.sass */
+  .modal__bg .modal .login {
+    background: url(../img/loginbtn.png) 50% no-repeat;
+    width: 197px;
+    height: 70px;
+    float: left;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    margin-top: 45px;
+  }
+  /* line 239, ../sass/_mobile.sass */
+  .modal__bg .modal .login:hover {
+    opacity: 0.8;
+    margin-top: 48px;
+  }
+  /* line 242, ../sass/_mobile.sass */
+  .modal__bg .modal .close {
+    background: url(../img/closebtn.png) 50% no-repeat;
+    width: 197px;
+    height: 70px;
+    float: left;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    margin-top: 45px;
+  }
+  /* line 252, ../sass/_mobile.sass */
+  .modal__bg .modal .close:hover {
+    opacity: 0.8;
+    margin-top: 48px;
+  }
+
+  /* line 257, ../sass/_mobile.sass */
+  .modal__bg__miss {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  /* line 267, ../sass/_mobile.sass */
+  .modal__bg__miss .modal {
+    background: url(../img/mbgb.png);
+    width: 600px;
+    height: 457px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -228px;
+    margin-left: -300px;
+    box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+  }
+  /* line 279, ../sass/_mobile.sass */
+  .modal__bg__miss .modal .imgbox {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    height: 206px;
+  }
+  /* line 284, ../sass/_mobile.sass */
+  .modal__bg__miss .modal .chance {
+    background: url(../img/chance.png) 50% no-repeat;
+    height: 40px;
+    font-size: 35px;
+    color: red;
+    -webkit-text-stroke: 2px white;
+    font-family: "Aria", sans-serif;
+    font-weight: 900;
+    line-height: 35px;
+    padding-left: 250px;
+  }
+  /* line 294, ../sass/_mobile.sass */
+  .modal__bg__miss .modal .again-btn {
+    background: url(../img/againbg.png) 50% no-repeat;
+    width: 197px;
+    height: 70px;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    float: left;
+    margin-top: 25px;
+    margin-left: 98px;
+  }
+  /* line 305, ../sass/_mobile.sass */
+  .modal__bg__miss .modal .again-btn:hover {
+    opacity: 0.8;
+    margin-top: 28px;
+  }
+  /* line 308, ../sass/_mobile.sass */
+  .modal__bg__miss .modal .close {
+    background: url(../img/closebtn.png) 50% no-repeat;
+    width: 197px;
+    height: 70px;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    float: left;
+    margin-top: 25px;
+  }
+  /* line 319, ../sass/_mobile.sass */
+  .modal__bg__miss .modal .close:hover {
+    opacity: 0.8;
+    margin-top: 28px;
+  }
+
+  /* line 324, ../sass/_mobile.sass */
+  .modal__bg__gift {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  /* line 334, ../sass/_mobile.sass */
+  .modal__bg__gift .modal {
+    background: url(../img/mbgb-gift.png);
+    width: 600px;
+    height: 457px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -228px;
+    margin-left: -300px;
+    box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+  }
+  /* line 346, ../sass/_mobile.sass */
+  .modal__bg__gift .modal .imgbox {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    height: 206px;
+  }
+  /* line 351, ../sass/_mobile.sass */
+  .modal__bg__gift .modal .chance {
+    background: url(../img/chance.png) 50% no-repeat;
+    height: 40px;
+    font-size: 35px;
+    color: red;
+    -webkit-text-stroke: 2px white;
+    font-family: "Aria", sans-serif;
+    font-weight: 900;
+    line-height: 35px;
+    padding-left: 250px;
+  }
+  /* line 361, ../sass/_mobile.sass */
+  .modal__bg__gift .modal .again-btn {
+    background: url(../img/againbg.png) 50% no-repeat;
+    width: 197px;
+    height: 70px;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    float: left;
+    margin-top: 25px;
+    margin-left: 98px;
+  }
+  /* line 372, ../sass/_mobile.sass */
+  .modal__bg__gift .modal .again-btn:hover {
+    opacity: 0.8;
+    margin-top: 28px;
+  }
+  /* line 375, ../sass/_mobile.sass */
+  .modal__bg__gift .modal .close {
+    background: url(../img/closebtn.png) 50% no-repeat;
+    width: 197px;
+    height: 70px;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    float: left;
+    margin-top: 25px;
+  }
+  /* line 386, ../sass/_mobile.sass */
+  .modal__bg__gift .modal .close:hover {
+    opacity: 0.8;
+    margin-top: 28px;
+  }
+
+  /* line 389, ../sass/_mobile.sass */
+  .modal__bg__result {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  /* line 399, ../sass/_mobile.sass */
+  .modal__bg__result .modal {
+    background: url(../img/mbgb.png);
+    width: 600px;
+    height: 457px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -228px;
+    margin-left: -300px;
+    box-shadow: 0px 1px 11px 2px rgba(0, 0, 0, 0.3);
+  }
+  /* line 411, ../sass/_mobile.sass */
+  .modal__bg__result .modal h4 {
+    color: white;
+    font-size: 20px;
+    margin: 45px auto 30px 45px;
+  }
+  /* line 415, ../sass/_mobile.sass */
+  .modal__bg__result .modal h4 span {
+    color: yellow;
+  }
+  /* line 417, ../sass/_mobile.sass */
+  .modal__bg__result .modal .result {
+    background: url(../img/resbg.png) 50% no-repeat;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    color: white;
+    width: 455px;
+    height: 113px;
+    margin: 0 auto;
+    padding-top: 55px;
+  }
+  /* line 426, ../sass/_mobile.sass */
+  .modal__bg__result .modal .result .rBox {
+    width: 449px;
+    height: 103px;
+    overflow-y: auto;
+  }
+  /* line 430, ../sass/_mobile.sass */
+  .modal__bg__result .modal .result .rBox p {
+    font-size: 20px;
+    margin-left: 1em;
+  }
+  /* line 433, ../sass/_mobile.sass */
+  .modal__bg__result .modal .result .rBox p .yellow {
+    color: yellow;
+    margin-left: 30px;
+  }
+  /* line 436, ../sass/_mobile.sass */
+  .modal__bg__result .modal .result .rBox p .red {
+    color: red;
+    margin-left: 30px;
+  }
+  /* line 439, ../sass/_mobile.sass */
+  .modal__bg__result .modal .close {
+    background: url(../img/close02.png) 50% no-repeat;
+    width: 197px;
+    height: 70px;
+    display: block;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 450, ../sass/_mobile.sass */
+  .modal__bg__result .modal .close:hover {
+    opacity: 0.8;
+    margin-top: 28px;
+  }
+}

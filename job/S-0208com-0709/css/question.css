@@ -1,0 +1,54 @@
+.top {
+    background: url(../images/bg4.jpg) center 150px !important;
+    background-size: 100% 100%;
+    z-index: 99;
+}
+
+.listBoxTitle {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.listBox-content {
+    border: 1px solid #888888;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.listBox-content .Q {
+    padding-left: 40px;
+    color: #16131a;
+    background-color: #c7c7c7;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+}
+
+.listBox-content .A {
+    padding-left: 40px;
+    color: #c7c7c7;
+    position: relative;
+    display: block;
+}
+
+.listBox-content .Q::after,
+.listBox-content .A::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+
+.listBox-content .Q::after {
+    background-image: url(../images/Q.png);
+}
+
+.listBox-content .A::after {
+    background-image: url(../images/A.png);
+}

@@ -1,0 +1,32 @@
+{
+    "errorCode": 0,
+    "message": "操作成功",
+    "result": {
+        "businessCode": 0,
+        "message": "操作成功",
+        "data": {
+            "preDrawCode": "1,3,0",
+            "drawIssue": 915419,
+            "drawTime": "2018-11-17 17:10:00",
+            "preDrawTime": "2018-11-17 17:05:00",
+            "preDrawIssue": 915418,
+            "drawCount": 97,
+            "sumNum": 4,
+            "sumBigSmall": -1,
+            "sumSingleDouble": -1,
+            "sdrawCount": "",
+            "sumMiddle": "",
+            "sumLimit": "",
+            "status": 0,
+            "frequency": "",
+            "totalCount": 179,
+            "lotCode": 10046,
+            "iconUrl": "",
+            "shelves": 1,
+            "groupCode": 46,
+            "lotName": "pc蛋蛋幸运28",
+            "serverTime": "2018-10-15 17:07:14",
+            "index": 100
+        }
+    }
+}

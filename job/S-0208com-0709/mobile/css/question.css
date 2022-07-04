@@ -1,0 +1,66 @@
+.top {
+    background-size: 100% 100%;
+    z-index: 99;
+    margin-bottom: 80px;
+}
+
+.listBoxTitle {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.listBox-content {
+    border: 1px solid #888888;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.listBox-content .Q {
+    padding-left: 60px;
+    color: #16131a;
+    background-color: #c7c7c7;
+    border-radius: 15px;
+    position: relative;
+    display: block;
+}
+
+.listBox-content .A {
+    padding-left: 60px;
+    color: #c7c7c7;
+    position: relative;
+    display: block;
+}
+
+.listBox-content .Q::after,
+.listBox-content .A::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.listBox-content .Q::after {
+    background-image: url(../../images/Q.png);
+}
+
+.listBox-content .A::after {
+    background-image: url(../../images/A.png);
+}
+
+.listBoxTitle img {
+    width: 100%;
+}
+
+.partnerTitle img {
+    width: 65%;
+}
+
+.managementTitle img {
+    width: 80%;
+}

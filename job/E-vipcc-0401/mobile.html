@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="max-age=2592000">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="375">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="375">
+    <title>VIPcc</title>
+    <link rel="stylesheet" href="vendor/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile_css_scss.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="tecentContent"></div>
+    <div class="topbar">
+        <div class="topbar-content clearfix">
+            <div class="topbar-content-message pull-left">
+                客服电话：40000-40000
+            </div>
+            <div class="topbar-content-message pull-right topbar-unlogin">
+                <a class="login-button">登录</a>
+                <a href="">注册</a>
+            </div>
+            <div class="topbar-content-message pull-right topbar-login">
+                尊敬的<span class="user-login-name color-red"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i></span>
+                <a href="" class="color-blue">个人中心</a>
+                <a onclick="logout()" class="color-red">退出登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="header clearfix">
+        <div class="logo">
+            <a href="/">
+                <img src="images/agent_index/logo_20.png" class="logo-image" alt="">
+            </a>
+        </div>
+        <div class="toolbar"></div>
+    </div>
+    <nav class="nav">
+        <ul class="title-nav">
+            <li class="nav-agent"><a href="#agent" class="index_agent">域名代理</a></li>
+            <li class="nav-consignment"><a href="#consignment" class="index_consignment">域名寄售</a></li>
+            <li class="nav-alliance"><a href="#alliance" class="index_alliance">中介联盟</a></li>
+            <li class="nav-domains"><a href="">域名中心</a></li>
+        </ul>
+    </nav>
+    <div class="banner-content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide1">
+                    <a class="banner-btn-join banner-btn-join-01" href="">加入代理</a>
+                    <img src="http://oss.juhu.com/20/mobile-banner-0322/1.jpg" alt="">
+                </div>
+                <div class="swiper-slide swiper-slide2">
+                    <a class="banner-btn-join banner-btn-join-02" href="">立即寄售</a>
+                    <img src="images/m-banner-1.png" alt="">
+                </div>
+                <div class="swiper-slide swiper-slide3">
+                    <a class="banner-btn-join banner-btn-join-03" href="">立即加入</a>
+                    <img src="images/m-banner-1.png" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="section-content section-content-01">
+        <img src="images/index_image/mobile/mobile_01.png" alt="">
+        <div class="section-tittle-content" id="agent">
+            <h2 class="section-title">域名代理</h2>
+            <p class="section-title-en">Domain name agent</p>
+        </div>
+        <div class="agent-content agent-content-cloud-left">
+            域名投资<br>好难啊！
+        </div>
+        <div class="agent-content agent-content-people-left"></div>
+        <div class="agent-content agent-content-gate">
+            <p class="agent-content agent-content-gate-tip agent-content-gate-tip-01"></p>
+            <p class="agent-content agent-content-gate-tip agent-content-gate-tip-02"></p>
+            <p class="agent-content agent-content-gate-tip agent-content-gate-tip-03"></p>
+        </div>
+    </div>
+    <div class="section-content section-content-03">
+        <img src="images/index_image/mobile/mobile_03.png" alt="">
+        <div class="agent-content agent-content-cloud-right">
+            投资不如做代理！
+            <br>
+            <a class="agent-content-cloud-right-join" href="/agent/register">加入代理</a>
+        </div>
+        <div class="agent-content agent-content-blackboard">
+            <p class="agent-content agent-content-blackboard-tip agent-content-blackboard-tip-01"></p>
+            <p class="agent-content agent-content-blackboard-tip agent-content-blackboard-tip-02"></p>
+            <p class="agent-content agent-content-blackboard-tip agent-content-blackboard-tip-03"></p>
+            <p class="agent-content agent-content-blackboard-tip agent-content-blackboard-tip-04"></p>
+        </div>
+        <div class="agent-content agent-content-people-right"></div>
+    </div>
+    <div class="section-content section-content-04">
+        <img src="images/index_image/mobile/mobile_04.png" alt="">
+        <div class="section-tittle-content" id="consignment">
+            <h2 class="section-title">域名寄售</h2>
+            <p class="section-title-en">Domain name consignment</p>
+        </div>
+        <div class="consignment-content consignment-content-pear consignment-content-pear03"></div>
+        <div class="consignment-content consignment-content-pear consignment-content-pear02"></div>
+        <div class="consignment-content consignment-content-pear consignment-content-pear01"></div>
+        <div class="consignment-content consignment-content-people-left"></div>
+        <div class="consignment-content consignment-content-cloud-top">
+            米农难做啊
+            <br> ！！！
+        </div>
+    </div>
+    <div class="section-content section-content-05">
+        <img src="images/index_image/mobile/mobile_05.png" alt="">
+        <div class="consignment-content consignment-content-cloud-bottom">
+            20真给力啊
+            <br> ！！！
+        </div>
+        <div class="consignment-content consignment-content-people-right"></div>
+        <div class="consignment-content consignment-content-blackboard">
+            <p class="consignment-content consignment-content-blackboard-tip consignment-content-blackboard-tip01">
+                1.渠道广<br><span>（众多代理、全网中介）</span>
+            </p>
+            <p class="consignment-content consignment-content-blackboard-tip consignment-content-blackboard-tip02">
+                2.收费低<br><span>（成交才收费）</span>
+            </p>
+            <p class="consignment-content consignment-content-blackboard-tip consignment-content-blackboard-tip03">
+                3.全托管
+            </p>
+        </div>
+    </div>
+    <div class="section-content section-content-06">
+        <img src="images/index_image/mobile/mobile_06.png" alt="">
+        <div class="section-tittle-content" id="alliance">
+            <h2 class="section-title">中介联盟</h2>
+            <p class="section-title-en">Intermediary Alliance</p>
+        </div>
+        <div class="alliance-content alliance-content-book-1"></div>
+        <div class="alliance-content alliance-content-book-2"></div>
+        <div class="alliance-content alliance-content-book-3"></div>
+        <div class="alliance-content alliance-content-book-4"></div>
+        <div class="alliance-content alliance-content-people-left"></div>
+    </div>
+    <div class="section-content section-content-07">
+        <img src="images/index_image/mobile/mobile_07.png" alt="">
+        <div class="alliance-content alliance-content-people-right"></div>
+        <div class="alliance-content alliance-content-gold-base"></div>
+        <div class="alliance-content alliance-content-gold-lazy"></div>
+        <div class="alliance-content alliance-content-gold-resource"></div>
+        <div class="alliance-content alliance-content-gold-free"></div>
+        <div class="alliance-content alliance-content-light-top"></div>
+        <div class="alliance-content alliance-content-light-bottom"></div>
+
+    </div>
+    <footer>
+        <div class="link-content">
+            <div class="link-title">VIP域名交易中心</div>
+            <div class="link-content-detail">
+                <a href="">关于我们</a>
+                <a href="">联系我们</a>
+                <a href="">荣誉资质</a>
+                <a href="">成立背景</a>
+            </div>
+        </div>
+        <div class="link-content">
+            <div class="link-title">友情链接</div>
+            <div class="link-content-detail">
+                <a href="" target="_blank">巨虎股份</a>
+                <a href="" target="_blank">米表9800.com</a>
+                <a href="" target="_blank">快乐游kly.com</a><br>
+                <a href="" target="_blank">小斌游戏网</a>
+                <a href="" target="_blank">猫头鹰mty.com</a>
+                <a href="" target="_blank">中介009.com</a><br>
+                <a href="" target="_blank">金米网</a>
+            </div>
+        </div>
+        <div class="address">闽ICP备16020253号－6 <br> 闽公网安备 35020302032683号 <br> 增值电信业务经营许可证：闽B2-20170219
+            <br> 厦门巨虎网络科技有限公司旗下网站：20.com <br> 法律顾问：福建永时律师事务所 站长统计</div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/bootbox.js/bootbox.min.js"></script>
+    <script type="text/javascript" src="vendor/fv/dist/js/formValidation.min.js"></script>
+    <script type="text/javascript" src="vendor/fv/dist/js/framework/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/fv/dist/js/language/zh_CN.js"></script>
+
+    <script charset=”utf-8” src="js/test.js"></script>
+    <script src="vendor/swiper/dist/js/swiper.js"></script>
+
+    <script>
+        $(function() {
+            var bannerSwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                // 如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                autoplay: true,
+                parallax: true
+                    // 如果需要前进后退按钮
+            });
+            indexCheckLogin();
+            $(".login-button").click(function() {
+                $(".login-content").fadeIn(500);
+                $(".login-box").fadeIn(500);
+                $(document).on('touchmove', function(e) {
+                    e.preventDefault();
+                })
+            });
+            $(".login-content").click(function() {
+                $(".login-box").fadeOut(500);
+                $(".login-content").fadeOut(500);
+                $(document).unbind('touchmove');
+            });
+            $(".login-box").click(function(event) {
+                var event = event || window.event;
+                event.stopPropagation();
+            })
+
+            function indexCheckLogin() {
+                var userToken = $.cookie("userToken");
+                if (userToken) {
+                    $(".topbar-login").fadeIn(500);
+                    $(".topbar-unlogin").fadeOut(500);
+                    $.ajax({
+                        url: App.url_prefix + "/api/users/me/profile",
+                        headers: {
+                            "Authorization": App.token
+                        },
+                        success: function(data) {
+                            var profile = data.data,
+                                name = profile.name;
+                            $(".profile-box .profile-avatar").attr("src", profile.avatar);
+                            $(".profile-box .profile-user-name").text(name);
+                            $(".profile-box .profile-user-name").text(name);
+                            $(".topbar-login .user-login-name").text(name);
+                            $(".profile-box .profile-user-id span").text(profile.code);
+                            $(".profile-box .profile-user-level span").text(profile.level);
+                            $.cookie("userName", name, {
+                                path: "/"
+                            });
+
+                        },
+                        error: function(xhr) {
+                            var errorMsg = xhr.responseJSON || JSON.parse(xhr.responseText ? xhr.responseText : "{}");
+                            if (errorMsg.error) {
+                                if (errorMsg.error.trim() === "token_expired" || errorMsg.error.trim() === "token_not_provided") {
+                                    logout();
+                                }
+                            }
+                        }
+                    });
+                } else {
+                    $(".topbar-login").fadeOut(500);
+                    $(".topbar-unlogin").fadeIn(500);
+                }
+            }
+
+            $(".user_searchicon").click(function() {
+                var value = $(".toolbar-input").val();
+                if (value.trim() === "") return;
+                window.location.replace("/tools?domain=" + value)
+            });
+            checkActive();
+        });
+
+        function checkActive() {
+            var href = window.location.href,
+                activeLi = 'nav-index',
+                domiansReg = 'domains',
+                agentReg = 'agent',
+                consignmentReg = 'consignment',
+                allianceReg = 'alliance',
+                toolReg = "tools",
+                aboutReg = "page/about";
+            if (href.indexOf(domiansReg) !== -1) {
+                activeLi = ".nav-domains";
+            } else if (href.indexOf(toolReg) !== -1) {
+                activeLi = ".nav-tools";
+            } else if (href.indexOf(aboutReg) !== -1) {
+                activeLi = ".nav-about"
+            } else if (href.indexOf(agentReg) !== -1) {
+                activeLi = ".nav-agent"
+            } else if (href.indexOf(consignmentReg) !== -1) {
+                activeLi = ".nav-consignment"
+            } else if (href.indexOf(allianceReg) !== -1) {
+                activeLi = ".nav-alliance"
+            }
+            $(activeLi).addClass("active").siblings("li").removeClass("active");
+        }
+
+        function logout() {
+            window.sessionStorage.clear();
+            $.cookie("userToken", "Bearer ", {
+                path: '/',
+                expires: -1
+            });
+            $.cookie("per_page", "10", {
+                path: '/',
+                expires: -1
+            });
+            $.cookie("laravel_session", "Bearer ", {
+                path: '/',
+                expires: -1
+            });
+            $.cookie("bindBank", "Bearer ", {
+                path: '/',
+                expires: -1
+            });
+            $.cookie("userName", " ", {
+                path: '/',
+                expires: -1
+            });
+            $.cookie("messageCount", "", {
+                path: '/',
+                expires: -1
+            });
+            $.cookie("userRole", "", {
+                path: '/',
+                expires: -1
+            });
+            $.ajax({
+                url: App.url_prefix + "/api/logout",
+                method: "POST",
+                success: function() {
+                    window.location.replace("/");
+                }
+            });
+        }
+    </script>
+    <script>
+        $('.plugin-fv').formValidation({
+            locale: 'zh_CN'
+        }).on('success.form.fv', function(e) {
+            e.preventDefault();
+            var data = {},
+                url = App.url_prefix + "/api/login";
+            data.password = $(".login-input-password").val();
+            data.name = $(".login-input-name").val();
+            $(".login-btn-submit").attr("disabled", "disabled");
+            $.ajax({
+                url: url,
+                data: data,
+                method: "POST",
+                success: function(data) {
+                    $(".login-btn-submit").removeAttr("disabled");
+                    $.cookie("userToken", "Bearer " + data.token, {
+                        path: '/'
+                    });
+                    $.cookie("userRole", data.role, {
+                        path: '/'
+                    });
+                    $.removeCookie("per_page");
+                    if (data.role === "broker") {
+                        window.location.replace("http://www.20.com/user/broker/home");
+                    } else {
+                        window.location.replace("http://www.20.com/user/home");
+                    }
+                },
+                error: function(xhr) {
+                    var result = xhr.responseJSON.error;
+                    bootbox.alert("登录失败" + result);
+                }
+            });
+        });
+        // 退出登录
+        $(".profile-btn-logout").click(function() {
+            logout();
+        });
+    </script>
+    <script>
+        $.fn.extend({
+            animateCss: function(animationName, method) {
+                if ($(this).is(".active")) return;
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                if (method && typeof method.before === "function") {
+                    method.before($(this));
+                }
+                if (method && method.infinite) {
+                    $(this).addClass("infinite");
+                }
+                $(this).addClass('active animated ' + animationName).one(animationEnd, function() {
+                    $(this).removeClass('animated ' + animationName);
+                    if (method && typeof method.after === "function") {
+                        method.after($(this));
+                    } else if (typeof method == "function") {
+                        method($(this));
+                    }
+                });
+            }
+        });
+        $(function() {
+            var agentSectionFirstTop = $(".section-content-01").offset().top,
+                agentSectionFirstBottom = $(".section-content-01").offset().top + $(".section-content-01").innerHeight(),
+                agentSectionSecondTop = $(".section-content-03").offset().top,
+                agentSectionSecondBottom = $(".section-content-03").offset().top + $(".section-content-03").innerHeight(),
+                consignmentSectionFirstTop = $(".section-content-04").offset().top,
+                consignmentSectionFirstBottom = $(".section-content-04").offset().top + $(".section-content-04").innerHeight(),
+                consignmentSectionSecondTop = $(".section-content-05").offset().top,
+                consignmentSectionSecondBottom = $(".section-content-05").offset().top + $(".section-content-05").innerHeight(),
+                allianceSectionFirstTop = $(".section-content-06").offset().top,
+                allianceSectionFirstBottom = $(".section-content-06").offset().top + $(".section-content-06").innerHeight(),
+                allianceSectionSecondTop = $(".section-content-07").offset().top,
+                allianceSectionSecondBottom = $(".section-content-07").offset().top + $(".section-content-07").innerHeight(),
+                screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+
+            $(window).scroll(function(event) {
+                var scrollTop = $(window).scrollTop(),
+                    scrollBottom = scrollTop + screenHeight;
+                if (scrollBottom >= agentSectionFirstBottom && scrollTop <= agentSectionFirstTop) {
+                    agentTopAnimate();
+                }
+                if (scrollBottom >= agentSectionSecondBottom && scrollTop <= agentSectionSecondTop) {
+                    agentBottomAnimate();
+                }
+                if (scrollBottom >= consignmentSectionFirstBottom && scrollTop <= consignmentSectionFirstTop) {
+                    consignmentTopAnimate();
+                }
+                if (scrollBottom >= consignmentSectionSecondBottom && scrollTop <= consignmentSectionSecondTop) {
+                    consignmentBottomAnimate();
+                }
+                if (scrollBottom >= allianceSectionFirstBottom && scrollTop <= allianceSectionFirstTop) {
+                    allianceTopAnimate();
+                }
+                if (scrollBottom >= allianceSectionSecondBottom && scrollTop <= allianceSectionSecondTop) {
+                    allianceBottomAnimate();
+                }
+
+            });
+
+            function agentTopAnimate() {
+                $(".agent-content-people-left").animateCss("slideInLeft", function() {
+                    $(".agent-content-cloud-left").animateCss("zoomIn");
+                });
+                $(".agent-content-gate").animateCss("lightSpeedIn", function() {
+                    showGateTip(1);
+                });
+
+                function showGateTip(index) {
+                    if (index >= 4) return;
+                    $(".agent-content-gate-tip-0" + index).animateCss("zoomIn", function() {
+                        showGateTip(++index);
+                    });
+                }
+            };
+
+            function agentBottomAnimate() {
+                $(".agent-content-people-right").animateCss("slideInDown", function() {
+                    $(".agent-content-cloud-right").animateCss("zoomIn");
+                    $(".agent-content-blackboard").animateCss("slideInRight", function() {
+                        showBlackboardTip(1);
+                    });
+
+                    function showBlackboardTip(index) {
+                        if (index >= 5) return;
+                        $(".agent-content-blackboard-tip-0" + index).animateCss("bounceIn", function() {
+                            showBlackboardTip(++index);
+                        });
+                    }
+                });
+            };
+
+            function consignmentTopAnimate() {
+                $(".consignment-content-people-left").animateCss("slideInLeft", function() {
+                    pearFollow(3);
+                });
+
+                function pearFollow(index) {
+                    if (index <= 0) {
+                        $(".consignment-content-cloud-top").animateCss("zoomIn");
+                    } else {
+                        $(".consignment-content-pear0" + index).animateCss("fadeInDown", function() {
+                            pearFollow(--index);
+                        });
+                    }
+                }
+            }
+
+            function consignmentBottomAnimate() {
+
+                $(".consignment-content-people-right").animateCss("slideInRight", function() {
+                    $(".consignment-content-cloud-bottom").animateCss("zoomIn");
+
+                    $(".consignment-content-blackboard").animateCss("slideInLeft", function() {
+                        showBlackboardTip(1);
+                    });
+
+                    function showBlackboardTip(index) {
+                        if (index >= 4) return;
+                        $(".consignment-content-blackboard-tip0" + index).animateCss("bounceIn", function() {
+                            showBlackboardTip(++index)
+                        });
+                    }
+                });
+            }
+
+            function allianceTopAnimate() {
+                showBook(1);
+
+                function showBook(index) {
+                    if (index >= 5) {
+                        $(".alliance-content-cloud-top").animateCss("zoomIn");
+                        return;
+                    }
+                    $(".alliance-content-book-" + index).animateCss("slideInDown", function() {
+                        showBook(++index);
+                    })
+                }
+            }
+
+            function allianceBottomAnimate() {
+
+                $(".alliance-content-people-right").animateCss("slideInRight", function() {
+                    $(".alliance-content-logo").animateCss("slideInRight");
+                    $(".alliance-content-light-top,.alliance-content-light-bottom").animateCss("flash", function() {
+                        showGoldIn();
+                    });
+                });
+
+                function showGoldIn() {
+                    var arr = ["base", "lazy", "resource", "free", "small-top", "small-bottom", "small-right"];
+                    for (var i = 0; i < arr.length; i++) {
+                        $(".alliance-content-gold-" + arr[i]).animateCss("zoomInRight");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+/*footer*/
+
+.footer {
+    position: relative;
+}
+
+.footer-money {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 297px;
+    background-image: url(../images/foot-money.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.footer_content {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    z-index: 9;
+    position: relative;
+}
+
+.footer_msg {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer_msg ul {
+    overflow: hidden;
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.footer_msg li {
+    float: left;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.footer_msg li a {
+    float: left;
+    color: #ddd;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.footer_msg li a:hover {
+    color: #fff;
+}
+
+.footer_msg div {
+    color: #eee;
+    font-size: 14px;
+}

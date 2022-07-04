@@ -1,0 +1,91 @@
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+    border-top: 1px solid #413b43 !important;
+}
+
+.top {
+    background: url(../../images/bg6.jpg) center 150px !important;
+    background-size: 100% 100%;
+    z-index: 99;
+    margin-bottom: 50px;
+}
+
+.test_msg_box {
+    color: #c7c7c7;
+    font-size: 14px;
+}
+
+.listBoxTitle {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.listBox-content table * {
+    text-align: center;
+    letter-spacing: 1px;
+    height: 20px;
+    line-height: 20px !important;
+    border-color: #413b43;
+    vertical-align: middle !important;
+}
+
+.listBox-content tr:nth-of-type(odd) {
+    background: #21191d;
+}
+
+.listBox-content tr.Fline {
+    background: #e9d08c;
+    color: #231d23;
+}
+
+.listBox-content tr.Fline th {
+    border-right: 1px solid #999589;
+}
+
+.program .listBox-content .Fline th {
+    font-size: 14px;
+    width: 33%;
+}
+
+.program .listBox-content tr:nth-child(5) {
+    border-bottom: 1px solid #413b43;
+}
+
+.listBox-content p {
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.worth table .Fline th {
+    width: 92px;
+    font-size: 14px;
+}
+
+.directions .listBox-content .Fline th {
+    font-size: 14px;
+    width: 25%;
+}
+
+.tbl-th {
+    border-right: 1px solid #413b43;
+}
+
+.listBox-content strong {
+    color: #f00;
+}
+
+.listBox-content p {
+    margin-bottom: 30px;
+}
+
+.listBox-content p.strong {
+    margin-bottom: 0;
+}
+
+.listBoxTitle img {
+    width: 60%;
+}

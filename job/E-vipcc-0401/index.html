@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>VIPcc</title>
+    <meta http-equiv="Cache-Control" content="max-age=2592000">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0,user-scalable=yes,maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="375">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="375">
+    <link rel="stylesheet" href="vendor/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/shop.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="topbar">
+        <div class="topbar-content clearfix" id="topBar">
+            <div class="topbar-content-message pull-left">
+                客服电话：40000-40000
+            </div>
+            <div class="topbar-content-message pull-right topbar-unlogin">
+
+                <a href="">登录</a>
+                <a href="">注册</a>
+            </div>
+            <div class="topbar-content-message pull-right topbar-login">
+
+                尊敬的<span class="user-login-name color-red"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i></span>，VIPcc欢迎您
+                <a href="" class="color-blue">个人中心</a>
+                <a onclick="logout()" class="color-red">退出登录</a>
+            </div>
+        </div>
+    </div>
+    <div class="header clearfix">
+        <div class="logo">
+            <a href="">
+                <img src="images/agent_index/logo_20.png" class="logo-image" alt="">
+            </a>
+        </div>
+        <div class="toolbar">
+        </div>
+    </div>
+    <nav class="nav">
+        <ul class="title-nav">
+            <li class="active nav-index"><a href="#index">网站首页</a></li>
+            <li class="nav-agent"><a href="#agent" class="index_agent">域名代理</a></li>
+            <li class="nav-consignment"><a href="#consignment" class="index_consignment">域名寄售</a></li>
+            <li class="nav-alliance"><a href="#alliance" class="index_alliance">中介联盟</a></li>
+        </ul>
+    </nav>
+    <script>
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                window.location.replace("mobile.html");
+            }
+        }
+        browserRedirect();
+    </script>
+    <div class="start-content">
+        <div class="banner-content">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide1">
+                        <a class="banner-btn-join" href="">加入中介</a>
+                        <img src="images/banner-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide swiper-slide2">
+                        <a class="banner-btn-join" href="">加入代理商</a>
+                        <img src="images/banner-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide swiper-slide3">
+                        <a class="banner-btn-join" href="">加入供应商</a>
+                        <img src="images/banner-1.png" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="full-content" id="fullPage">
+        <div class="section domain-agent">
+            <div class="section-tittle-content">
+                <h2 class="section-title">域名代理</h2>
+                <p class="section-title-en">Domain name agent</p>
+            </div>
+            <div class="section-image-content">
+                <img src="images/index_image/agent/agent_people_left.png" class="agent_people_left">
+                <div class="agent_cloud agent_cloud_left">域名投资<br>好难啊!</div>
+                <div class="agent_gate"></div>
+                <div class="agent_gate2"></div>
+                <div class="agent_gate3"></div>
+                <div class="agent_gate_r1"></div>
+                <div class="agent_gate_r2"></div>
+                <div class="agent_gate_r3"></div>
+                <div class="agent_gate_r4"></div>
+                <div class="agent_cloud agent_cloud_right">
+                    投资不如做代理
+                    <a class="agent_btn_join" href="">
+                        加入代理
+                    </a>
+                </div>
+                <img src="images/index_image/agent/agent_people_right.png" class="agent_people_right">
+            </div>
+            <div class="btn-next-section"></div>
+        </div>
+        <div class="section domain-consignment">
+            <div class="section-tittle-content">
+                <h2 class="section-title">域名寄售</h2>
+                <p class="section-title-en">Domain name consignment</p>
+            </div>
+            <div class="section-image-content">
+                <img src="images/index_image/consignment/consignment_people_left.png" class="consignment_people_left">
+                <div class="consignment—pear consignment—pear01"></div>
+                <div class="consignment—pear consignment—pear02"></div>
+                <div class="consignment—pear consignment—pear03"></div>
+                <div class="consignment_cloud_left">米农难做啊<br> ! <b> ! </b> !</div>
+                <div class="consignment_blackboard">
+                    <ol>
+                        <li>1.渠道广<br>
+                            <small>（众多代理，全网中介）</small>
+                        </li>
+                        <li>2.收费低<br>
+                            <small>（成交才收费）</small>
+                        </li>
+                        <li>3.全托管</li>
+                    </ol>
+                </div>
+                <img src="images/index_image/consignment/consignment_people_right.png" class="consignment_people_right">
+                <div class="consignment_cloud_right">VIP真给力啊<br> ! <b> ! </b> !</div>
+            </div>
+            <div class="btn-next-section"></div>
+        </div>
+        <div class="section domain-alliance">
+            <div class="section-tittle-content">
+                <h2 class="section-title">中介联盟</h2>
+                <p class="section-title-en">Intermediary Alliance</p>
+            </div>
+            <div class="section-image-content">
+                <img src="images/index_image/alliance/alliance_people_left.png" class="alliance_people_left">
+                <div class="alliance-book alliance_book_baseprice animated"></div>
+                <div class="alliance-book alliance_book_search animated"></div>
+                <div class="alliance-book alliance_book_buyer animated"></div>
+                <div class="alliance-book alliance_book_seller animated"></div>
+                <img src="images/index_image/alliance/alliance_people_right.png" class="alliance_people_right">
+                <img src="images/index_image/alliance/alliance_gold_base.png" class="alliance_gold alliance_gold_base">
+                <img src="images/index_image/alliance/alliance_gold_lazy.png" class="alliance_gold alliance_gold_lazy">
+                <img src="images/index_image/alliance/alliance_gold_resource.png" class="alliance_gold alliance_gold_resource">
+                <img src="images/index_image/alliance/alliance_gold_free.png" class="alliance_gold alliance_gold_free">
+                <img src="images/index_image/alliance/alliance_lightning_top.png" class="alliance_lightning_top alliance_lightning">
+                <img src="images/index_image/alliance/alliance_lightning_bottom.png" class="alliance_lightning_bottom alliance_lightning">
+            </div>
+        </div>
+    </div>
+    <div class="vertical-position">
+        <ul>
+            <li class="position-0 active"><span></span></li>
+            <li class="position-1"><span></span></li>
+            <li class="position-2"><span></span></li>
+            <li class="position-3"><span></span></li>
+            <li class="position-4"><span></span></li>
+        </ul>
+    </div>
+    <footer id="#footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-2">
+                    <ul class="widget">
+                        <li class="widget_h">VIP域名交易中心</li>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">荣誉资质</a></li>
+                        <li><a href="">成立背景</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-2">
+                    <ul class="widget">
+                        <li class="widget_h">友情链接</li>
+                        <li><a href="" target="_blank">巨虎股份</a></li>
+                        <li><a href="" target="_blank">米表9800.com</a></li>
+                        <li><a href="" target="_blank">快乐游kly.com</a></li>
+                        <li><a href="" target="_blank">小斌游戏网</a></li>
+                        <li><a href="" target="_blank">猫头鹰mty.com</a></li>
+                        <li><a href="" target="_blank">中介009.com</a></li>
+                        <li><a href="" target="_blank">金米网</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                </div>
+                <div class="col-md-5 col-xs-5">
+                    <div class="company-position">
+                        <img data-original="images/agent_index/company-position.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 20px">
+                <ul>
+                    <li>闽ICP备16020253号－6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a target="_blank" href=" " style="display:inline-block;text-decoration:none;height:20px;line-height:20px;vertical-align: top;">
+                            <img data-original="images/public_images/waba.png" style="float:left;" />
+                            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#fff;">
+                                闽公网安备 35020302032683号</p>
+                        </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：闽B2-20170219
+                    </li>
+                    <li>厦门巨虎网络科技有限公司旗下网站：20.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法律顾问：福建永时律师事务所
+                        <a href="" target="_blank" style="color:#fff;">站长统计</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/jquery_lazyload/jquery.lazyload.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendor/bootbox.js/bootbox.min.js"></script>
+    <script type="text/javascript" src="vendor/fv/dist/js/formValidation.min.js"></script>
+    <script type="text/javascript" src="vendor/fv/dist/js/framework/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendor/fv/dist/js/language/zh_CN.js"></script>
+
+    <script charset=”utf-8” src="js/test.js"></script>
+    <script src="js/move.js"></script>
+    <script src="vendor/swiper/dist/js/swiper.js"></script>
+    <script src="js/vipcc.js"></script>
+
+</body>
+
+</html>

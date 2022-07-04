@@ -1,0 +1,821 @@
+html::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+	border-radius: 10px
+	background-color: #F5F5F5
+
+
+html::-webkit-scrollbar
+	width: 12px
+	background-color: #F5F5F5
+
+
+html::-webkit-scrollbar-thumb
+	border-radius: 10px
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+	background-color: #D62929
+	
+html,body
+	min-width: 980px
+
+body
+	background: url(../images/bg.jpg) top center repeat-y
+	font-family: "微软雅黑"
+	-webkit-overflow-scrolling: touch
+	overflow-x: hidden
+	overflow-y: auto
+	background-position-y: 100px
+body.modal-open
+	padding-right: 0px !important
+	overflow-y: auto!important
+
+
+
+@media (min-width: 1200px)
+	.container 
+		width: 1025px
+
+*
+	border: 0
+	outline: none
+	background-color: transparent
+
+
+a:focus
+	outline: 0
+
+.navbar
+	height: auto
+	margin-bottom: 0px
+	position: absolute
+	z-index: 1050
+	width: 100%
+	.menu
+		padding: 10px 0px
+		min-height: 94px
+		background-image: url('../images/header.png')
+		background-size: cover
+	
+		.menubox
+			float: right
+			line-height: 74px
+			width: 800px
+			a
+				color: #f9e483
+				text-decoration: none
+				font-size: 16px
+				line-height: 20px
+				width: calc(100% / 7 - 27px)
+				display: inline-block
+				text-align: center
+				margin: 0 10px
+				padding: 3px 0
+
+				&:hover
+					color: #580501
+					background: #f9e483
+					border-radius: 15px
+			
+.banner
+	background: url(../images/banner.png) top center no-repeat
+	min-height: 1140px
+	z-index: 1
+	clear: both
+	position: relative
+
+	.banner_content
+		position: absolute
+		bottom: 50px
+		left: 50%
+		transform: translateX(-50%)
+
+		p
+			text-align: center
+			font-size: 20px
+			color: #fff
+			line-height: 34px
+
+
+.wrapper
+	background: url(../images/cbg.png) top center no-repeat
+	background-size: 100% 100%
+	margin: -160px auto 0 auto
+	padding-top: 150px
+	z-index: 0
+
+
+	.start
+		margin-bottom: 60px
+		img
+			margin-bottom: 15px
+		p
+			font-size: 18px
+			color: #3b0000
+			text-align: center
+
+	// .content
+		// background: url(../images/scbg.png) top center no-repeat
+		// +background-size(contain)
+		// min-width: 420px
+		// min-height: 320px
+		// .checkNum
+		// 	margin-top: 270px
+		// 	color: #fff
+		// 	font-size: 13px
+		// 	text-align: center
+	#showcase
+		button.receive
+			background-image: url(../images/receive.png)
+			background-size: cover
+			width: 290px
+			height: 55px
+			position: absolute
+			left: 50%
+			bottom: -90px
+			transform: translateX(-50%)
+
+			&:hover
+				background-image: url(../images/receiveHover.png)
+
+
+
+
+
+	.winner
+		text-align: center
+		margin-top: 30px
+		padding-left: 60px
+		padding-right: 60px
+		.title02
+			background: url(../images/title02.png) center center no-repeat
+			+background-size(contain)
+			background-color: #e99d00
+			width: 20%
+			min-height: 77px
+			float: left
+			font-size: 0px
+		.namebox
+			background: url(../images/namebg.png) center right no-repeat
+			+background-size(cotain)
+			width: 80%
+			margin-top: 6px
+			height: 65px
+			float: left
+			marquee
+				margin: 5px
+				color: #fff
+				font-size: 16px
+				line-height: 28px
+				height: 60px
+				.name
+					color: red
+				.gift
+					color: yellow
+	.rule
+		margin-top: 30px
+		padding-left: 60px
+		padding-right: 60px
+		text-align: center
+		h4
+			margin: 15px auto
+			text-align: left
+			letter-spacing: 1px
+			line-height: 26px
+
+	.info
+		background: linear-gradient(to bottom, rgba(120,1,4,0) 70px,rgba(120,1,4,0) 13%,rgba(120,1,4,1) 14%,rgba(120,1,4,1) 15%,rgba(120,1,4,1) 100%)
+		background: -webkit-linear-gradient(to bottom, rgba(120,1,4,0) 70px,rgba(120,1,4,0) 13%,rgba(120,1,4,1) 14%,rgba(120,1,4,1) 15%,rgba(120,1,4,1) 100%)
+		background: -moz-linear-gradient(to bottom, rgba(120,1,4,0) 70px,rgba(120,1,4,0) 13%,rgba(120,1,4,1) 14%,rgba(120,1,4,1) 15%,rgba(120,1,4,1) 100%)
+		padding-top: 30px
+		text-align: center
+		ul
+			list-style: none
+			font-size: 18px
+			font-weight: bold
+			color: #fff
+			margin-top: 0px
+			span
+				color: yellow
+
+	.rule02
+		padding-left: 60px
+		padding-right: 60px
+		margin-bottom: 50px
+		text-align: center
+		ul
+			list-style-type: decimal
+			font-size: 18px
+			color: #3b0000
+			line-height: 30px
+			margin-top: 15px
+			text-align: left
+
+	.rule03
+		margin-top: 30px
+		margin-bottom: 60px
+		ul
+			list-style-type: decimal
+			font-size: 18px
+			color: #3b0000
+			line-height: 30px
+
+
+
+
+
+
+.scratcher
+	display: none
+	width: 349px
+	height: 106px
+	margin: auto
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	position: absolute
+	// background: url(https://firefox.club.tw/static/img/event/every-moment/scratch/scratch-white.png) no-repeat
+// 	&:before
+// 		width: 349px
+// 		height: 106px
+// 		margin: auto
+// 		content: url(../images/front-images.png)
+// 		top: 0
+// 		bottom: 0
+// 		left: 0
+// 		right: 0
+// 		position: absolute
+// 		z-index: 999
+
+// .scratcher.change:before
+// 	display: none
+
+
+.scratcher #fx-scratcher, .scratcher #fx-icon
+	position: absolute
+
+.scratcher #fx-scratcher
+	transition: opacity 0.5s ease-out 0s
+
+
+.scratcher.complete #fx-scratcher
+	opacity: 0
+
+.scratcher #fx-icon
+
+	left: 0
+	top: 0
+	width: 338px
+	height: 103px
+
+.scratcher.complete #fx-icon
+	opacity: 1
+
+
+
+
+.btn-sc
+	background: url(../images/btn.png) center center no-repeat
+	background-size: 100% 100%
+	display: block
+	width: 191px
+	height: 50px
+	margin: 0 auto
+	font-size: 0px
+	border: 0px
+	outline: none
+	margin-top: 15px
+	&:hover
+		background: url(../images/btnHover.png) center center no-repeat
+
+
+// 登入框
+#loginModal
+	justify-content: center
+	align-items: center
+	.modal-content
+		background: url(../images/login.png) center center no-repeat
+		+background-size(cover)
+		width: 537px
+		height: 250px
+		.modal-header
+			color: #ffff00
+			font-weight: 200
+			border-bottom: 1px solid rgba(120, 1, 4, 0)
+		.modal-body
+			height: 100px
+			.form-group
+				margin-bottom: 40px
+				label
+					font-size: 18px
+					color: #ffff00
+					text-align: right
+					font-weight: normal
+					padding: 0px
+				input
+					border-radius: 0px
+					height: 44px
+					margin-top: 60px
+					margin-left: 84px
+					text-align: center
+					font-size: 20px
+		.modal-footer
+			text-align: center
+			border-top: 1px solid rgba(120, 1, 4, 0)
+			padding: 40px 15px 15px 15px
+			.login-ok
+				width: 118px
+				height: 40px
+				background-image: url('../images/login-ok.png')
+				margin-right: 50px
+			.login-del
+				width: 118px
+				height: 40px
+				background-image: url('../images/login-del.png')
+				
+
+//刮刮卡框
+#chooseOne
+	margin-top: 10%
+	justify-content: center
+	align-items: center
+	.modal-content
+		padding: 30px 40px
+		background: url(../images/loginbg.png) center center no-repeat
+		+background-size(cover)
+		width: 574px
+		height: 429px
+		.modal-header
+			color: #ffff00
+			font-weight: 200
+			border-bottom: 1px solid rgba(120, 1, 4, 0)
+			text-align: center
+			h4
+				font-size: 25px
+				span
+					color: blue
+		.modal-body
+			height: 230px
+			text-align: center
+			color: #ffff00
+			font-size: 25px
+			span
+				color: red
+				font-weight: 900
+				font-size: 28px
+
+		.modal-footer
+			text-align: center
+			border-top: 1px solid rgba(120, 1, 4, 0)
+			padding: 15px 15px 15px 15px
+			.login-ok
+				width: 118px
+				height: 40px
+				background-image: url('../images/login-ok.png')
+			.login-del
+				width: 118px
+				height: 40px
+				background-image: url('../images/login-del.png')
+
+//確認選取框
+#checkChoose
+	justify-content: center
+	align-items: center
+	.modal-content
+		padding: 20px 15px
+		background: url(../images/choose.png) center center no-repeat
+		+background-size(cover)
+		width: 537px
+		height: 250px
+		margin: 20% auto auto auto
+		.modal-header
+			color: #ffff00
+			font-weight: 200
+			border-bottom: 1px solid rgba(120, 1, 4, 0)
+			text-align: center
+			h4
+				font-size: 25px
+				span
+					color: blue
+		.modal-body
+			height: auto
+			text-align: center
+			color: #ffff00
+			font-size: 25px
+			span
+				color: red
+				font-weight: 900
+				font-size: 28px
+
+		.modal-footer
+			text-align: center
+			border-top: 1px solid rgba(120, 1, 4, 0)
+			padding: 40px 15px 15px 15px
+			.login-ok
+				width: 118px
+				height: 40px
+				margin-right: 50px
+				background-image: url('../images/login-ok.png')
+			.login-del
+				width: 118px
+				height: 40px
+				background-image: url('../images/login-del.png')
+
+// 中獎框
+#giftModal
+	justify-content: center
+	align-items: center
+	.modal-dialog
+		width: auto !important
+	.modal-content
+		background: url('../images/loginbg.png') center center no-repeat
+		+background-size(cover)
+		width: 673px
+		height: 528px
+		.modal-header
+			border: 0
+			text-align: center
+			margin-top: 34px
+		.modal-body
+			text-align: center
+			padding: 0
+			p
+				color: #fff
+				margin: 5px auto
+				line-height: 30px
+				font-size: 20px
+				.yellow
+					color: #ffff00 
+			img
+				width: 338px
+				height: 103px
+				margin: 0 auto
+			.popgift
+				background: url(../images/popbg.png) 50% no-repeat
+				background-size: cover
+				width: 545px
+				height: 181px
+				margin: 0 auto
+				border-radius: 10px
+				padding-top: 12px
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				h1
+					margin-top: 0px
+					font-size: 50px
+					color: #430a0a
+				p
+					color: #430a0a
+					
+		.modal-footer
+			text-align: center
+			border-top: 1px solid rgba(120, 1, 4, 0)
+			padding: 20px 15px 15px 15px
+			.gift-ok
+				width: 118px
+				height: 40px
+				background-image: url('../images/login-del2.png')
+				background-repeat: no-repeat
+				background-size: cover
+			
+
+
+// 中獎查詢框
+#iqModal
+	justify-content: center
+	align-items: center
+	.modal-content
+		background: url(../images/Inquirebg.png) center center no-repeat
+		+background-size(cover)
+		width: 673px
+		height: 528px
+		.modal-header
+			border-bottom: 1px solid rgba(120, 1, 4, 0)
+		.modal-body
+			overflow-x: hidden
+			overflow-y: auto
+			color: #fff
+			margin-top: 30px
+			height: 360px
+			h6
+				font-size: 20px
+				text-align: center
+			span.yellow
+				color: yellow
+			.iqtable
+				width: 80%
+				margin: auto
+				border: 0
+				color: #fff
+
+				tr:first-child
+					background: url('../images/InquireTitlebg.png')
+					background-size: cover
+					width: 100%
+					height: 42px
+					color: #fff
+					font-size: 18px
+				tr:nth-child(2)
+					td
+						padding-top: 10px
+				tr
+					border: 0
+					td
+						text-align: center
+						border: 0
+						font-size: 16px
+						height: 30px
+						line-height: 30px
+						width: 50%
+
+
+		.modal-footer
+			text-align: center
+			border-top: 1px solid rgba(120, 1, 4, 0)
+			padding: 10px 15px 15px 15px
+			position: relative
+			color: #fff
+			img
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translateX(-50%)
+			.pagelist
+				margin-bottom: 10px
+				span
+					cursor: pointer
+					color: #fff
+					font-size: 16px
+					&:hover
+						color: yellow
+			.table-ok
+				width: 118px
+				height: 40px
+				background: url('../images/login-del2.png')
+				
+
+body.modal-open
+	padding-right: 0px !important
+	overflow-y: auto
+
+
+
+.cardbox
+	position: fixed
+	z-index: 1035
+	top: 0px
+	left: 0px
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.5)
+	.card
+		position: absolute
+		background: url(../images/cardbg-r.png) center center no-repeat
+		+background-size(contain)
+		width: 556px
+		height: 395px
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+
+.h
+	// z-index: -1
+	visibility: hidden
+.scratch3d
+	position: absolute
+	z-index: 10
+	.aScratch
+
+
+		&:hover
+
+
+
+#myCanvas1
+	width: 424px
+	height: 196px
+	margin-top: 140px
+	margin-left: 66px
+	border-radius: 6px
+	position: relative
+
+
+.gifttext
+	width: 250px
+	height: 80px
+	margin: -140px auto auto auto
+	-webkit-user-select: none
+	-moz-user-select: none
+	user-select: none
+	text-align: center
+	h1
+		font-size: 50px
+		font-weight: bold
+		line-height: 20px
+		margin-bottom: 24px
+	p
+		font-size: 20px
+
+
+//table
+.tableInfo
+	border-collapse: collapse
+	margin: 0px auto 30px auto
+	width: 100%
+	tr
+		background: #fff
+		border: 1px #111 solid
+		width: 100%
+		td
+			text-align: center
+			font-size: 16px
+			border: 1px #111 solid
+			height: 40px
+			width: calc(100% / 7 - 7px)
+			line-height: 28px
+		
+	tr:first-child
+		background: #96000d
+		color: #fff
+
+
+
+// carousel
+.abgne-yahoo-carousel
+	background: url(../images/carousel.png) 50% no-repeat
+	width: 960px
+	height: 140px
+	margin: 0 auto
+	position: relative
+	padding-top: 12px
+	*
+		margin: 0
+		padding: 0
+	ul, li
+		list-style: none
+	a img
+		border: none
+		width: 186px
+		overflow: hidden
+	h3
+		font-size: 18px
+		height: 30px
+	.page
+		position: absolute
+		top: 12px
+		right: 80px
+	.btn
+		// position: relative
+		// top: 10px
+		// right: 5px
+		// height: 20px
+		a
+			width: 31px
+			height: 24px
+			float: left
+			text-indent: -9999px
+			&.prev
+				background: url(../images/left.png) no-repeat 0 0
+				width: 25px
+				height: 66px
+				margin: -95px auto auto -30px
+			&.next
+				background: url(../images/right.png) no-repeat 0 0
+				width: 25px
+				height: 66px
+				margin: -95px auto auto 960px
+	.frame
+		position: relative
+		overflow: hidden
+		width: 907px
+		/* (li 的寬度 + li 的邊框寬度 * 2 ) * 一次要顯示的數量 + li 的右邊界 * (一次要顯示的數量 - 1)*/
+		height: 115px
+		margin: 0 auto
+	ul
+		width: 99999px
+		position: absolute
+	li
+		float: left
+		width: 186px
+		height: 115px
+		position: relative
+		margin-right: 3px
+
+		.thumb, .ovrly, h3
+			position: absolute
+		.ovrly, h3
+			width: 100%
+			height: 32px
+			line-height: 32px
+			text-align: center
+			bottom: 0
+		.ovrly
+			background: #000
+		h3 a
+			color: #fff
+			&:hover
+				color: #f90
+
+
+
+
+.disabled
+	pointer-events: none
+	background: url(../images/cardbg-r.png) 50% no-repeat!important
+.choose
+	margin-top: -20px
+
+
+// 3d
+.scratchs
+	height: 350px
+	position: relative
+
+#scratchBtn
+	width:  140px
+	margin: 60px auto
+	.left
+		background: url(../images/prevbtn.png) 50% no-repeat
+		height: 66px
+		width: 66px
+		font-size: 0px
+		border: 0px
+		outline: none
+		&:hover
+			opacity: 0.8
+	.right
+		background: url(../images/nextbtn.png) 50% no-repeat
+		height: 66px
+		width: 66px
+		font-size: 0px
+		border: 0px
+		outline: none
+		&:hover
+			opacity: 0.8
+
+
+//carousel3
+#abgne-block-20110406
+	margin: 0 auto
+	width: 936px
+	height: 224px
+	position: relative
+	background: url('../images/carousel.png') 50% no-repeat
+	padding: 5px
+	margin-top: 150px
+	a
+		&.prev, &.next
+			position: absolute
+			top: 95px
+			display: block
+			width: 18px
+			height: 62px
+			text-indent: -9999px
+	.prev
+		background: url('../images/leftGift.png') no-repeat
+		left: 10px
+	.next
+		background: url('../images/rightGift.png') no-repeat
+		right: 10px
+	.slides
+		// overflow: unset
+		position: relative
+		top: 0
+		left: 152px
+		width: 186px
+		height: 115px
+
+		ul
+			position: absolute
+			width: 9990px
+			height: 100%
+		li
+			width: 186px
+			height: 100%
+			float: left
+			list-style: none
+.slidersbox
+	overflow: hidden
+	width: 850px
+	height: 115px
+	margin: 70px auto
+
+.change-view
+	background: url('../images/clickpic.jpg') 50% no-repeat
+	+background-size(contain)
+	width: 1120px
+	height: 350px
+
+
+html.noscroll 
+	position: fixed
+	overflow-y: scroll
+	width: 100%
+
+
+html.fixWindow 
+	position: fixed
+	width: 100%
+
+

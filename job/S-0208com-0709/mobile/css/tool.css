@@ -1,0 +1,309 @@
+body {
+    background: -webkit-linear-gradient(left, #23222b, #28252d, #37353b);
+    background: -o-linear-gradient(right, #23222b, #28252d, #37353b);
+    background: -moz-linear-gradient(right, #23222b, #28252d, #37353b);
+    background: linear-gradient(to right, #23222b, #28252d, #37353b);
+}
+
+.top {
+    background: url(../images/bg.jpg);
+    background-size: 100% 100%;
+    z-index: 99;
+    margin-bottom: 50px;
+}
+
+.introduction {
+    margin-top: 20px;
+}
+
+.introduction_img {
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+}
+
+.introduction_img img {
+    width: 100%;
+}
+
+.introduction_content {
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+
+.introduction_title img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.introduction_content p {
+    width: 100%;
+    margin: 10px auto;
+    color: #c7c7c7;
+    line-height: 22px;
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.contact img {
+    width: 60%;
+}
+
+.listBox {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.listBox>img {
+    width: 99%;
+}
+
+.poster.listBox>img {
+    height: 300px;
+}
+
+.listBoxTitle {
+    margin: 20px auto;
+    position: relative;
+}
+
+.listBoxTitle img {
+    width: 60%;
+}
+
+.presentation {
+    clear: both;
+    padding-top: 20px;
+}
+
+.activity {
+    margin-bottom: 70px;
+}
+
+.activity .titleTwo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    cursor: pointer;
+}
+
+.posterImg img {
+    width: 100%;
+    margin: 2px 0;
+}
+
+.listBox-content {
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+.listBox-content p {
+    color: #c7c7c7;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-indent: 2em;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 22px;
+    display: block;
+}
+
+.poster .listBox-content {
+    top: 54px;
+}
+
+.notice .listBox-content {
+    top: 60px;
+    padding: 1px;
+}
+
+.notice .listBox-content p {
+    margin-bottom: 0px;
+    padding: 0 20px;
+}
+
+.notice .listBox-content img {
+    width: 84%;
+    margin-top: -20px;
+}
+
+.notice ._notice {
+    position: absolute;
+    transition: 1s;
+    background-size: 100% 100%;
+}
+
+.notice ._noticeL {
+    width: 38px;
+    height: 35px;
+    left: 160px;
+    bottom: 50px;
+    background-image: url(../../images/_noticeL.png);
+}
+
+.notice ._noticeR {
+    width: 56px;
+    height: 56px;
+    background-image: url(../../images/_noticeR.png);
+    right: 132px;
+    bottom: 72px;
+}
+
+.notice ._noticeR:hover,
+.notice ._noticeL:hover {
+    transform: scale(1.5);
+}
+
+.comment p {
+    position: absolute;
+    top: 66px;
+    color: #c7c7c7;
+    font-size: 12px;
+    text-indent: 2em;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    line-height: 20px;
+}
+
+.presentation .listBox-content img {
+    width: 100%;
+    margin: 6px 0;
+}
+
+.poster .listBox-content .posterImg {
+    display: inline-block;
+    width: 100%;
+}
+
+.poster .listBox-content .posterImg img {
+    margin: 0 8px;
+    width: 28%;
+}
+
+.activity .listBox-content {
+    top: 54px;
+}
+
+#conBox {
+    font-size: 12px;
+}
+
+#msgBox .list {
+    height: 1025px;
+}
+
+#msgBox .list .userName {
+    font-size: 14px;
+}
+
+#msgBox .list .msgInfo {
+    font-size: 14px;
+}
+
+#msgBox .list .times {
+    font-size: 12px;
+}
+
+.page ul {
+    float: initial;
+    margin: auto;
+}
+
+.page ._page {
+    height: 73px;
+}
+
+.page ul li {
+    border: 1px solid #696969;
+    color: #656565;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+#msgBox img {
+    border-radius: 3px;
+    width: 26px;
+}
+
+span.head {
+    cursor: pointer;
+    float: left;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#headbox td img {
+    margin: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.userPic img {
+    width: 40px !important;
+}
+
+#facebox img {
+    width: 50px;
+}
+
+#msgBox {
+    width: 100%;
+    margin: 10px auto;
+    padding-top: 10px;
+    position: absolute;
+    top: 144px;
+}
+
+#conBox {
+    width: 100%;
+    resize: none;
+    height: 70px;
+    overflow: auto;
+}
+
+span.emotion {
+    cursor: pointer;
+    float: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#sendBtn {
+    border: 0;
+    width: 62px;
+    height: 100%;
+    cursor: pointer;
+    margin-left: 10px;
+    float: right;
+    border-radius: 0 0 6px 0;
+    background-color: #12b7f5;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#msgBox .list .userPic,
+#msgBox .list .userPic img {
+    width: 40px;
+    height: 40px;
+}

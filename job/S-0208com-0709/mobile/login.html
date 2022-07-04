@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1">
+    <meta name="keywords" content="澳门银河VIP线路中心">
+    <meta name="listBox-contentcription" content="澳门银河VIP线路中心">
+    <title>VIP导航中心</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/slider-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/messageboard.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/wow.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type='text/javascript' src="../js/jquery.qqFace.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='../js/modernizr.min.js'></script>
+    <script type='text/javascript'>
+        var CSSettings = {
+            "pluginPath": "module"
+        };
+    </script>
+    <script type='text/javascript' src='../js/cute.slider.js'></script>
+    <script type='text/javascript' src='../js/cute.transitions.all.js'></script>
+    <script type='text/javascript' src="../js/clipboard.min.js"></script>
+    <script type='text/javascript' src="../js/messageboard.js"></script>
+</head>
+
+<body style="overflow-x: hidden;">
+    <!--头部-->
+    <div class="top">
+        <div id="header"></div>
+
+        <!--代理查詢-->
+        <div class="test_msg">
+            <div class="test_msg_box">
+                <div class="information">
+                    <a class="login" href="index.html">退出登录</a>
+                    <div class="memberinfo"><img src="../images/person.png" alt="">尊敬的<span class="account" id="userName">abc235689556</span></div>
+                </div>
+                <div id="abgne-block" class="content_box">
+                    <div class="bd contentAll">
+                        <div class="content_list">
+                            <ul>
+                                <li class="on">
+                                    <a>数据中心</a>
+                                </li>
+                                <li>
+                                    <a>推广海报</a>
+                                </li>
+                                <li>
+                                    <a>推广术语</a>
+                                </li>
+                                <li>
+                                    <a>广告横幅</a>
+                                </li>
+                                <li>
+                                    <a>营销策略</a>
+                                </li>
+                                <li>
+                                    <a>留言板</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info on">
+                            <div class="contentPush">
+                                <ul>
+                                    <li>推广链接：<span id="link">0208000.com</span><button class="copy" id="copy" data-clipboard-target="#link">复制</button></li>
+                                    <li class="QRli">推广二维码<span class="QR"><img src="../images/QRcode.jpg"></span></li>
+                                    <li>代理等级：<span class="level">01</span></li>
+                                    <li>距下次晋级需获取<span class="nextmoney">999.00</span>佣金</li>
+                                </ul>
+                            </div>
+                            <div class="datasheets">
+                                <ul>数据列表 快捷选时：
+                                    <li class="today active" onclick="toDay()">今天</li>
+                                    <li class="yesterday" onclick="yesterDay()">昨天</li>
+                                    <li class="thisweek" onclick="thisWeek()">本周</li>
+                                    <li class="lastweek" onclick="lastWeek()">上周</li>
+                                    <li class="thismon" onclick="thisMon()">本月</li>
+                                    <li class="lastmon" onclick="lastMon()">上月</li>
+                                </ul>
+                                <p class="dateRange">开始日期：<span class="STdate"><input type="text" name="STdate" value="2018-07-03 00:00:00"></span><br/>结束日期：<span class="EDdate"><input type="text" name="EDdate" value="2018-07-03 23:59:59"></span><a>提交</a></p>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tbody>
+                                        <tr>
+                                            <th>存款金额</th>
+                                            <th>有效投注</th>
+                                            <th>总注单量</th>
+                                            <th>总盈利金额</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>可获佣金</td>
+                                            <td>累计佣金</td>
+                                            <td>累计晋级金</td>
+                                            <td>累计好运金</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="downloadQR">
+                                <a href="../images/QRcode.jpg" download="QRcode"><img src="../images/QRcode.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="info info2">
+                            <h3></h3>
+                            <ul class="poster">
+                                <li>
+                                    <a><img src="../images/poster1-1.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster1-2.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster1-3.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster1-4.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster1-5.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster1-6.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster2-1.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster2-2.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster2-3.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster2-4.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster2-5.jpg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a><img src="../images/poster2-6.jpg" alt=""></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="info info3">
+                            <div class="terminology">
+                                <p id="terminology1">澳门银河2018年实力打造新会员三重礼包：①注册自动送28元；②存18送18元，最高1888元；③完成指定有效投注，可获5次新人奖；当日注册次日 还可以抢红包！5月15日-【澳门银河7周年盛典】：彰显注册年份价值、彰显历史存款价值、彰显VIP账号价值，更多回馈内容火热筹备中！现在注 册、存款在周年庆期间皆可领钱，错过再等一年！
+                                    <br> ★★★★贵宾注册网址： （加上您的推广链接即可）★★★★</p>
+                                <button class="copy" id="copy" data-clipboard-target="#terminology1">点击复制</button>
+                            </div>
+                            <div class="terminology">
+                                <p id="terminology2">澳门银河 ღ 优秀玩家的首选平台
+                                    <br>1.新会员注册自动送28元圆梦金，次日还可免费抢红包；
+                                    <br>2.首存18元送18元，最高可获1888元，还可获得5次新人奖；
+                                    <br>2.投注1元自动晋级VIP，升级可领取高达88888元晋级彩金；
+                                    <br> 3.一日会员，终身有钱，周工资、月薪水无条件准时派送；
+                                    <br>4.六合彩49倍，PK10、时时彩9.88倍，承诺只升倍不降倍；
+                                    <br> 5.五大电子平台，12大电子游艺专题，百万彩金天天赠送；
+                                    <br> 6.八大视讯平台，返水1.1%起，更有多项视讯彩金等您尊享！
+                                    <br> ★★★★贵宾注册网址： （加上您的推广链接即可）★★★★</p>
+                                <button class="copy" id="copy" data-clipboard-target="#terminology2">点击复制</button>
+                            </div>
+                        </div>
+                        <div class="info info4">
+                            <ul class="posterbanner">
+                                <li>
+                                    <a href="../images/banner1.gif" download="banner1"><img src="../images/banner1.gif" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="../images/banner2.gif" download="banner2"><img src="../images/banner2.gif" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="../images/banner3.gif" download="banner3"><img src="../images/banner3.gif" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="../images/banner4.gif" download="banner4"><img src="../images/banner4.gif" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="../images/banner5.gif" download="banner5"><img src="../images/banner5.gif" alt=""></a>
+                                </li>
+
+                            </ul>
+                            <p><span class="red">温馨提示：</span>以上图片仅供参考，您可以联系代理专员定制您的专属广告横幅，一切以代理专员提供的广告横幅为准。</p>
+                        </div>
+                        <div class="info info5">
+                            <div class="info5Content">
+                                <img src="../images/markeBanner.png" alt="" srcset="">
+                                <ul>
+                                    <li>
+                                        <img src="../images/fruitShop.jpg" alt="">
+                                        <div class="marketContent">
+                                            <h3>人性营销：水果店用微信轻松实现创富</h3>
+                                            <p>我今天给大家分享一个案例：我们小区的水果店是怎么用一年突破150万营业额的。这人性.......</p>
+                                            <div><span class="time">2017-07-07 13:17:15</span><span class="more" data-id="1">点击查看</span></div>
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                <img src="../images/fruitShop.jpg" alt="">
+                                <div class="marketContent">
+                                    <h3>人性营销：水果店用微信轻松实现创富</h3>
+                                    <p>我今天给大家分享一个案例：我们小区的水果店是怎么用一年突破150万营业额的。这<br>
+                                        <br> 人性是需要思考，需要不断感受的。如果是学习专业户，看过之后就会觉得明白了，.......
+                                    </p>
+                                    <div><span class="time">2017-07-07 13:17:15</span><span class="more" data-id="2">点击查看</span></div>
+                                </div>
+                            </li> -->
+                                </ul>
+                            </div>
+                            <div class="info5More">
+                                <div class="marketContents marketContent-1">
+                                    <p class="goBack"><span class="Back">Back</span> >> <span class="title">人性营销：水果店用微信轻松实现创富</span></p>
+                                    <h1 class="title">人性营销：水果店用微信轻松实现创富</h1>
+                                    <span class="time">2017-07-07 13:17:15</span>
+                                    <img src="../images/fruitShop.jpg" alt="">
+                                    <p>我今天給大家分享一个案例：我们小区的水果店是怎么用一年突破150万营业额的。这个案例是我亲自策划指导，所以我就可以把里面的原理给大家详细分析。看看“人性”是怎么在营销逻辑中起作用的，我们又是怎么利用“人性”来实现年营业额突破150万的。<br> 人性是需要思考，需要不断感受的。如果是学习专业户，看过之后就会觉得明白了，但是实际操作中仍然会自动进入“利己”的漩涡，至少导致某个环节失效，引起连锁性方案失败。
+                                        <br> 当你理解了人性，就可以在营销的每个环节、每个互动、每个话术中使用它，而不是我、我们怎样怎样，如果总是强调你自己，没有人会理你，因为没有人关心你是谁，除非你能帮到他。
+                                    </p>
+                                </div>
+                                <!-- <div class="marketContents marketContent-2">
+
+                        </div> -->
+                            </div>
+                        </div>
+                        <div class="info info6">
+                            <div id="msgBox">
+                                <p class="littletitle">发表您的留言 </p>
+                                <form>
+                                    <div class="textBox">
+                                        <span class="emotionList">
+                                            <span class="emotion"><img src="../images/smail.png" alt="" srcset=""> 表情 v</span><span class="head">變更頭像 v</span>
+                                        <div id="headbox" style="position: absolute; z-index: 1000; top: 29px; left: 10px;">
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><img src="../images/head_1.jpg"></td>
+                                                        <td><img src="../images/head_2.jpg"></td>
+                                                        <td><img src="../images/head_3.jpg"></td>
+                                                        <td><img src="../images/head_4.jpg"></td>
+                                                        <td><img src="../images/head_5.jpg"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="../images/head_6.jpg"></td>
+                                                        <td><img src="../images/head_7.jpg"></td>
+                                                        <td><img src="../images/head_8.jpg"></td>
+                                                        <td><img src="../images/head_9.jpg"></td>
+                                                        <td><img src="../images/head_10.jpg"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="../images/head_11.jpg"></td>
+                                                        <td><img src="../images/head_12.jpg"></td>
+                                                        <td><img src="../images/head_13.jpg"></td>
+                                                        <td><img src="../images/head_14.jpg"></td>
+                                                        <td><img src="../images/head_15.jpg"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="../images/head_16.jpg"></td>
+                                                        <td><img src="../images/head_17.jpg"></td>
+                                                        <td><img src="../images/head_18.jpg"></td>
+                                                        <td><img src="../images/head_19.jpg"></td>
+                                                        <td><img src="../images/head_20.jpg"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="../images/head_21.jpg"></td>
+                                                        <td><img src="../images/head_22.jpg"></td>
+                                                        <td><img src="../images/head_23.jpg"></td>
+                                                        <td><img src="../images/head_24.jpg"></td>
+                                                        <td><img src="../images/head_25.jpg"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><img src="../images/head_26.jpg"></td>
+                                                        <td><img src="../images/head_27.jpg"></td>
+                                                        <td><img src="../images/head_28.jpg"></td>
+                                                        <td><img src="../images/head_29.jpg"></td>
+                                                        <td><img src="../images/head_30.jpg"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        </span>
+                                        <textarea id="conBox" class="input f-text" name="conBox">评论有你更精彩！</textarea>
+                                        <div class="tr">
+                                            <button type="button" id="sendBtn" title="快捷键 Ctrl+Enter" class="">发布</button>
+                                            <input type="checkbox" name="noname" id="noname"> 匿名留言
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="list">
+                                    <ul>
+                                        <li class="">
+                                            <div class="contents">
+                                                <div class="userPic"><img src="../images/face625.png"></div>
+                                                <div class="content">
+                                                    <div class="userName"><a href="javascript:;">幸福就好</a></div>
+                                                    <div class="msgInfo">朋友介绍过来澳门银河的，感觉还不错</div>
+                                                    <div class="times"><span>06月28日 21:14</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="answers">
+                                                <div class="answer">
+                                                    <div class="managerPic"><img src="../images/managerPic.jpg"></div>
+                                                    <div class="content">
+                                                        <div class="managerName"><a href="javascript:;">澳门银河</a></div>
+                                                        <div class="msgInfo"><img src="arclist/1.gif" border="0" class=""></div>
+                                                        <div class="times"><span>06月28日 21:14</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="answer">
+                                                    <div class="managerPic"><img src="../images/managerPic.jpg"></div>
+                                                    <div class="content">
+                                                        <div class="managerName"><a href="javascript:;">澳门银河</a></div>
+                                                        <div class="msgInfo">谢谢信任</div>
+                                                        <div class="times"><span>06月28日 21:14</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <div class="contents">
+                                                <div class="userPic"><img src="../images/face628.png"></div>
+                                                <div class="content">
+                                                    <div class="userName"><a href="javascript:;">幸福就好</a></div>
+                                                    <div class="msgInfo">世界杯买那个队呀，那个高手给点意见。</div>
+                                                    <div class="times"><span>06月28日 21:13</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="answers">
+                                                <div class="answer">
+                                                    <div class="managerPic"><img src="../images/managerPic.jpg"></div>
+                                                    <div class="content">
+                                                        <div class="managerName"><a href="javascript:;">澳门银河</a></div>
+                                                        <div class="msgInfo"><img src="arclist/1.gif" border="0" class=""></div>
+                                                        <div class="times"><span>06月28日 21:14</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="answer">
+                                                    <div class="managerPic"><img src="../images/managerPic.jpg"></div>
+                                                    <div class="content">
+                                                        <div class="managerName"><a href="javascript:;">澳门银河</a></div>
+                                                        <div class="msgInfo">谢谢信任</div>
+                                                        <div class="times"><span>06月28日 21:14</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="contents">
+                                                <div class="userPic"><img src="../images/face628.png"></div>
+                                                <div class="content">
+                                                    <div class="userName"><a href="javascript:;">幸福就好</a></div>
+                                                    <div class="msgInfo">银河平台信誉有保障，在银河做代理放心。介绍朋友来玩，不怕被黑。</div>
+                                                    <div class="times"><span>06月27日 20:08</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="answers">
+                                                <div class="answer">
+                                                    <div class="managerPic"><img src="../images/managerPic.jpg"></div>
+                                                    <div class="content">
+                                                        <div class="managerName"><a href="javascript:;">澳门银河</a></div>
+                                                        <div class="msgInfo"><img src="arclist/1.gif" border="0" class=""></div>
+                                                        <div class="times"><span>06月28日 21:14</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="answer">
+                                                    <div class="managerPic"><img src="../images/managerPic.jpg"></div>
+                                                    <div class="content">
+                                                        <div class="managerName"><a href="javascript:;">澳门银河</a></div>
+                                                        <div class="msgInfo">谢谢信任</div>
+                                                        <div class="times"><span>06月28日 21:14</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="page">
+                                    <div class="_page">
+                                        <ul>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li class="dot">......</li>
+                                            <li>19</li>
+                                            <li>20</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="downloadPoster">
+            <a>
+                <div class="closeBtn">X</div>
+                <img src="" alt="">
+            </a>
+            <div class="data">
+                <div class="closeBtn">X</div>
+                <span>联系方式：<input type="text" placeholder="QQ:785190000"></span>
+                <span>推广网址：<input type="text" placeholder="0208.com"></span>
+                <a class="downloadA" href="" download="poster"><button>送出</button></a>
+            </div>
+        </div>
+        <!--footer-->
+        <div id="footer"></div>
+    </div>
+    <div class="TOP" style="display: none;">
+        <a><img src="../images/top.png" alt="" srcset="" style="width:50px;"></a>
+    </div>
+    <script>
+        $.get("header.html", function(data) {
+            $("#header").html(data);
+        });
+        $.get("footer.html", function(data) {
+            $("#footer").html(data);
+            $('.footer_content img').attr("src", "../images/footer_6.jpg");
+        });
+        $('body').css("background", "linear-gradient(to right, rgb(31, 28, 36), rgb(40, 33, 35), rgb(54, 54, 56))");
+    </script>
+    <script>
+        $(function() {
+            //6欄顯示切換
+            var $block = $('#abgne-block');
+            $('#abgne-block .content_list ul li').click(function() {
+                var $this = $(this);
+                $this.add($('.bd div.info', $block).eq($this.index())).addClass('on').siblings('.on').removeClass('on');
+            });
+
+            //公佈欄內容切換
+            $('.info5Content .more').click(function() {
+                var id = $(this).attr("data-id");
+                $('.info5More').show();
+                $('.info5More .marketContent-' + id).css("display", "flex");
+            });
+            $('.info5More .Back').click(function() {
+                $('.info5More').hide();
+                $('.info5More .marketContents').hide();
+            });
+
+
+            //下載海報
+            $('.poster li a').click(function(e) {
+                $('.downloadPoster').show();
+                e.stopPropagation();
+                e.preventDefault();
+                var src = $(this).find('img').attr('src');
+                $(window).scrollTop(0);
+                $('.downloadPoster img').attr('src', src);
+                $('.downloadPoster .downloadA').attr('href', src);
+            });
+
+            $('.downloadPoster .data .downloadA').click(function() {
+                $('.downloadPoster').hide();
+                $('.downloadPoster .data').hide();
+            });
+
+            $('.downloadPoster>a').click(function(e) {
+                $('.downloadPoster .data').css("display", "flex");
+                e.stopPropagation();
+                e.preventDefault();
+            });
+            $(document).click(function() {
+                $('.downloadPoster .data').hide();
+                $('.downloadPoster').hide();
+            });
+            $('.downloadPoster .data').click(function(e) {
+                e.stopPropagation();
+            });
+            $('.downloadPoster a .closeBtn').click(function() {
+                $('.downloadPoster').hide();
+            });
+            $('.data .closeBtn').click(function() {
+                $('.data').hide();
+            });
+
+            //下載二維碼
+
+            $('.downloadQR a').click(function() {
+                $('.downloadQR').hide();
+            });
+            $("#conBox").focus(function() {
+                if (this.value == this.defaultValue) {
+                    this.value = '';
+                }
+            });
+
+            $("#conBox").blur(function() {
+                if (this.value == '') {
+                    this.value = this.defaultValue;
+                }
+            });
+            $('.downloadQR').hide();
+            $('.QRli').click(function(e) {
+                $('.downloadQR').show();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+            $(document).click(function() {
+                $('.downloadQR').hide();
+            });
+            $('.downloadQR').click(function(e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+    <script>
+        new Clipboard("#copy");
+    </script>
+    <script>
+        //  日期查詢切換
+        var nowyear = new Date().getUTCFullYear();
+        var nowmon = parseInt(("0" + parseInt(new Date().getUTCMonth() + 1)).slice(-2));
+        var nowDate = ("0" + new Date().getUTCDate()).slice(-2);
+        var nowweek = new Date().getUTCDay();
+
+        function toDay() {
+            var today = nowyear + "-" + nowmon + "-" + nowDate;
+            $('.STdate input').val(today + " 00:00:00");
+            $('.EDdate input').val(today + " 23:59:59");
+        }
+
+        function yesterDay() {
+            var yesterday = nowyear + "-" + nowmon + "-" + parseInt(nowDate - 1);
+            $('.STdate input').val(yesterday + " 00:00:00");
+            $('.EDdate input').val(yesterday + " 23:59:59");
+        }
+
+        function thisWeek() {
+            var NdayF = parseInt(nowDate - nowweek + 1);
+            var NdayL = parseInt(nowDate - nowweek + 7);
+            var lastday, thisWeekF, thisWeekL, lastday2;
+            if (nowmon == 2) {
+                lastday = 28;
+            } else if (nowmon == 4 || nowmon == 6 || nowmon == 9 || nowmon == 11) {
+                lastday = 30;
+            } else {
+                lastday = 31;
+            }
+            if (NdayF > lastday) {
+                if ((nowmon - 1) == 2) {
+                    lastday2 = 28;
+                } else if ((nowmon - 1) == 4 || (nowmon - 1) == 6 || (nowmon - 1) == 9 || (nowmon - 1) == 11) {
+                    lastday2 = 30;
+                } else {
+                    lastday2 = 31;
+                }
+                var NNdayF = lastday + lastday2 - NdayF
+                thisWeekF = nowyear + "-" + (nowmon - 1) + "-" + NNdayF;
+            } else if (NdayF < 0) {
+                if ((nowmon - 1) == 2) {
+                    lastday2 = 28;
+                } else if ((nowmon - 1) == 4 || (nowmon - 1) == 6 || (nowmon - 1) == 9 || (nowmon - 1) == 11) {
+                    lastday2 = 30;
+                } else {
+                    lastday2 = 31;
+                }
+                var NNdayF = lastday2 + NdayF
+                thisWeekF = nowyear + "-" + (nowmon - 1) + "-" + NNdayF;
+            } else {
+                thisWeekF = nowyear + "-" + nowmon + "-" + NdayF;
+            }
+            if (NdayL > lastday) {
+                var NNdayL = NdayL - lastday;
+                thisWeekL = nowyear + "-" + (nowmon + 1) + "-" + NNdayL;
+            } else {
+                thisWeekL = nowyear + "-" + nowmon + "-" + NdayL;
+            }
+            $('.STdate input').val(thisWeekF + " 00:00:00");
+            $('.EDdate input').val(thisWeekL + " 23:59:59");
+        }
+
+        function lastWeek() {
+            var NdayF = parseInt(nowDate - nowweek + 1 - 7);
+            var NdayL = parseInt(nowDate - nowweek + 7 - 7);
+            var lastday, lastWeekF, lastWeekL, lastday2;
+            if (nowmon == 2) {
+                lastday = 28;
+            } else if (nowmon == 4 || nowmon == 6 || nowmon == 9 || nowmon == 11) {
+                lastday = 30;
+            } else {
+                lastday = 31;
+            }
+            if (NdayF > lastday) {
+                if ((nowmon - 1) == 2) {
+                    lastday2 = 28;
+                } else if ((nowmon - 1) == 4 || (nowmon - 1) == 6 || (nowmon - 1) == 9 || (nowmon - 1) == 11) {
+                    lastday2 = 30;
+                } else {
+                    lastday2 = 31;
+                }
+                var NNdayF = lastday + lastday2 - NdayF
+                lastWeekF = nowyear + "-" + (nowmon - 1) + "-" + NNdayF;
+            } else if (NdayF < 0) {
+                if ((nowmon - 1) == 2) {
+                    lastday2 = 28;
+                } else if ((nowmon - 1) == 4 || (nowmon - 1) == 6 || (nowmon - 1) == 9 || (nowmon - 1) == 11) {
+                    lastday2 = 30;
+                } else {
+                    lastday2 = 31;
+                }
+                var NNdayF = lastday2 + NdayF
+                lastWeekF = nowyear + "-" + (nowmon - 1) + "-" + NNdayF;
+            } else {
+                lastWeekF = nowyear + "-" + nowmon + "-" + NdayF;
+            }
+            if (NdayL > lastday) {
+                var NNdayL = NdayL - lastday;
+                lastWeekL = nowyear + "-" + (nowmon + 1) + "-" + NNdayL;
+            } else {
+                lastWeekL = nowyear + "-" + nowmon + "-" + NdayL;
+            }
+
+            $('.STdate input').val(lastWeekF + " 00:00:00");
+            $('.EDdate input').val(lastWeekL + " 23:59:59");
+        }
+
+        function thisMon() {
+            var lastday;
+            if (nowmon == 2) {
+                lastday = 28;
+            } else if (nowmon == 4 || nowmon == 6 || nowmon == 9 || nowmon == 11) {
+                lastday = 30;
+            } else {
+                lastday = 31;
+            }
+            var thisMonF = nowyear + "-" + nowmon + "-" + "01";
+            var thisMonL = nowyear + "-" + nowmon + "-" + lastday;
+            $('.STdate input').val(thisMonF + " 00:00:00");
+            $('.EDdate input').val(thisMonL + " 23:59:59");
+        }
+
+        function lastMon() {
+            var lastmon = parseInt(nowmon - 1);
+            var lastday;
+            if (lastmon == 2) {
+                lastday = 28;
+            } else if (lastmon == 4 || lastmon == 6 || lastmon == 9 || lastmon == 11) {
+                lastday = 30;
+            } else {
+                lastday = 31;
+            }
+            var lastMonF = nowyear + "-" + ("0" + lastmon).slice(-2) + "-" + "01";
+            var lastMonL = nowyear + "-" + ("0" + lastmon).slice(-2) + "-" + lastday;
+            $('.STdate input').val(lastMonF + " 00:00:00");
+            $('.EDdate input').val(lastMonL + " 23:59:59");
+        }
+        toDay();
+
+        $('.datasheets ul li').click(function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    </script>
+    <script>
+        $(function() {
+            for (var i = 0; i < $(".poster li").length; i++) {
+                var num = ("0" + (i + 1)).substr(-2, 2);
+                $(".poster li").eq(i).append("<span>" + num + "</span>");
+            }
+        });
+    </script>
+
+</html>
+
+</html>

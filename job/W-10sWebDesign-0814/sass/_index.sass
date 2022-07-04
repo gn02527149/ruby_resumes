@@ -1,0 +1,531 @@
+body
+	background: url(../img/bg.jpg) top center no-repeat,#550001
+	font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif
+	font-size: 12px
+	overflow-x: hidden
+
+*
+	margin: 0
+	padding: 0
+
+a
+	text-decoration: none
+	color: unset
+	cursor: pointer
+	&:hover
+		opacity: 0.8
+
+@font-face
+	font-family: 'lcdd'
+	src: url('../fonts/lcdd.eot?rretjt')
+	src: url('../fonts/lcdd.eot?#iefixrretjt') format('embedded-opentype'),url('../fonts/lcdd.woff?rretjt') format('woff'),url('../fonts/lcdd.ttf?rretjt') format('truetype'),url('../fonts/lcdd.svg?rretjt#lcd') format('svg')
+
+
+
+// module
+.middlebox
+	width: 1000px  //改
+	margin: 0 auto
+	position: relative
+
+.navbar
+	background: rgba(0,0,0,0.5)
+	height: 145px
+	.middlebox
+		display: flex
+		justify-content: space-between
+		a
+			display: flex
+			color: #ffff00
+			line-height: 145px
+			width: auto
+			font-size: 24px
+			vertical-align: middle
+			text-align: center
+			img
+				width: 222px
+				height: 103px
+				padding-top: 15px
+				vertical-align: -webkit-baseline-middle
+				
+
+//game
+.game
+	position: relative
+	img                  
+		width: 1000px   
+	.block01
+	.block02
+		background: url(../img/t02.png)50% no-repeat
+		background-size: 100% 100%  //改
+		width: 1200px  //改
+		height: 600px   //改
+		position: absolute
+		left: 50%  //改
+		top: 366px  //改
+		margin-left: -600px  //改
+		.secondbox
+			position: absolute
+			left: 390px  //改
+			top: 156px  //改
+			width: 295px
+			text-align: right
+			#second
+				font-family: "lcdd", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif
+				font-size: 110px  //改
+				-webkit-text-stroke: 2px white
+				color: red
+		.start_btn
+			background: url(../img/tenup.png) 50% no-repeat
+			width: 371px
+			height: 138px
+			animation: bg 0.3s infinite
+			-webkit-animation: bg 0.3s infinite
+			position: absolute
+			right: 66px  //改
+			top: 258px  //改
+			font-size: 0
+			outline: 0
+			border: 0
+		.arrow
+			background: url(../img/arrow.png) center center no-repeat
+			width: 90px
+			height: 98px
+			position: absolute
+			right: 66px  //改
+			top: 340px  //改
+			font-size: 0
+			outline: 0
+			border: 0
+
+		.play_btn
+			background: url(../img/startbtn.png) 50% no-repeat
+			width: 371px
+			height: 138px
+			position: absolute
+			right: 66px  //改
+			top: 258px  //改
+			font-size: 0
+			outline: 0
+			border: 0
+			&:hover
+				opacity: 0.8
+		.stop_btn
+			background: url(../img/stopbtn.png) 50% no-repeat
+			width: 371px
+			height: 138px
+			position: absolute
+			right: 66px  //改
+			top: 258px  //改
+			font-size: 0
+			outline: 0
+			border: 0
+			&:hover
+				opacity: 0.8
+
+
+
+.content
+	background: url(../img/cbg.png) bottom center no-repeat
+	padding-bottom: 99px
+	margin-top: -200px       //改
+	background-size: 1050px  //改
+	.mbox
+		background: url(../img/mbg.png) 50% no-repeat
+		padding-top: 298px
+		width: 885px
+		height: 313px
+		margin-top: 572px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: -150px
+		.list
+			width: 685px
+			height: 150px
+			display: inline-block
+			vertical-align: top
+			margin-top: -88px
+			position: relative
+			overflow: hidden
+			margin-left: 170px
+			
+			.marqueebox
+				color: white
+				top: 10px
+				animation: marquee 6s linear infinite
+				list-style: none
+				font-size: 20px
+				position: absolute
+				line-height: 32px
+				&:hover
+					animation-play-state: paused
+				span
+					color: #ffc314
+		.sbtn
+			width: 196px
+			height: 68px
+			background: url(../img/sbtn.png) 50% no-repeat
+			animation: bg02 0.3s infinite
+			-webkit-animation: bg02 0.3s infinite
+			margin: 5px auto 0 auto
+			font-size: 0
+			&:hover
+				opacity: 0.9
+		.arrow02
+			background: url(../img/arrow02.png) 50% no-repeat
+			width: 31px
+			height: 32px
+			position: absolute
+			right: 404px   //改
+			top: 394px     //改
+			font-size: 0
+			outline: 0
+			border: 0
+
+	.title
+		width: 930px
+		margin: 60px auto 
+		color: white
+		p
+			margin-left: 1em
+			margin-top: 15px
+			font-size: 20px
+		ul
+			list-style-type: decimal
+			list-style-position: outside
+			margin-top: 15px
+			margin-left: 2.2em
+			font-size: 20px
+			line-height: 28px
+
+
+.footer
+	background: #3d0101
+	color: white
+	font-size: 20px
+	margin-top: -55px
+	text-align: center
+	padding-top: 40px
+	padding-bottom: 40px
+
+
+//bg animation
+.l1
+	background: url(../img/l1.png) 50% no-repeat
+	width: 461px
+	height: 720px
+	position: absolute
+	left: -105px
+	top: 1360px
+	z-index: -1
+	animation: left-l 5s infinite
+	-webkit-animation: left-l 5s infinite
+.l2
+	background: url(../img/l2.png) 50% no-repeat
+	width: 278px
+	height: 822px
+	position: absolute
+	left: 0
+	top: 1670px
+	z-index: -1
+	animation: left-r 5s infinite
+	-webkit-animation: left-r 5s infinite
+.r1
+	background: url(../img/r1.png) 50% no-repeat
+	width: 305px
+	height: 1025px
+	position: absolute
+	right: 0
+	top: 1360px
+	z-index: -1
+	animation: right-r 5s infinite
+	-webkit-animation: right-r 5s infinite
+.r2
+	background: url(../img/r2.png) 50% no-repeat
+	width: 509px
+	height: 855px
+	position: absolute
+	right: 0
+	top: 1420px
+	z-index: -1
+	animation: right-l 5s infinite
+	-webkit-animation: right-l 5s infinite
+
+
+
+
+//modals
+.modal__bg
+	background: rgba(0,0,0,0.8)
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100%
+	display: none
+	.modal
+		background: url(../img/mbg-s.png)
+		width: 1100px
+		height: 165px
+		border-radius: 15px
+		position: absolute
+		line-height: 165px
+		top: 50%
+		left: 50%
+		margin-top: -82px
+		margin-left: -550px
+		box-shadow: 0px 1px 11px 2px rgba(0,0,0,0.3)
+		label
+			background: url(../img/labelbg.png) 50% no-repeat
+			font-size: 0
+			width: 191px
+			height: 58px
+			float: left
+			margin-top: 45px
+			margin-left: 45px
+		input
+			width: 400px
+			height: 58px
+			background: rgba(0,0,0,0)
+			float: left
+			border: 0
+			outline: 0
+			font-size: 32px
+			margin-top: 45px
+			font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif
+			color: white
+			padding-left: 15px
+			&::placeholder
+				font-family: "Meiryo", "Meiryo UI", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif
+				color: white
+				padding-left: 15px
+		.login
+			background: url(../img/loginbtn.png) 50% no-repeat
+			width: 197px
+			height: 70px
+			float: left
+			display: block
+			border: 0
+			outline: 0
+			font-size: 0
+			margin-top: 45px
+			&:hover
+				opacity: 0.8
+				margin-top: 48px
+		.close
+			background: url(../img/closebtn.png) 50% no-repeat
+			width: 197px
+			height: 70px
+			float: left
+			display: block
+			border: 0
+			outline: 0
+			font-size: 0
+			margin-top: 45px
+			&:hover
+				opacity: 0.8
+				margin-top: 48px
+		
+
+.modal__bg__miss
+	background: rgba(0,0,0,0.8)
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100%
+	display: none
+	.modal
+		background: url(../img/mbgb.png)
+		width: 600px
+		height: 457px
+		border-radius: 15px
+		position: absolute
+		
+		top: 50%
+		left: 50%
+		margin-top: -228px
+		margin-left: -300px
+		box-shadow: 0px 1px 11px 2px rgba(0,0,0,0.3)
+		.imgbox
+			width: 100%
+			text-align: center
+			margin-top: 60px
+			height: 206px
+		.chance
+			background: url(../img/chance.png) 50% no-repeat
+			height: 40px
+			font-size: 35px
+			color: red
+			-webkit-text-stroke: 2px white
+			font-family: "Aria", sans-serif
+			font-weight: 900
+			line-height: 35px
+			padding-left: 250px
+		.again-btn
+			background: url(../img/againbg.png) 50% no-repeat
+			width: 197px
+			height: 70px
+			display: block
+			border: 0
+			outline: 0
+			font-size: 0
+			float: left
+			margin-top: 25px
+			margin-left: 98px
+			&:hover
+				opacity: 0.8
+				margin-top: 28px
+		.close
+			background: url(../img/closebtn.png) 50% no-repeat
+			width: 197px
+			height: 70px
+			display: block
+			border: 0
+			outline: 0
+			font-size: 0
+			float: left
+			margin-top: 25px
+			
+			&:hover
+				opacity: 0.8
+				margin-top: 28px
+
+
+.modal__bg__gift
+	background: rgba(0,0,0,0.8)
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100%
+	display: none
+	.modal
+		background: url(../img/mbgb-gift.png)
+		width: 600px
+		height: 457px
+		border-radius: 15px
+		position: absolute
+		
+		top: 50%
+		left: 50%
+		margin-top: -228px
+		margin-left: -300px
+		box-shadow: 0px 1px 11px 2px rgba(0,0,0,0.3)
+		.imgbox
+			width: 100%
+			text-align: center
+			margin-top: 60px
+			height: 206px
+		.chance
+			background: url(../img/chance.png) 50% no-repeat
+			height: 40px
+			font-size: 35px
+			color: red
+			-webkit-text-stroke: 2px white
+			font-family: "Aria", sans-serif
+			font-weight: 900
+			line-height: 35px
+			padding-left: 250px
+		.again-btn
+			background: url(../img/againbg.png) 50% no-repeat
+			width: 197px
+			height: 70px
+			display: block
+			border: 0
+			outline: 0
+			font-size: 0
+			float: left
+			margin-top: 25px
+			margin-left: 98px
+			&:hover
+				opacity: 0.8
+				margin-top: 28px
+		.close
+			background: url(../img/closebtn.png) 50% no-repeat
+			width: 197px
+			height: 70px
+			display: block
+			border: 0
+			outline: 0
+			font-size: 0
+			float: left
+			margin-top: 25px
+			
+			&:hover
+				opacity: 0.8
+				margin-top: 28px
+.modal__bg__result
+	background: rgba(0,0,0,0.8)
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 100%
+	height: 100%
+	display: none
+	.modal
+		background: url(../img/mbgb.png)
+		width: 600px
+		height: 457px
+		border-radius: 15px
+		position: absolute
+		
+		top: 50%
+		left: 50%
+		margin-top: -228px
+		margin-left: -300px
+		box-shadow: 0px 1px 11px 2px rgba(0,0,0,0.3)
+		h4
+			color: white
+			font-size: 20px
+			margin: 45px auto 30px 45px
+			span
+				color: yellow
+		.result
+			background: url(../img/resbg.png) 50% no-repeat
+			+background-size(100% 100%)
+			color: white
+			width: 455px
+			height: 113px
+			margin: 0 auto
+			padding-top: 55px
+
+			.rBox
+				width: 449px
+				height: 103px
+				overflow-y: auto
+				p
+					font-size: 20px
+					margin-left: 1em
+					.yellow
+						color: yellow
+						margin-left: 30px
+					.red
+						color: red
+						margin-left: 30px
+		.close
+			background: url(../img/close02.png) 50% no-repeat
+			width: 197px
+			height: 70px
+			display: block
+			border: 0
+			outline: 0
+			font-size: 0
+			margin-top: 25px
+			margin-left: auto
+			margin-right: auto
+			&:hover
+				opacity: 0.8
+				margin-top: 28px
+
+
+
+

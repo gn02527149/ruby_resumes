@@ -1,0 +1,184 @@
+.top {
+    background: url(../images/bg3.png) center 150px !important;
+    background-size: 100% 100%;
+    z-index: 99;
+}
+
+.introduction {
+    margin-top: 60px;
+}
+
+.introduction_img {
+    float: left;
+}
+
+.introduction_content {
+    float: left;
+    width: 686px;
+    text-align: center;
+}
+
+.introduction_content p {
+    width: 90%;
+    margin: 10px auto;
+    color: #c7c7c7;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.listBox {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.listBoxTitle {
+    margin: 20px auto;
+    position: relative;
+}
+
+.presentation {
+    clear: both;
+    padding-top: 30px;
+}
+
+.activity {
+    margin-bottom: 70px;
+}
+
+.activity .titleTwo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    cursor: pointer;
+}
+
+.activity .listBox-content .posterImg img:nth-child(1) {
+    padding-right: 10px;
+    border-right: 2px solid #e3dead;
+}
+
+.activity .listBox-content .posterImg img:nth-child(2) {
+    padding-left: 6px;
+}
+
+.listBox-content {
+    width: 1000px;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+.listBox-content p {
+    color: #c7c7c7;
+    margin-bottom: 7px;
+    font-size: 16px;
+    text-indent: 2em;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 30px;
+    display: block;
+}
+
+.notice .notice_bg {
+    width: 1000px;
+    height: 540px;
+}
+
+.notice .listBox-content {
+    bottom: 0;
+    padding: 1px;
+}
+
+.notice .listBox-content p {
+    margin-bottom: 0px;
+    padding: 0 20px;
+}
+
+.notice .listBox-content img {
+    width: 100%;
+}
+
+.notice ._notice {
+    position: absolute;
+    transition: 1s;
+    background-size: 100% 100%;
+}
+
+.notice ._noticeL {
+    width: 107px;
+    height: 94px;
+    left: 370px;
+    bottom: 148px;
+    background-image: url(../images/_noticeL.png);
+}
+
+.notice ._noticeR {
+    width: 160px;
+    height: 160px;
+    background-image: url(../images/_noticeR.png);
+    right: 289px;
+    bottom: 210px;
+}
+
+.notice ._noticeR:hover,
+.notice ._noticeL:hover {
+    transform: scale(1.5);
+}
+
+.comment p {
+    position: absolute;
+    top: 120px;
+    color: #c7c7c7;
+    font-size: 16px;
+    text-indent: 2em;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 0 20px;
+    line-height: 36px;
+}
+
+.presentation .listBox-content img {
+    margin-bottom: 8px;
+}
+
+.poster .listBox-content .posterImg {
+    display: inline-block;
+}
+
+.poster .listBox-content .posterImg img {
+    margin-right: 14px;
+    transition: 1s;
+    z-index: 0;
+}
+
+.poster .listBox-content .posterImg img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+span.head {
+    cursor: pointer;
+    float: left;
+    line-height: 46px;
+    padding-left: 10px;
+}
+
+#headbox td img {
+    margin: 5px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.userPic img {
+    width: 50px;
+}

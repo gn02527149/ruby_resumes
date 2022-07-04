@@ -1,0 +1,841 @@
+// 平版
+@media (max-width: 1024px) and (min-width: 769px)
+	html::-webkit-scrollbar-track
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+		border-radius: 10px
+		background-color: #F5F5F5
+
+
+	html::-webkit-scrollbar
+		width: 12px
+		background-color: #F5F5F5
+
+
+	html::-webkit-scrollbar-thumb
+		border-radius: 10px
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+		background-color: #D62929
+
+
+	body
+		background: url(../images/bg.jpg) top center repeat-y
+		font-family: "微软雅黑"
+		-webkit-overflow-scrolling: touch
+		overflow-x: hidden
+		overflow-y: auto
+	body.modal-open
+		padding-right: 0px !important
+		overflow-y: auto!important
+
+
+
+
+
+
+
+	a:focus
+		outline: 0
+
+	.navbar
+		background: #780104
+		height: auto
+		margin-bottom: 0px
+		position: fixed
+		z-index: 1050
+		width: 100%
+		border-bottom: 3px solid #3b0000
+		.menu
+			padding: 10px 0px
+			.logo
+				float: unset
+				margin-left: 35%
+			.menubox
+				float: unset
+				margin-top: 35px
+				width: 100%
+				text-align: center
+				a
+					border-right: 1px #f9e483 solid
+					color: #f9e483
+					text-decoration: none
+					font-size: 20px
+					padding: 10px
+					line-height: 20px
+
+				a:last-child
+					border-right: 0px
+	.banner
+		background: url(../images/banner.jpg) top center no-repeat
+		min-height: 900px
+		clear: both
+
+	.wrapper
+		background: url(../images/cbg.jpg) top center no-repeat,#e99d00
+		+background-size(100%)
+		border: #3b0000 10px solid
+		min-height: 729px
+		margin: -210px auto 0 auto
+		padding-top: 90px
+
+
+		.start
+			margin-bottom: 60px
+			img
+				margin-bottom: 15px
+			p
+				font-size: 18px
+				color: #3b0000
+				text-align: center
+
+		// .content
+			// background: url(../images/scbg.png) top center no-repeat
+			// +background-size(contain)
+			// min-width: 420px
+			// min-height: 320px
+			// .checkNum
+			// 	margin-top: 270px
+			// 	color: #fff
+			// 	font-size: 13px
+			// 	text-align: center
+
+
+
+
+
+		.winner
+			text-align: center
+			margin-top: 30px
+			padding-left: 60px
+			padding-right: 60px
+			.title02
+				background: url(../images/title02.png) center center no-repeat
+				+background-size(contain)
+				background-color: #e99d00
+				width: 20%
+				min-height: 77px
+				float: left
+				font-size: 0px
+			.namebox
+				background: url(../images/namebg.png) center right no-repeat
+				+background-size(cotain)
+				width: 80%
+				margin-top: 6px
+				height: 65px
+				float: left
+				marquee
+					margin: 5px
+					color: #fff
+					font-size: 16px
+					line-height: 28px
+					height: 60px
+					.name
+						color: red
+					.gift
+						color: yellow
+		.rule
+			margin-top: 30px
+			padding-left: 30px
+			padding-right: 30px
+			h4
+				width: 100%
+				margin: 15px auto
+
+		.info
+			background: linear-gradient(to bottom, rgba(120,1,4,0) 70px,rgba(120,1,4,0) 13%,rgba(120,1,4,1) 14%,rgba(120,1,4,1) 15%,rgba(120,1,4,1) 100%)
+			background: -webkit-linear-gradient(to bottom, rgba(120,1,4,0) 70px,rgba(120,1,4,0) 13%,rgba(120,1,4,1) 14%,rgba(120,1,4,1) 15%,rgba(120,1,4,1) 100%)
+			background: -moz-linear-gradient(to bottom, rgba(120,1,4,0) 70px,rgba(120,1,4,0) 13%,rgba(120,1,4,1) 14%,rgba(120,1,4,1) 15%,rgba(120,1,4,1) 100%)
+			padding-top: 30px
+			text-align: center
+			ul
+				list-style: none
+				font-size: 18px
+				font-weight: bold
+				color: #fff
+				margin-top: 0px
+				span
+					color: yellow
+
+		.rule02
+			padding-left: 60px
+			padding-right: 60px
+			margin-bottom: 50px
+			ul
+				list-style-type: decimal
+				font-size: 18px
+				color: #3b0000
+				line-height: 30px
+				margin-top: 15px
+
+		.rule03
+			margin-top: 30px
+			margin-bottom: 60px
+			ul
+				list-style-type: decimal
+				font-size: 18px
+				color: #3b0000
+				line-height: 30px
+
+
+
+	.cloud
+		background: url(../images/cloud.png) top center no-repeat
+		width: 100%
+		height: 196px
+		margin: 0 auto
+		font-size: 0px
+		position: absolute
+		left: 50%
+		margin-left: -578px
+		top: 555px
+		z-index: 999
+
+
+	.footer
+		color: #fff
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 15px
+
+
+
+
+
+
+
+
+	.scratcher
+		display: none
+		width: 349px
+		height: 106px
+		margin: auto
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		position: absolute
+		// background: url(https://firefox.club.tw/static/img/event/every-moment/scratch/scratch-white.png) no-repeat
+	// 	&:before
+	// 		width: 349px
+	// 		height: 106px
+	// 		margin: auto
+	// 		content: url(../images/front-images.png)
+	// 		top: 0
+	// 		bottom: 0
+	// 		left: 0
+	// 		right: 0
+	// 		position: absolute
+	// 		z-index: 999
+
+	// .scratcher.change:before
+	// 	display: none
+
+
+	.scratcher #fx-scratcher, .scratcher #fx-icon
+		position: absolute
+
+	.scratcher #fx-scratcher
+		transition: opacity 0.5s ease-out 0s
+
+
+	.scratcher.complete #fx-scratcher
+		opacity: 0
+
+	.scratcher #fx-icon
+
+		left: 0
+		top: 0
+		width: 338px
+		height: 103px
+
+	.scratcher.complete #fx-icon
+		opacity: 1
+
+
+
+
+	.btn-sc
+		background: url(../images/btn.png) center center no-repeat
+		display: block
+		width: 200px
+		height: 42px
+		margin: 0 auto
+		font-size: 0px
+		border: 0px
+		outline: none
+		margin-top: 15px
+		&:hover
+			background: url(../images/btn_r.png) center center no-repeat
+
+
+	// 登入框
+	#loginModal
+		.modal-content
+			padding: 50px 40px
+			background: url(../images/loginbg.jpg) center center no-repeat
+			+background-size(cover)
+			width: 574px
+			height: 429px
+			.modal-header
+				color: #ffff00
+				font-weight: 200
+				border-bottom: 1px solid rgba(120, 1, 4, 0)
+			.modal-body
+				height: 100px
+				.form-group
+					margin-bottom: 40px
+					label
+						font-size: 18px
+						color: #ffff00
+						text-align: right
+						font-weight: normal
+						padding: 0px
+					input
+						border-radius: 0px
+						height: 30px
+			.modal-footer
+				text-align: center
+				border-top: 1px solid rgba(120, 1, 4, 0)
+				padding: 40px 15px 15px 15px
+				.login-ok
+					width: 150px
+					height: 50px
+					color: #b50000
+					border: #ffff00 1px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					background: -webkit-linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					background: -moz-linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					&:hover
+						color: yellow
+						background: linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -webkit-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -moz-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+				.login-del
+					width: 150px
+					height: 50px
+					color: #616161
+					border: #c5c5c5 2px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					background: -webkit-linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					background: -moz-linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					&:hover
+						color: #fff
+	//次數框
+	#memberTime
+		.modal-content
+			padding: 50px 40px
+			background: url(../images/loginbg.jpg) center center no-repeat
+			+background-size(cover)
+			width: 574px
+			height: 429px
+			.modal-header
+				color: #ffff00
+				font-weight: 200
+				border-bottom: 1px solid rgba(120, 1, 4, 0)
+				text-align: center
+				h4
+					font-size: 25px
+					span
+						color: blue
+			.modal-body
+				height: 100px
+				text-align: center
+				color: #ffff00
+				font-size: 25px
+				span
+					color: red
+					font-weight: 900
+					font-size: 28px
+
+			.modal-footer
+				text-align: center
+				border-top: 1px solid rgba(120, 1, 4, 0)
+				padding: 40px 15px 15px 15px
+				.login-ok
+					width: 150px
+					height: 50px
+					color: #b50000
+					border: #ffff00 1px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					background: -webkit-linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					background: -moz-linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					&:hover
+						color: yellow
+						background: linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -webkit-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -moz-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+				.login-del
+					width: 150px
+					height: 50px
+					color: #616161
+					border: #c5c5c5 2px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					background: -webkit-linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					background: -moz-linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					&:hover
+						color: #fff
+
+	//刮刮卡框
+	#chooseOne
+		margin-top: 10%
+		.modal-content
+			padding: 30px 40px
+			background: url(../images/loginbg.jpg) center center no-repeat
+			+background-size(cover)
+			width: 574px
+			height: 429px
+			.modal-header
+				color: #ffff00
+				font-weight: 200
+				border-bottom: 1px solid rgba(120, 1, 4, 0)
+				text-align: center
+				h4
+					font-size: 25px
+					span
+						color: blue
+			.modal-body
+				height: 230px
+				text-align: center
+				color: #ffff00
+				font-size: 25px
+				span
+					color: red
+					font-weight: 900
+					font-size: 28px
+
+			.modal-footer
+				text-align: center
+				border-top: 1px solid rgba(120, 1, 4, 0)
+				padding: 15px 15px 15px 15px
+				.login-ok
+					width: 150px
+					height: 50px
+					color: #b50000
+					border: #ffff00 1px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					background: -webkit-linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					background: -moz-linear-gradient(to bottom, #b1785d 0%,#e19766 8%,#f5c66e 20%,#fbdb74 35%,#f7eda8 51%,#fbdb74 66%,#f5c66e 74%,#e19766 93%,#b1785d 100%)
+					&:hover
+						color: yellow
+						background: linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -webkit-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -moz-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+				.login-del
+					width: 150px
+					height: 50px
+					color: #616161
+					border: #c5c5c5 2px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					background: -webkit-linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					background: -moz-linear-gradient(to bottom, #d0d0d0 0%,#ffffff 48%,#d0d0d0 100%)
+					&:hover
+						color: #fff
+
+
+
+	// 中獎框
+	#giftModal
+		.modal-content
+			padding: 40px
+			background: url(../images/giftbg.jpg) center center no-repeat
+			+background-size(cover)
+			width: 489px
+			height: 366px
+			margin-left: 50px
+			.modal-header
+				color: #ffff00
+				font-weight: 200
+				text-align: center
+				border-bottom: 1px solid rgba(120, 1, 4, 0)
+				h4
+					font-size: 25px
+			.modal-body
+				height: 120px
+				text-align: center
+
+				p
+					color: #ffff00
+					margin: 5px auto
+				img
+					width: 338px
+					height: 103px
+					margin: 0 auto
+				.popgift
+					background: url(../images/popbg.jpg) 50% no-repeat
+					width: 338px
+					height: 103px
+					margin: 0 auto
+					border-radius: 10px
+					padding-top: 12px
+					h1
+						margin-top: 0px
+					p
+						color: #111
+			.modal-footer
+				text-align: center
+				border-top: 1px solid rgba(120, 1, 4, 0)
+				padding: 40px 15px 15px 15px
+				.gift-ok
+					width: 150px
+					height: 50px
+					color: #b50000
+					border: #ffff00 2px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					background: -webkit-linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					background: -moz-linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					&:hover
+						color: yellow
+						background: linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -webkit-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -moz-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+
+
+	// 中獎查詢框
+	#iqModal
+		.modal-content
+			padding: 50px 40px
+			background: url(../images/loginbg.jpg) center center no-repeat
+			+background-size(cover)
+			width: 574px
+			height: 429px
+			.modal-header
+				color: #ffff00
+				font-weight: 200
+				border-bottom: 1px solid rgba(120, 1, 4, 0)
+				label
+					font-size: 20px
+					font-weight: normal
+				input
+					border-radius: 0px
+					outline: 0px
+				.id-check
+					border-radius: 0px
+					color: #b50000
+					font-size: 14px
+					outline: 0px
+					font-weight: normal
+					background: linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					background: -webkit-linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					background: -moz-linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					&:hover
+						color: yellow
+						background: linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -webkit-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -moz-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+
+
+			.modal-body
+				height: 190px
+				overflow-x: hidden
+				overflow-y: auto
+				.iqtable
+					background: #f1c945
+					width: 100%
+
+					tr:first-child
+						background: #4d0006
+						color: #ffff00
+						border: 1px solid #111
+					tr
+						td
+							text-align: center
+							border: 1px solid #111
+			.modal-footer
+				text-align: center
+				border-top: 1px solid rgba(120, 1, 4, 0)
+				padding: 40px 15px 15px 15px
+				.table-ok
+					width: 150px
+					height: 50px
+					color: #b50000
+					border: #ffff00 2px solid
+					font-size: 25px
+					-webkit-box-shadow: 1px 4px #5a0005
+					-moz-box-shadow: 1px 4px #5a0005
+					box-shadow: 1px 4px #5a0005
+					background: linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					background: -webkit-linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					background: -moz-linear-gradient(to bottom, #ffc06e 0%,#f7eda6 48%,#ffc06e 100%)
+					&:hover
+						color: yellow
+						background: linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -webkit-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+						background: -moz-linear-gradient(to bottom, #a80000 0%,#d32a00 10%,#fa5d00 48%,#d32a00 90%,#a80000 100%)
+
+	body.modal-open
+		padding-right: 0px !important
+		overflow-y: auto
+
+
+
+	.cardbox
+		position: absolute
+		z-index: 1035
+		// top: 69px
+		// left: 390px
+		.card
+
+			background: url(../images/cardbg-r.png) center center no-repeat
+			+background-size(contain)
+			width: 320px
+			height: 210px
+			margin: 50px 400px
+
+	.h
+		// z-index: -1
+		visibility: hidden
+	.scratch3d
+		position: absolute
+		z-index: 10
+
+
+
+	#myCanvas1
+		width: 256px
+		height: 83px
+		margin-top: 84px
+		margin-left: 30px
+		border-radius: 10px
+
+
+	.gifttext
+		width: 250px
+		height: 80px
+		margin: -83px auto auto auto
+		-webkit-user-select: none
+		-moz-user-select: none
+		user-select: none
+		text-align: center
+		h1
+			font-size: 25px
+			font-weight: bold
+			line-height: 15px
+		p
+			font-size: 13px
+
+
+	//table
+	.tableInfo
+		width: 100%
+		border-collapse: collapse
+		margin: 0px auto 30px auto
+		tr
+			background: #fff
+			border: 1px #111 solid
+			td
+				text-align: center
+				font-size: 16px
+				border: 1px #111 solid
+
+			td:first-child
+				width: 20%
+
+			td:nth-child(1)
+				width: 10%
+			td:nth-child(2)
+				width: 20%
+				height: 40px
+			td:nth-child(3)
+				width: 10%
+			td:nth-child(4)
+				width: 10%
+			td:nth-child(5)
+				width: 10%
+			td:nth-child(6)
+				width: 20%
+		tr:first-child
+			background: #96000d
+			color: #fff
+
+
+
+	// carousel
+	.abgne-yahoo-carousel
+		background: url(../images/carousel.png) 50% no-repeat
+		width: 850px
+		height: 140px
+		margin: 0 auto
+		position: relative
+		padding-top: 12px
+		*
+			margin: 0
+			padding: 0
+		ul, li
+			list-style: none
+		a img
+			border: none
+			width: 186px
+			overflow: hidden
+		h3
+			font-size: 18px
+			height: 30px
+		.page
+			position: absolute
+			top: 12px
+			right: 80px
+		.btn
+			// position: relative
+			// top: 10px
+			// right: 5px
+			// height: 20px
+			a
+				width: 31px
+				height: 24px
+				float: left
+				text-indent: -9999px
+				&.prev
+					background: url(../images/left.png) no-repeat 0 0
+					width: 25px
+					height: 66px
+					margin: -95px auto auto -30px
+				&.next
+					background: url(../images/right.png) no-repeat 0 0
+					width: 25px
+					height: 66px
+					margin: -95px auto auto 960px
+		.frame
+			position: relative
+			overflow: hidden
+			width: 907px
+			/* (li 的寬度 + li 的邊框寬度 * 2 ) * 一次要顯示的數量 + li 的右邊界 * (一次要顯示的數量 - 1)
+			height: 115px
+			margin: 0 auto
+		ul
+			width: 99999px
+			position: absolute
+		li
+			float: left
+			width: 186px
+			height: 115px
+			position: relative
+			margin-right: 3px
+
+			.thumb, .ovrly, h3
+				position: absolute
+			.ovrly, h3
+				width: 100%
+				height: 32px
+				line-height: 32px
+				text-align: center
+				bottom: 0
+			.ovrly
+				background: #000
+			h3 a
+				color: #fff
+				&:hover
+					color: #f90
+
+
+
+
+	.disabled
+		pointer-events: none
+		background: url(../images/cardbg-r.png) 50% no-repeat!important
+	.choose
+		margin-top: -20px
+
+
+	// 3d
+	.scratchs
+		height: 350px
+
+	#scratchBtn
+		width:  140px
+		margin: 60px auto
+		.left
+			background: url(../images/prevbtn.png) 50% no-repeat
+			height: 66px
+			width: 66px
+			font-size: 0px
+			border: 0px
+			outline: none
+			&:hover
+				opacity: 0.8
+		.right
+			background: url(../images/nextbtn.png) 50% no-repeat
+			height: 66px
+			width: 66px
+			font-size: 0px
+			border: 0px
+			outline: none
+			&:hover
+				opacity: 0.8
+
+
+	//carousel3
+	#abgne-block-20110406
+		margin: 0 auto
+		width: 850px
+		height: 134px
+		position: relative
+		background: url('../images/carousel.png') 50% no-repeat
+		padding: 5px
+		a
+			&.prev, &.next
+				position: absolute
+				top: 35px
+				display: block
+				width: 56px
+				height: 75px
+				text-indent: -9999px
+		.prev
+			background: url('../images/left.png') no-repeat
+			left: -30px
+		.next
+			background: url('../images/right.png') no-repeat
+			right: -60px
+		.slides
+			// overflow: unset
+			position: relative
+			top: 0
+			left: 152px
+			width: 186px
+			height: 115px
+
+			ul
+				position: absolute
+				width: 9990px
+				height: 100%
+			li
+				width: 186px
+				height: 100%
+				float: left
+				list-style: none
+	.slidersbox
+		overflow: hidden
+		width: 830px
+		height: 115px
+		margin: 3px auto
+
+	.change-view
+		background: url('../images/clickpic.jpg') 50% no-repeat
+		+background-size(contain)
+		width: 1120px
+		height: 350px
