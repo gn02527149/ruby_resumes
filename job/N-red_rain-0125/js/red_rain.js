@@ -10,7 +10,7 @@ $(function() {
     //時間倒數＋紅包雨
     function getStartTime() {
 
-        var EndTime = new Date("2018/01/22 15:00:00");
+        var EndTime = new Date("2022/06/22 15:00:00");
         var NowTime = new Date();
         var t = EndTime.getTime() - NowTime.getTime();
 
@@ -35,7 +35,7 @@ $(function() {
 
     function getEndTime() {
 
-        var EndTime = new Date("2018/11/25 11:59:59");
+        var EndTime = new Date("2022/07/25 11:59:59");
         var NowTime = new Date();
         var t = EndTime.getTime() - NowTime.getTime();
 
