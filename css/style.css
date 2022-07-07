@@ -159,6 +159,12 @@
     text-align: center;
     margin: 10px auto 50px;
 }
+.worktitle {
+    text-align: center;
+    margin: 10px auto 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
 
 .demo-item div {
     width: 277px;
