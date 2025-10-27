@@ -1,575 +1,495 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Ruby Wu</title>
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/typeit.css">
-    <!-- Plugins-->
-    <link href="css/plugins.min.css" rel="stylesheet">
-    <!-- Template core CSS-->
-    <link href="css/template.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Ruby Wu</title>
+
+  <!-- 字體 / Icon -->
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+  <!-- ★ 加入 Bootstrap 3 CSS（放在自家 CSS 之前，避免被覆蓋） -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- 你原本的樣式 -->
+  <link href="css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/typeit.css">
+  <link href="css/plugins.min.css" rel="stylesheet">
+  <link href="css/template.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Preloader-->
-    <div class="page-loader">
-        <div class="page-loader-inner">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
+  <!-- Preloader -->
+  <div class="page-loader">
+    <div class="page-loader-inner">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
     </div>
-    <!-- Preloader end-->
+  </div>
 
-    <!-- Header-->
-    <!-- <header class="header header-transparent">
-    </header> -->
-    <!-- Header end-->
-
-    <!-- Wrapper-->
-    <div class="wrapper">
-        <div class="module-cover parallax text-center" data-overlay="1" data-gradient="1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="demo-heading"></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="module p-t-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 m-auto">
-                        <div class="space" data-mY="-540px"></div>
-                        <div class="macbook">
-                        </div>
-                        <div class="space" data-mY="100px"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="moduleHeader">
-                <div class="info">
-                    <a class="About">
-                        <li>ABOUT ME</li>
-                    </a>
-                    <a class="Experience">
-                        <li>EXPERIENCE</li>
-                    </a>
-                    <a class="Works">
-                        <li>MY WORKS</li>
-                    </a>
-                    <a class="Skill">
-                        <li>SKILLSET</li>
-                    </a>
-                </div>
-            </div>
-            <div class="container-fluid" style="max-width: 1200px;">
-                <div id="about">
-                    <div class="col-sm-6">
-                        <h1><b>Ruby Wu</b></h1>
-                        <hr>
-                        <p>我畢業於德霖科技大學餐飲管理系， 擅長溝通接洽。因緣際會接觸網頁開發，曾經開發過線上一對一教學網站、線上課程預約、博弈開獎網站、公司形象網站...等各式動、靜態網站及響應式網頁。 未來希望能作為一名優秀的前端工程師，讓使用網站的人們，當下能夠體驗到親切與友善的使用者介面。
-                        </p>
-                        <p>目前職稱<br>前端工程師<br><a href="mailto:gn02527149@gmail.com">gn02527149@gmail.com</a></p>
-                    </div>
-                    <div class="col-sm-6">
-                        <img class="photoMe" data-no-retina="true" src="images/S__38133763.jpg" data-uploader-id="3" data-state="empty">
-                    </div>
-                </div>
-                <div id="experience">
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12">
-                                <div class="row" title="" style="display:block;" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11 item">
-                                        <h2><b>EXPERIENCE</b></h2>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="col-xs-12 col-sm-6">
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1 item-bullet"></div>
-                                    <div class="col-xs-10 col-sm-11 item">
-                                        <h5>天旭國際科技有限公司，2019/11 - 仍在職</h5>
-                                        <p>H5工程師</p>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1 item-bullet"></div>
-                                    <div class="col-xs-10 col-sm-11 item">
-                                        <h5>絕勝國際股份有限公司，2017/11 - 2019/4</h5>
-                                        <p>前端工程師</p>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1 item-bullet"></div>
-                                    <div class="col-xs-10 col-sm-11 item">
-                                        <h5>天絡股份有限公司，2017/5 - 2017/11</h5>
-                                        <p>前端工程師</p>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1 item-bullet"></div>
-                                    <div class="col-xs-10 col-sm-11 item">
-                                        <h5>台灣大學資訊系統訓練班，2016/1 - 2016/2</h5>
-                                        <p>30小時學分班<br></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="works">
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12">
-                                <div class="row" title="" style="display:block;" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11 item">
-                                        <h2><b>WORKS</b></h2>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2 class="workTitle">JOBS</h2>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="job/NYX/index.html" target="_blank">
-                                                    <div>
-                                                        <img src="images/job01.png" alt="">
-                                                    </div>
-                                                    <h4>NYX形象頁</h4>
-                                                </a>
-                                                <h6><span>pug</span><span>sass</span><span>jquery</span><span>rwd</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="job/E-vipcc-0401/index.html" target="_blank">
-                                                    <div>
-                                                        <img src="images/job03.png" alt="">
-                                                    </div>
-                                                    <h4>VIP.cc形象頁</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="job/W-editweb-0719/index.html" target="_blank">
-                                                    <div>
-                                                        <img src="images/job11.png" alt="">
-                                                    </div>
-                                                    <h4>永利官網首頁</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="job/S-0208com-0709/index.html" target="_blank">
-                                                    <div>
-                                                        <img src="images/job09.png" alt="">
-                                                    </div>
-                                                    <h4>澳門銀河官網首頁</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="job/E-eventual-0524/index.html" target="_blank">
-                                                    <div>
-                                                        <img src="images/job10.png" alt="">
-                                                    </div>
-                                                    <h4>絕勝公司形象頁</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="job/0403-H-OfficialWebsite/index.html" target="_blank">
-                                                    <div>
-                                                        <img src="images/job13.png" alt="">
-                                                    </div>
-                                                    <h4>海馬科技公司形象頁</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://drive.google.com/drive/u/0/folders/1EsiNKhvNm7HSPF4c2Tvpwo21K2_xp0WD" target="_blank">
-                                                    <div>
-                                                        <img src="images/job16.png" alt="">
-                                                    </div>
-                                                    <h4>美術清單工具</h4>
-                                                </a>
-                                                <h6><span>electronjs</span><span>react</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://drive.google.com/drive/u/0/folders/16fqZNBx7EJSWUGqmnBCzIHwN-8stSsCv" target="_blank">
-                                                    <div>
-                                                        <img src="images/job17.png" alt="">
-                                                    </div>
-                                                    <h4>瓦力遊戲大廳</h4>
-                                                </a>
-                                                <h6><span>typescript</span><span>react</span><span>pixi</span><span>rwd</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://drive.google.com/drive/u/0/folders/1_nq88K7l_yEByFtmhUS2znnFzxsLSMMb" target="_blank">
-                                                    <div>
-                                                        <img src="images/job18.jpg" alt="">
-                                                    </div>
-                                                    <h4>視訊百家樂</h4>
-                                                </a>
-                                                <h6><span>typescript</span><span>pixi</span><span>rwd</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://drive.google.com/drive/u/0/folders/1E-3IAi5WOwgr81_69_5D042nbHNbKKPt" target="_blank">
-                                                    <div>
-                                                        <img src="images/job19.jpg" alt="">
-                                                    </div>
-                                                    <h4>通比牛牛</h4>
-                                                </a>
-                                                <h6><span>typescript</span><span>pixi</span><span>rwd</span></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <h2 class="workTitle">PRACTICE</h2>
-                                    <h3 class="worktitle">CSS Animation / JQuery</h3>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/dOvOEw" target="_blank">
-                                                    <div>
-                                                        <img src="images/work01.png" alt="">
-                                                    </div>
-                                                    <h4>天氣盒子</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/MoxxWN" target="_blank">
-                                                    <div>
-                                                        <img src="images/work02.png" alt="">
-                                                    </div>
-                                                    <h4>IG拍照動畫</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/MGojdd" target="_blank">
-                                                    <div>
-                                                        <img src="images/work03.png" alt="">
-                                                    </div>
-                                                    <h4>地中海風格動畫</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/XYXzRx" target="_blank">
-                                                    <div>
-                                                        <img class="long" src="images/work08.png" alt="">
-                                                    </div>
-                                                    <h4>記憶格子</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="worktitle">CANVAS</h3>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/rKdpOz" target="_blank">
-                                                    <div>
-                                                        <img class="long" src="images/work13.png" alt="">
-                                                    </div>
-                                                    <h4>貪食蛇</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/LBeGej" target="_blank">
-                                                    <div>
-                                                        <img class="long" src="images/work14.png" alt="">
-                                                    </div>
-                                                    <h4>碼表</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/aQzVyj" target="_blank">
-                                                    <div>
-                                                        <img src="images/work15.png" alt="">
-                                                    </div>
-                                                    <h4>唱片播放器</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/JepZze" target="_blank">
-                                                    <div>
-                                                        <img src="images/work16.png" alt="">
-                                                    </div>
-                                                    <h4>小朋友下樓梯</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="worktitle">Vue JS</h3>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/aMgaYg" target="_blank">
-                                                    <div>
-                                                        <img src="images/work17.png" alt="">
-                                                    </div>
-                                                    <h4>拉麵菜單</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/LvPBMd" target="_blank">
-                                                    <div>
-                                                        <img class="long" src="images/work18.png" alt="">
-                                                    </div>
-                                                    <h4>咖啡配方表</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/xebeyY" target="_blank">
-                                                    <div>
-                                                        <img class="long" src="images/work19.png" alt="">
-                                                    </div>
-                                                    <h4>記憶撲克</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/KqzxrY" target="_blank">
-                                                    <div>
-                                                        <img src="images/work12.png" alt="">
-                                                    </div>
-                                                    <h4>彈鋼琴</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://codepen.io/gn02527149/full/mwVrvG" target="_blank">
-                                                    <div>
-                                                        <img src="images/work20.png" alt="">
-                                                    </div>
-                                                    <h4>Hahow仿作</h4>
-                                                </a>
-                                                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="worktitle">React JS</h3>
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://f2-e-2020-pomodoro.vercel.app/" target="_blank">
-                                                    <div>
-                                                        <img src="images/work21.png" alt="">
-                                                    </div>
-                                                    <h4>蕃茄鐘</h4>
-                                                </a>
-                                                <h6><span>react js</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://f2-e-2020-freecell.vercel.app/" target="_blank">
-                                                    <div>
-                                                        <img src="images/work22.png" alt="">
-                                                    </div>
-                                                    <h4>接龍</h4>
-                                                </a>
-                                                <h6><span>react js</span></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="demo-item">
-                                                <a href="https://f2-e-2021-trip.vercel.app/" target="_blank">
-                                                    <div>
-                                                        <img src="images/work23.png" alt="">
-                                                    </div>
-                                                    <h4>台灣旅遊景點導覽</h4>
-                                                </a>
-                                                <h6><span>react js</span></h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div class="col-xs-12">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12">
-                                <div class="row" title="" style="display:block;" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11 item">
-                                        <h2><b>SKILL</b></h2>
-                                    </div>
-                                </div>
-                                <hr>
-                            </div>
-                            <div class="col-xs-12 col-sm-6">
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>HTML5 / PUG</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:90%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>JAVASCRIPT / JQUERY</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:80%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>AJAX</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:70%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>VUE JS</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:55%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>REACT JS</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:65%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6">
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>CSS / SASS</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:90%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>BOOTSTRAP</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:70%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>PIXI JS</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:55%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row" title="" data-original-title="">
-                                    <div class="col-xs-2 col-sm-1"></div>
-                                    <div class="col-xs-10 col-sm-11">
-                                        <h5>PHOTOSHOP</h5>
-                                        <div class="col-xs-9 col-sm-10 longBar">
-                                            <div class="bar" style="width:55%;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="wrapper">
+    <div class="module-cover parallax text-center" data-overlay="1" data-gradient="1">
+      <div class="container">
+        <div class="row"><div class="col-md-12"><h1 class="demo-heading"></h1></div></div>
+      </div>
     </div>
 
-    <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
+    <div class="module p-t-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 m-auto">
+            <div class="space" data-mY="-540px"></div>
+            <div class="macbook"></div>
+            <div class="space" data-mY="100px"></div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Scripts-->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.min.js"></script>
-    <script src="js/custom.min.js"></script>
-    <script src="js/typeit.js"></script>
-    <script src="js/index.js"></script>
+      <div class="moduleHeader">
+        <div class="info">
+          <a class="About"><li>ABOUT ME</li></a>
+          <a class="Experience"><li>EXPERIENCE</li></a>
+          <a class="Works"><li>MY WORKS</li></a>
+          <a class="Skill"><li>SKILLSET</li></a>
+        </div>
+      </div>
+
+      <div class="container section" style="max-width:1200px">
+
+        <!-- ABOUT -->
+        <section id="about" class="m-b-30">
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <h1><b>Ruby Wu</b></h1>
+              <h4>前端工程師｜7 年網頁開發經驗</h4>
+              <hr>
+              <p>
+                我畢業於德霖科技大學餐飲管理系，擅長跨領域溝通與協作。
+                因對網頁技術的熱情而轉入前端開發領域，至今累積近八年實務經驗，
+                熟悉從設計稿到上線的完整開發流程。
+              </p>
+              <p>
+                曾負責開發多類型專案，包括線上一對一教學平台、線上課程預約系統、
+                博弈開獎網站、企業形象網站與響應式活動頁面等，
+                具備將使用者需求轉化為流暢互動體驗的能力。
+              </p>
+              <p>
+                我重視程式架構的可維護性與使用者介面的友善度，
+                致力於以乾淨的程式與直覺的設計打造愉悅的使用體驗。
+                未來希望持續精進前端技術與跨團隊協作能力，
+                成為連結設計與使用者之間的橋樑。
+              </p>
+              <p>📩 <b>聯絡方式</b><br>
+                <a href="mailto:gn02527149@gmail.com">gn02527149@gmail.com</a>
+              </p>
+            </div>
+            <div class="col-xs-12 col-md-6 text-center">
+              <img class="photoMe img-responsive center-block"
+                   src="images/S__38133763.jpg" alt="Ruby Wu portrait">
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="m-b-30">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2><b>EXPERIENCE</b></h2>
+              <hr>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="m-b-20">
+                <h5><b>優玩科技有限公司</b>，2024/9 - 2025/10</h5>
+                <p>前端工程師</p>
+              </div>
+              <div class="m-b-20">
+                <h5><b>天能資訊有限公司</b>，2022/10 - 2024/9</h5>
+                <p>前端工程師</p>
+              </div>
+              <div class="m-b-20">
+                <h5><b>天旭國際科技有限公司</b>，2019/11 - 2022/10</h5>
+                <p>H5 工程師</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+              <div class="m-b-20">
+                <h5><b>絕勝國際股份有限公司</b>，2017/11 - 2019/4</h5>
+                <p>前端工程師</p>
+              </div>
+              <div class="m-b-20">
+                <h5><b>天絡股份有限公司</b>，2017/5 - 2017/11</h5>
+                <p>前端工程師</p>
+              </div>
+              <div class="m-b-20">
+                <h5><b>台灣大學資訊系統訓練班</b>，2016/1 - 2016/2</h5>
+                <p>30 小時學分班</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- WORKS -->
+        <section id="works" class="m-b-30">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2><b>WORKS</b></h2>
+              <hr>
+            </div>
+          </div>
+
+          <!-- JOBS -->
+          <div class="row">
+            <div class="col-xs-12"><h2 class="workTitle">JOBS</h2></div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="job/NYX/index.html" target="_blank">
+                  <img src="images/job01.png" alt="NYX形象頁">
+                  <h4>NYX形象頁</h4>
+                </a>
+                <h6><span>pug</span><span>sass</span><span>jquery</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="job/E-vipcc-0401/index.html" target="_blank">
+                  <img src="images/job03.png" alt="VIP.cc形象頁">
+                  <h4>VIP.cc形象頁</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="job/W-editweb-0719/index.html" target="_blank">
+                  <img src="images/job11.png" alt="永利官網首頁">
+                  <h4>永利官網首頁</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="job/S-0208com-0709/index.html" target="_blank">
+                  <img src="images/job09.png" alt="澳門銀河官網首頁">
+                  <h4>澳門銀河官網首頁</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="job/E-eventual-0524/index.html" target="_blank">
+                  <img src="images/job10.png" alt="絕勝公司形象頁">
+                  <h4>絕勝公司形象頁</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="job/0403-H-OfficialWebsite/index.html" target="_blank">
+                  <img src="images/job13.png" alt="海馬科技公司形象頁">
+                  <h4>海馬科技公司形象頁</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://drive.google.com/file/d/1_r-BzBZuxeBCdWc89ixZgPYZaYqbRps1/view?usp=sharing" target="_blank">
+                  <img src="images/job16.png" alt="美術清單工具">
+                  <h4>美術清單工具</h4>
+                </a>
+                <h6><span>electronjs</span><span>react</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://drive.google.com/file/d/1BT6KM7E9fgwipFS6rUx-UF_A4jveoiOD/view?usp=sharing" target="_blank">
+                  <img src="images/job17.png" alt="瓦力遊戲大廳">
+                  <h4>瓦力遊戲大廳</h4>
+                </a>
+                <h6><span>typescript</span><span>react</span><span>pixi</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://drive.google.com/file/d/1I0eYS81oyg4Gyuk67tBe5LhL6Md53CHx/view?usp=sharing" target="_blank">
+                  <img src="images/job18.jpg" alt="視訊百家樂">
+                  <h4>視訊百家樂</h4>
+                </a>
+                <h6><span>typescript</span><span>pixi</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://drive.google.com/file/d/1P1ZZNmn1ckk0Z4pQ-1FTNrAOWQdoqQFE/view?usp=sharing" target="_blank">
+                  <img src="images/job19.jpg" alt="通比牛牛">
+                  <h4>通比牛牛</h4>
+                </a>
+                <h6><span>typescript</span><span>pixi</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://drive.google.com/file/d/1ixGIL1GboWbKhLx5p9mRC0b8lU6GktKH/view?usp=drive_link" target="_blank">
+                  <img src="images/job20.png" alt="SoarFun">
+                  <h4>soarfun</h4>
+                </a>
+                <h6><span>typescript</span><span>react</span><span>rwd</span></h6>
+              </div>
+            </div>
+
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://drive.google.com/file/d/1-R3CTtcY9-yGMTkbRKQMN_cMatEbmFiT/view?usp=drive_link" target="_blank">
+                  <img src="images/job21.png" alt="通比牛牛">
+                  <h4>soarfun 後台</h4>
+                </a>
+                <h6><span>typescript</span><span>react</span><span>rwd</span></h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRACTICE / CANVAS / Vue / React -->
+          <div class="row">
+            <div class="col-xs-12"><h2 class="workTitle">PRACTICE</h2></div>
+
+            <div class="col-xs-12"><h3 class="worktitle">CSS Animation / JQuery</h3></div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/dOvOEw" target="_blank">
+                  <img src="images/work01.png" alt="">
+                  <h4>天氣盒子</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/MoxxWN" target="_blank">
+                  <img src="images/work02.png" alt="">
+                  <h4>IG拍照動畫</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/MGojdd" target="_blank">
+                  <img src="images/work03.png" alt="">
+                  <h4>地中海風格動畫</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/XYXzRx" target="_blank">
+                  <img class="long" src="images/work08.png" alt="">
+                  <h4>記憶格子</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
+              </div>
+            </div>
+
+            <div class="col-xs-12"><h3 class="worktitle">CANVAS</h3></div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/rKdpOz" target="_blank">
+                  <img class="long" src="images/work13.png" alt="">
+                  <h4>貪食蛇</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/LBeGej" target="_blank">
+                  <img class="long" src="images/work14.png" alt="">
+                  <h4>碼表</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/aQzVyj" target="_blank">
+                  <img src="images/work15.png" alt="">
+                  <h4>唱片播放器</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/JepZze" target="_blank">
+                  <img src="images/work16.png" alt="">
+                  <h4>小朋友下樓梯</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
+              </div>
+            </div>
+
+            <div class="col-xs-12"><h3 class="worktitle">Vue JS</h3></div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/aMgaYg" target="_blank">
+                  <img src="images/work17.png" alt="">
+                  <h4>拉麵菜單</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/LvPBMd" target="_blank">
+                  <img class="long" src="images/work18.png" alt="">
+                  <h4>咖啡配方表</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/xebeyY" target="_blank">
+                  <img class="long" src="images/work19.png" alt="">
+                  <h4>記憶撲克</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/KqzxrY" target="_blank">
+                  <img src="images/work12.png" alt="">
+                  <h4>彈鋼琴</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://codepen.io/gn02527149/full/mwVrvG" target="_blank">
+                  <img src="images/work20.png" alt="">
+                  <h4>Hahow仿作</h4>
+                </a>
+                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
+              </div>
+            </div>
+
+            <div class="col-xs-12"><h3 class="worktitle">React JS</h3></div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://f2-e-2020-pomodoro.vercel.app/" target="_blank">
+                  <img src="images/work21.png" alt="">
+                  <h4>蕃茄鐘</h4>
+                </a>
+                <h6><span>react js</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://f2-e-2020-freecell.vercel.app/" target="_blank">
+                  <img src="images/work22.png" alt="">
+                  <h4>接龍</h4>
+                </a>
+                <h6><span>react js</span></h6>
+              </div>
+            </div>
+            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
+              <div class="demo-item">
+                <a href="https://f2-e-2021-trip.vercel.app/" target="_blank">
+                  <img src="images/work23.png" alt="">
+                  <h4>台灣旅遊景點導覽</h4>
+                </a>
+                <h6><span>react js</span></h6>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SKILL -->
+        <section id="skill" class="m-b-30">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2><b>SKILL</b></h2>
+              <hr>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <h5>HTML5 / PUG</h5>
+              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+
+              <h5>JAVASCRIPT / JQUERY</h5>
+              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+
+              <h5>AJAX</h5>
+              <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+
+              <h5>VUE JS</h5>
+              <div class="progress"><div class="progress-bar" style="width:30%"></div></div>
+
+              <h5>REACT JS</h5>
+              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+              <h5>CSS / SASS</h5>
+              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+
+              <h5>BOOTSTRAP</h5>
+              <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
+
+              <h5>PIXI JS</h5>
+              <div class="progress"><div class="progress-bar" style="width:60%"></div></div>
+
+              <h5>PHOTOSHOP</h5>
+              <div class="progress"><div class="progress-bar" style="width:30%"></div></div>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- /container -->
+    </div><!-- /module -->
+  </div><!-- /wrapper -->
+
+  <!-- To top button -->
+  <a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.min.js"></script>
+  <script src="js/custom.min.js"></script>
+  <script src="js/typeit.js"></script>
+  <script src="js/index.js"></script>
 </body>
-
 </html>
