@@ -86,15 +86,14 @@ body {
   height: 0;
 }
 
-.moduleHeader a li {
-  list-style-type: none;
+.moduleHeader a {
   text-align: center;
   color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
 }
 
-.moduleHeader a:hover li {
+.moduleHeader a:hover {
   color: #ffff00;
 }
 
@@ -131,6 +130,17 @@ body {
 @media (max-width: 767px) {
   #about h1 { font-size: 28px; }
   #about h4 { font-size: 16px; }
+  #about {
+    display: block;
+  }
+  #about > div {
+    display: block;
+  }
+  .photoMe {
+    float: none;
+    margin: 20px auto 0;
+    max-width: 80%;
+  }
 }
 
 /* =========================
@@ -226,35 +236,28 @@ body {
   justify-content: flex-end;
 }
 
-.demo-item div {
-  width: 277px;
-  height: 277px;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  overflow: hidden;
-  border-radius: 20px;
+.demo-item {
+  max-width: 277px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* 作品卡片圖片等比縮放（去重合併） */
+.demo-item a {
+  color: #222;
+  display: block;
+}
+
 .demo-item img {
   width: 100%;
   height: auto;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* 長圖模式 */
-.demo-item div img {
-  width: 277px;
-  margin-bottom: 0;
-  transition: 0.5s;
-}
-.demo-item div img.long {
-  height: 277px;
-  width: auto;
-  margin-bottom: 0;
+.demo-item img.long {
+  width: 100%;
+  height: auto;
   transition: 0.5s;
 }
 
@@ -312,16 +315,20 @@ body {
   .module-cover.fullscreen {
     padding: 80px 0 270px;
   }
+  .module-cover .demo-heading {
+    font-size: 30px;
+    line-height: 1.15;
+  }
   .module-cover .demo-heading span { letter-spacing: -3px; }
-  .moduleHeader a li {
-    font-size: 12px;
+  .moduleHeader a {
+    font-size: 9px;
     letter-spacing: 0;
   }
   .moduleHeader a::after {
     height: 12px;
     top: 18px;
   }
-  .demo-item div { margin: 0 auto 20px; }
+  .demo-item { margin-bottom: 40px; }
   .row { margin: 0; }
   .col-md-12 { padding: 0; }
 }
