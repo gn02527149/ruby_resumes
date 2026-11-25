@@ -1,535 +1,682 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>Ruby Wu</title>
-
-  <!-- 字體 / Icon -->
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
-  <!-- ★ 加入 Bootstrap 3 CSS（放在自家 CSS 之前，避免被覆蓋） -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-  <!-- 你原本的樣式 -->
-  <link href="css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/typeit.css">
-  <link href="css/plugins.min.css" rel="stylesheet">
-  <link href="css/template.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ruby Wu 的前端作品集。收錄前端開發經歷、網站專案、互動練習與自創網頁遊戲。">
+  <meta name="theme-color" content="#faf5ed">
+  <title>Ruby Wu｜前端工程師作品集</title>
+  <link rel="preload" href="webfonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-  <!-- Preloader -->
-  <div class="page-loader">
-    <div class="page-loader-inner">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
-      </div>
+<body id="top">
+  <a class="skip-link" href="#main">跳至主要內容</a>
+  <header class="site-header">
+    <div class="layout header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">R.</span>
+        <span>Ruby Wu</span>
+      </a>
+      <nav class="site-nav" aria-label="主要導覽">
+        <a href="#works">作品集</a>
+        <a href="#experience">工作經歷</a>
+        <a href="#about">關於我</a>
+        <a href="#skill">技能</a>
+      </nav>
+      <a class="header-contact" href="mailto:gn02527149@gmail.com">聯絡我</a>
     </div>
-  </div>
+  </header>
 
-  <div class="wrapper">
-    <div class="module-cover parallax text-center" data-overlay="1" data-gradient="1">
-      <div class="container">
-        <div class="row"><div class="col-md-12"><h1 class="demo-heading"></h1></div></div>
-      </div>
-    </div>
-
-    <div class="module p-t-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 m-auto">
-            <div class="space" data-mY="-540px"></div>
-            <div class="macbook"></div>
-            <div class="space" data-mY="100px"></div>
-          </div>
+  <main id="main" tabindex="-1">
+    <section class="hero layout" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="hero-role">FRONT-END DEVELOPER</p>
+        <h1 id="intro-title">Ruby Wu<span aria-hidden="true">.</span></h1>
+        <p class="hero-lead">從設計稿到上線，打造好用的網頁</p>
+        <p class="hero-description">近 8 年前端開發經驗，專注於直覺的互動介面與易於維護的程式碼。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#works">瀏覽作品</a>
+          <a class="button button-outline" href="#experience">查看經歷</a>
         </div>
       </div>
 
-      <div class="moduleHeader">
-        <div class="info">
-          <a class="About">ABOUT ME</a>
-          <a class="Experience">EXPERIENCE</a>
-          <a class="Works">MY WORKS</a>
-          <a class="Skill">SKILLSET</a>
+      <div class="portrait-panel">
+        <div class="portrait-frame">
+          <div class="portrait-top" aria-hidden="true">
+            <span class="portrait-controls"><i></i><i></i><i></i></span>
+            <span class="portrait-address"></span>
+          </div>
+          <img src="images/portfolio/ruby-wu.webp" alt="Ruby Wu 的個人照片" width="880" height="880" fetchpriority="high">
         </div>
+        <span class="portrait-code" aria-hidden="true">&lt;/&gt;</span>
+      </div>
+    </section>
+
+    <div class="tech-strip layout">
+      <p>常用技術</p>
+      <ul>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Vue</li>
+        <li>Canvas</li>
+      </ul>
+    </div>
+
+    <section class="layout content-section works" id="works" aria-labelledby="works-title">
+      <div class="section-heading">
+        <h2 id="works-title">作品集</h2>
       </div>
 
-      <div class="container section" style="max-width:1200px">
-
-        <!-- ABOUT -->
-        <section id="about" class="m-b-30">
-          <div class="row">
-            <div class="col-xs-12 col-md-6">
-              <h1><b>Ruby Wu</b></h1>
-              <h4>前端工程師｜8 年網頁開發經驗</h4>
-              <hr>
-              <p>
-                我畢業於德霖科技大學餐飲管理系，擅長跨領域溝通與協作。
-                因對網頁技術的熱情而轉入前端開發領域，至今累積近八年實務經驗，
-                熟悉從設計稿到上線的完整開發流程。
-              </p>
-              <p>
-                曾負責開發多類型專案，包括線上一對一教學平台、線上課程預約系統、
-                博弈開獎網站、企業形象網站與響應式活動頁面等，
-                具備將使用者需求轉化為流暢互動體驗的能力。
-              </p>
-              <p>
-                我重視程式架構的可維護性與使用者介面的友善度，
-                致力於以乾淨的程式與直覺的設計打造愉悅的使用體驗。
-                未來希望持續精進前端技術與跨團隊協作能力，
-                成為連結設計與使用者之間的橋樑。
-              </p>
-              <p>📩 <b>聯絡方式</b><br>
-                <a href="mailto:gn02527149@gmail.com">gn02527149@gmail.com</a>
-              </p>
-            </div>
-            <div class="col-xs-12 col-md-6 text-center">
-              <img class="photoMe img-responsive center-block"
-                   src="images/S__38133763.jpg" alt="Ruby Wu portrait">
-            </div>
+      <article class="featured-project" aria-labelledby="game-title">
+        <div class="featured-copy">
+          <p class="feature-kicker">個人專案</p>
+          <h3 id="game-title">自創網頁遊戲</h3>
+          <p class="feature-description">番外手作部，收錄我製作的瀏覽器小遊戲。</p>
+          <ul class="tags feature-tags" aria-label="使用工具">
+            <li>AI</li>
+            <li>Canvas</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <a class="button button-feature" href="https://fanwai-games.rgame.workers.dev/#support" target="_blank" rel="noopener" aria-label="造訪番外手作部（在新分頁開啟）">造訪番外手作部</a>
+        </div>
+        <div class="featured-visual" aria-hidden="true">
+          <div class="game-window">
+            <div class="game-window-bar"><span></span><span></span><span></span></div>
+            <img src="images/portfolio/fanwai-games.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
           </div>
-        </section>
+        </div>
+      </article>
 
-        <!-- EXPERIENCE -->
-        <section id="experience" class="m-b-30">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2><b>EXPERIENCE</b></h2>
-              <hr>
-            </div>
+      <div class="works-group">
+        <h3 class="group-heading">工作專案</h3>
+        <div class="portfolio-grid">
+          <article class="project-card">
+            <a class="project-link" href="https://fruitshop-rhtn.onrender.com/" target="_blank" rel="noopener" aria-labelledby="project-job24">
+              <div class="project-preview">
+                <img src="images/portfolio/job24.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
+              </div>
+              <div class="project-copy">
+                <h4 id="project-job24">鮮果市集前台</h4>
+                <ul class="tags" aria-label="使用技術">
+                  <li>TypeScript</li>
+                  <li>Vue</li>
+                  <li>RWD</li>
+                  <li>AI</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-link" href="https://fruitshop-rhtn.onrender.com/admin" target="_blank" rel="noopener" aria-labelledby="project-job25">
+              <div class="project-preview">
+                <img src="images/portfolio/job25.webp" alt="" width="960" height="546" loading="lazy" decoding="async">
+              </div>
+              <div class="project-copy">
+                <h4 id="project-job25">鮮果市集後台</h4>
+                <ul class="tags" aria-label="使用技術">
+                  <li>TypeScript</li>
+                  <li>Vue</li>
+                  <li>RWD</li>
+                  <li>AI</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-link" href="https://drive.google.com/file/d/1T_2F2P6eSJ8yipdwmtZPSdkkJqbjoxJu/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job22">
+              <div class="project-preview">
+                <img src="images/portfolio/job22.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
+              </div>
+              <div class="project-copy">
+                <h4 id="project-job22">創宇前台</h4>
+                <ul class="tags" aria-label="使用技術">
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>RWD</li>
+                  <li>AI</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-link" href="https://drive.google.com/file/d/1FaBEhrqCRX5tRBmK0ioyWh2cw81M9nof/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job23">
+              <div class="project-preview">
+                <img src="images/portfolio/job23.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
+              </div>
+              <div class="project-copy">
+                <h4 id="project-job23">創宇後台</h4>
+                <ul class="tags" aria-label="使用技術">
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>RWD</li>
+                  <li>AI</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-link" href="https://drive.google.com/file/d/1ixGIL1GboWbKhLx5p9mRC0b8lU6GktKH/view?usp=drive_link" target="_blank" rel="noopener" aria-labelledby="project-job20">
+              <div class="project-preview">
+                <img src="images/portfolio/job20.webp" alt="" width="960" height="539" loading="lazy" decoding="async">
+              </div>
+              <div class="project-copy">
+                <h4 id="project-job20">SoarFun</h4>
+                <ul class="tags" aria-label="使用技術">
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>RWD</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+          <article class="project-card">
+            <a class="project-link" href="https://drive.google.com/file/d/1-R3CTtcY9-yGMTkbRKQMN_cMatEbmFiT/view?usp=drive_link" target="_blank" rel="noopener" aria-labelledby="project-job21">
+              <div class="project-preview">
+                <img src="images/portfolio/job21.webp" alt="" width="960" height="539" loading="lazy" decoding="async">
+              </div>
+              <div class="project-copy">
+                <h4 id="project-job21">SoarFun 後台</h4>
+                <ul class="tags" aria-label="使用技術">
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>RWD</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <details class="project-group more-projects">
+          <summary><span>更多工作專案</span><span class="group-count">10 件作品</span></summary>
+          <div class="portfolio-grid">
+            <article class="project-card">
+              <a class="project-link" href="job/NYX/index.html" target="_blank" rel="noopener" aria-labelledby="project-job01">
+                <div class="project-preview">
+                  <img src="images/portfolio/job01.webp" alt="" width="878" height="720" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job01">NYX 形象頁</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Pug</li>
+                    <li>Sass</li>
+                    <li>jQuery</li>
+                    <li>RWD</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="job/E-vipcc-0401/index.html" target="_blank" rel="noopener" aria-labelledby="project-job03">
+                <div class="project-preview">
+                  <img src="images/portfolio/job03.webp" alt="" width="960" height="681" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job03">VIP.cc 形象頁</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>jQuery</li>
+                    <li>RWD</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="job/W-editweb-0719/index.html" target="_blank" rel="noopener" aria-labelledby="project-job11">
+                <div class="project-preview">
+                  <img src="images/portfolio/job11.webp" alt="" width="811" height="720" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job11">永利官網首頁</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>jQuery</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="job/S-0208com-0709/index.html" target="_blank" rel="noopener" aria-labelledby="project-job09">
+                <div class="project-preview">
+                  <img src="images/portfolio/job09.webp" alt="" width="885" height="720" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job09">澳門銀河官網首頁</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>jQuery</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="job/E-eventual-0524/index.html" target="_blank" rel="noopener" aria-labelledby="project-job10">
+                <div class="project-preview">
+                  <img src="images/portfolio/job10.webp" alt="" width="960" height="662" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job10">絕勝公司形象頁</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>jQuery</li>
+                    <li>RWD</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="job/0403-H-OfficialWebsite/index.html" target="_blank" rel="noopener" aria-labelledby="project-job13">
+                <div class="project-preview">
+                  <img src="images/portfolio/job13.webp" alt="" width="960" height="525" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job13">海馬科技公司形象頁</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>jQuery</li>
+                    <li>RWD</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://drive.google.com/file/d/1_r-BzBZuxeBCdWc89ixZgPYZaYqbRps1/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job16">
+                <div class="project-preview">
+                  <img src="images/portfolio/job16.webp" alt="" width="960" height="563" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job16">美術清單工具</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Electron</li>
+                    <li>React</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://drive.google.com/file/d/1BT6KM7E9fgwipFS6rUx-UF_A4jveoiOD/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job17">
+                <div class="project-preview">
+                  <img src="images/portfolio/job17.webp" alt="" width="960" height="676" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job17">瓦力遊戲大廳</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>PixiJS</li>
+                    <li>RWD</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://drive.google.com/file/d/1I0eYS81oyg4Gyuk67tBe5LhL6Md53CHx/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job18">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/job18.webp" alt="" width="960" height="411" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job18">視訊百家樂</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>TypeScript</li>
+                    <li>PixiJS</li>
+                    <li>RWD</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://drive.google.com/file/d/1P1ZZNmn1ckk0Z4pQ-1FTNrAOWQdoqQFE/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job19">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/job19.webp" alt="" width="960" height="411" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-job19">通比牛牛</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>TypeScript</li>
+                    <li>PixiJS</li>
+                    <li>RWD</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
           </div>
+        </details>
+      </div>
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="m-b-20">
-                <h5><b>工樂行動科技股份有限公司</b>，2025/12 - 2026/8</h5>
-                <p>資深前端工程師</p>
-              </div>
-              <div class="m-b-20">
-                <h5><b>天能資訊有限公司</b>，2022/10 - 2025/10</h5>
-                <p>前端工程師</p>
-              </div>
-              <div class="m-b-20">
-                <h5><b>天旭國際科技有限公司</b>，2019/11 - 2022/10</h5>
-                <p>H5 工程師</p>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <div class="m-b-20">
-                <h5><b>絕勝國際股份有限公司</b>，2017/11 - 2019/4</h5>
-                <p>前端工程師</p>
-              </div>
-              <div class="m-b-20">
-                <h5><b>天絡股份有限公司</b>，2017/5 - 2017/11</h5>
-                <p>前端工程師</p>
-              </div>
-              <div class="m-b-20">
-                <h5><b>台灣大學資訊系統訓練班</b>，2016/1 - 2016/2</h5>
-                <p>30 小時學分班</p>
-              </div>
-            </div>
+      <div class="works-group">
+        <h3 class="group-heading">練習作品</h3>
+        <details class="project-group">
+          <summary><span>CSS 動畫與 jQuery</span><span class="group-count">4 件作品</span></summary>
+          <div class="portfolio-grid">
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/dOvOEw" target="_blank" rel="noopener" aria-labelledby="project-work01">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work01.webp" alt="" width="426" height="454" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work01">天氣盒子</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/MoxxWN" target="_blank" rel="noopener" aria-labelledby="project-work02">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work02.webp" alt="" width="420" height="433" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work02">IG 拍照動畫</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/MGojdd" target="_blank" rel="noopener" aria-labelledby="project-work03">
+                <div class="project-preview">
+                  <img src="images/portfolio/work03.webp" alt="" width="704" height="501" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work03">地中海風格動畫</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/XYXzRx" target="_blank" rel="noopener" aria-labelledby="project-work08">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work08.webp" alt="" width="468" height="564" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work08">記憶格子</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>jQuery</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
           </div>
-        </section>
-
-        <!-- WORKS -->
-        <section id="works" class="m-b-30">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2><b>WORKS</b></h2>
-              <hr>
-            </div>
+        </details>
+        <details class="project-group">
+          <summary><span>Canvas</span><span class="group-count">4 件作品</span></summary>
+          <div class="portfolio-grid">
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/rKdpOz" target="_blank" rel="noopener" aria-labelledby="project-work13">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work13.webp" alt="" width="583" height="581" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work13">貪食蛇</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Canvas</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/LBeGej" target="_blank" rel="noopener" aria-labelledby="project-work14">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work14.webp" alt="" width="579" height="720" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work14">碼表</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Canvas</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/aQzVyj" target="_blank" rel="noopener" aria-labelledby="project-work15">
+                <div class="project-preview">
+                  <img src="images/portfolio/work15.webp" alt="" width="960" height="718" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work15">唱片播放器</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Canvas</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/JepZze" target="_blank" rel="noopener" aria-labelledby="project-work16">
+                <div class="project-preview">
+                  <img src="images/portfolio/work16.webp" alt="" width="960" height="679" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work16">小朋友下樓梯</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Canvas</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
           </div>
-
-          <!-- JOBS -->
-          <div class="row">
-            <div class="col-xs-12"><h2 class="workTitle">JOBS</h2></div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="job/NYX/index.html" target="_blank">
-                  <img src="images/job01.png" alt="NYX形象頁">
-                  <h4>NYX形象頁</h4>
-                </a>
-                <h6><span>pug</span><span>sass</span><span>jquery</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="job/E-vipcc-0401/index.html" target="_blank">
-                  <img src="images/job03.png" alt="VIP.cc形象頁">
-                  <h4>VIP.cc形象頁</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="job/W-editweb-0719/index.html" target="_blank">
-                  <img src="images/job11.png" alt="永利官網首頁">
-                  <h4>永利官網首頁</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="job/S-0208com-0709/index.html" target="_blank">
-                  <img src="images/job09.png" alt="澳門銀河官網首頁">
-                  <h4>澳門銀河官網首頁</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="job/E-eventual-0524/index.html" target="_blank">
-                  <img src="images/job10.png" alt="絕勝公司形象頁">
-                  <h4>絕勝公司形象頁</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="job/0403-H-OfficialWebsite/index.html" target="_blank">
-                  <img src="images/job13.png" alt="海馬科技公司形象頁">
-                  <h4>海馬科技公司形象頁</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>jquery</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1_r-BzBZuxeBCdWc89ixZgPYZaYqbRps1/view?usp=sharing" target="_blank">
-                  <img src="images/job16.png" alt="美術清單工具">
-                  <h4>美術清單工具</h4>
-                </a>
-                <h6><span>electronjs</span><span>react</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1BT6KM7E9fgwipFS6rUx-UF_A4jveoiOD/view?usp=sharing" target="_blank">
-                  <img src="images/job17.png" alt="瓦力遊戲大廳">
-                  <h4>瓦力遊戲大廳</h4>
-                </a>
-                <h6><span>typescript</span><span>react</span><span>pixi</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1I0eYS81oyg4Gyuk67tBe5LhL6Md53CHx/view?usp=sharing" target="_blank">
-                  <img src="images/job18.jpg" alt="視訊百家樂">
-                  <h4>視訊百家樂</h4>
-                </a>
-                <h6><span>typescript</span><span>pixi</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1P1ZZNmn1ckk0Z4pQ-1FTNrAOWQdoqQFE/view?usp=sharing" target="_blank">
-                  <img src="images/job19.jpg" alt="通比牛牛">
-                  <h4>通比牛牛</h4>
-                </a>
-                <h6><span>typescript</span><span>pixi</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1ixGIL1GboWbKhLx5p9mRC0b8lU6GktKH/view?usp=drive_link" target="_blank">
-                  <img src="images/job20.png" alt="SoarFun">
-                  <h4>soarfun</h4>
-                </a>
-                <h6><span>typescript</span><span>react</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1-R3CTtcY9-yGMTkbRKQMN_cMatEbmFiT/view?usp=drive_link" target="_blank">
-                  <img src="images/job21.png" alt="通比牛牛">
-                  <h4>soarfun 後台</h4>
-                </a>
-                <h6><span>typescript</span><span>react</span><span>rwd</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1T_2F2P6eSJ8yipdwmtZPSdkkJqbjoxJu/view?usp=sharing" target="_blank">
-                  <img src="images/job22.png" alt="創宇前台">
-                  <h4>創宇前台</h4>
-                </a>
-                <h6><span>typescript</span><span>react</span><span>rwd</span><span>ai</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://drive.google.com/file/d/1FaBEhrqCRX5tRBmK0ioyWh2cw81M9nof/view?usp=sharing" target="_blank">
-                  <img src="images/job23.png" alt="創宇後台">
-                  <h4>創宇後台</h4>
-                </a>
-                <h6><span>typescript</span><span>react</span><span>rwd</span><span>ai</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://fruitshop-rhtn.onrender.com/" target="_blank">
-                  <img src="images/job24.png" alt="鮮果市集前台">
-                  <h4>鮮果市集前台</h4>
-                </a>
-                <h6><span>typescript</span><span>vue</span><span>rwd</span><span>ai</span></h6>
-              </div>
-            </div>
-
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://fruitshop-rhtn.onrender.com/admin" target="_blank">
-                  <img src="images/job25.png" alt="鮮果市集後台">
-                  <h4>鮮果市集後台</h4>
-                </a>
-                <h6><span>typescript</span><span>vue</span><span>rwd</span><span>ai</span></h6>
-              </div>
-            </div>
+        </details>
+        <details class="project-group">
+          <summary><span>Vue</span><span class="group-count">5 件作品</span></summary>
+          <div class="portfolio-grid">
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/aMgaYg" target="_blank" rel="noopener" aria-labelledby="project-work17">
+                <div class="project-preview">
+                  <img src="images/portfolio/work17.webp" alt="" width="960" height="625" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work17">拉麵菜單</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Vue</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/LvPBMd" target="_blank" rel="noopener" aria-labelledby="project-work18">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work18.webp" alt="" width="646" height="585" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work18">咖啡配方表</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Vue</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/xebeyY" target="_blank" rel="noopener" aria-labelledby="project-work19">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work19.webp" alt="" width="458" height="463" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work19">記憶撲克</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Vue</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/KqzxrY" target="_blank" rel="noopener" aria-labelledby="project-work12">
+                <div class="project-preview project-preview--contain">
+                  <img src="images/portfolio/work12.webp" alt="" width="960" height="447" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work12">彈鋼琴</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Vue</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://codepen.io/gn02527149/full/mwVrvG" target="_blank" rel="noopener" aria-labelledby="project-work20">
+                <div class="project-preview">
+                  <img src="images/portfolio/work20.webp" alt="" width="960" height="483" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work20">Hahow 仿作</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>Sass</li>
+                    <li>Pug</li>
+                    <li>Vue</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
           </div>
-
-          <!-- PRACTICE / CANVAS / Vue / React -->
-          <div class="row">
-            <div class="col-xs-12"><h2 class="workTitle">PRACTICE</h2></div>
-
-            <div class="col-xs-12"><h3 class="worktitle">CSS Animation / JQuery</h3></div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/dOvOEw" target="_blank">
-                  <img src="images/work01.png" alt="">
-                  <h4>天氣盒子</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/MoxxWN" target="_blank">
-                  <img src="images/work02.png" alt="">
-                  <h4>IG拍照動畫</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/MGojdd" target="_blank">
-                  <img src="images/work03.png" alt="">
-                  <h4>地中海風格動畫</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/XYXzRx" target="_blank">
-                  <img class="long" src="images/work08.png" alt="">
-                  <h4>記憶格子</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>jquery</span></h6>
-              </div>
-            </div>
-
-            <div class="col-xs-12"><h3 class="worktitle">CANVAS</h3></div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/rKdpOz" target="_blank">
-                  <img class="long" src="images/work13.png" alt="">
-                  <h4>貪食蛇</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/LBeGej" target="_blank">
-                  <img class="long" src="images/work14.png" alt="">
-                  <h4>碼表</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/aQzVyj" target="_blank">
-                  <img src="images/work15.png" alt="">
-                  <h4>唱片播放器</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/JepZze" target="_blank">
-                  <img src="images/work16.png" alt="">
-                  <h4>小朋友下樓梯</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>canvas</span></h6>
-              </div>
-            </div>
-
-            <div class="col-xs-12"><h3 class="worktitle">Vue JS</h3></div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/aMgaYg" target="_blank">
-                  <img src="images/work17.png" alt="">
-                  <h4>拉麵菜單</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/LvPBMd" target="_blank">
-                  <img class="long" src="images/work18.png" alt="">
-                  <h4>咖啡配方表</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/xebeyY" target="_blank">
-                  <img class="long" src="images/work19.png" alt="">
-                  <h4>記憶撲克</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/KqzxrY" target="_blank">
-                  <img src="images/work12.png" alt="">
-                  <h4>彈鋼琴</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://codepen.io/gn02527149/full/mwVrvG" target="_blank">
-                  <img src="images/work20.png" alt="">
-                  <h4>Hahow仿作</h4>
-                </a>
-                <h6><span>sass</span><span>pug</span><span>vue js</span></h6>
-              </div>
-            </div>
-
-            <div class="col-xs-12"><h3 class="worktitle">React JS</h3></div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://f2-e-2020-pomodoro.vercel.app/" target="_blank">
-                  <img src="images/work21.png" alt="">
-                  <h4>蕃茄鐘</h4>
-                </a>
-                <h6><span>react js</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://f2-e-2020-freecell.vercel.app/" target="_blank">
-                  <img src="images/work22.png" alt="">
-                  <h4>接龍</h4>
-                </a>
-                <h6><span>react js</span></h6>
-              </div>
-            </div>
-            <div class="itemBox col-xs-12 col-sm-6 col-md-3">
-              <div class="demo-item">
-                <a href="https://f2-e-2021-trip.vercel.app/" target="_blank">
-                  <img src="images/work23.png" alt="">
-                  <h4>台灣旅遊景點導覽</h4>
-                </a>
-                <h6><span>react js</span></h6>
-              </div>
-            </div>
+        </details>
+        <details class="project-group">
+          <summary><span>React</span><span class="group-count">3 件作品</span></summary>
+          <div class="portfolio-grid">
+            <article class="project-card">
+              <a class="project-link" href="https://f2-e-2020-pomodoro.vercel.app/" target="_blank" rel="noopener" aria-labelledby="project-work21">
+                <div class="project-preview">
+                  <img src="images/portfolio/work21.webp" alt="" width="960" height="610" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work21">蕃茄鐘</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>React</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://f2-e-2020-freecell.vercel.app/" target="_blank" rel="noopener" aria-labelledby="project-work22">
+                <div class="project-preview">
+                  <img src="images/portfolio/work22.webp" alt="" width="960" height="513" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work22">接龍</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>React</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
+            <article class="project-card">
+              <a class="project-link" href="https://f2-e-2021-trip.vercel.app/" target="_blank" rel="noopener" aria-labelledby="project-work23">
+                <div class="project-preview">
+                  <img src="images/portfolio/work23.webp" alt="" width="960" height="477" loading="lazy" decoding="async">
+                </div>
+                <div class="project-copy">
+                  <h4 id="project-work23">台灣旅遊景點導覽</h4>
+                  <ul class="tags" aria-label="使用技術">
+                    <li>React</li>
+                  </ul>
+                </div>
+              </a>
+            </article>
           </div>
-        </section>
+        </details>
+      </div>
+    </section>
 
-        <!-- SKILL -->
-        <section id="skill" class="m-b-30">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2><b>SKILL</b></h2>
-              <hr>
-            </div>
-          </div>
+    <section class="experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="layout content-section experience-layout">
+        <div class="section-heading">
+          <h2 id="experience-title">工作經歷</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <p class="timeline-date"><time datetime="2025-12">2025.12</time> – <time datetime="2026-08">2026.08</time></p>
+            <div><h3>工樂行動科技股份有限公司</h3><p>資深前端工程師</p></div>
+          </li>
+          <li>
+            <p class="timeline-date"><time datetime="2022-10">2022.10</time> – <time datetime="2025-10">2025.10</time></p>
+            <div><h3>天能資訊有限公司</h3><p>前端工程師</p></div>
+          </li>
+          <li>
+            <p class="timeline-date"><time datetime="2019-11">2019.11</time> – <time datetime="2022-10">2022.10</time></p>
+            <div><h3>天旭國際科技有限公司</h3><p>H5 工程師</p></div>
+          </li>
+          <li>
+            <p class="timeline-date"><time datetime="2017-11">2017.11</time> – <time datetime="2019-04">2019.04</time></p>
+            <div><h3>絕勝國際股份有限公司</h3><p>前端工程師</p></div>
+          </li>
+          <li>
+            <p class="timeline-date"><time datetime="2017-05">2017.05</time> – <time datetime="2017-11">2017.11</time></p>
+            <div><h3>天絡股份有限公司</h3><p>前端工程師</p></div>
+          </li>
+          <li>
+            <p class="timeline-date"><time datetime="2016-01">2016.01</time> – <time datetime="2016-02">2016.02</time></p>
+            <div><h3>台灣大學資訊系統訓練班</h3><p>30 小時學分班</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <h5>HTML5 / PUG</h5>
-              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+    <div class="layout content-section profile-layout">
+      <section id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <h2 id="about-title">關於我</h2>
+        </div>
+        <div class="about-copy">
+          <p>我畢業於德霖科技大學餐飲管理系，因為喜歡網頁技術而轉入前端開發，迄今累積近 8 年實務經驗。我擅長跨領域溝通與協作，熟悉從設計稿到上線的完整開發流程。</p>
+          <p>曾參與線上一對一教學平台、線上課程預約系統、博弈開獎網站、企業形象網站和響應式活動頁等專案，把使用者需求轉化為直覺的互動體驗。</p>
+          <p>我重視程式架構的可維護性與介面的易用性，希望持續精進前端技術與團隊協作，讓設計更貼近使用者的需求。</p>
+        </div>
+      </section>
 
-              <h5>JAVASCRIPT / JQUERY</h5>
-              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+      <section id="skill" aria-labelledby="skill-title">
+        <div class="section-heading">
+          <h2 id="skill-title">技能</h2>
+        </div>
+        <ul class="skills">
+          <li><label for="skill-html">HTML5 / Pug</label><meter id="skill-html" min="0" max="100" value="100">100%</meter></li>
+          <li><label for="skill-css">CSS / Sass</label><meter id="skill-css" min="0" max="100" value="100">100%</meter></li>
+          <li><label for="skill-js">JavaScript / jQuery</label><meter id="skill-js" min="0" max="100" value="100">100%</meter></li>
+          <li><label for="skill-react">React</label><meter id="skill-react" min="0" max="100" value="100">100%</meter></li>
+          <li><label for="skill-ajax">AJAX</label><meter id="skill-ajax" min="0" max="100" value="70">70%</meter></li>
+          <li><label for="skill-bootstrap">Bootstrap</label><meter id="skill-bootstrap" min="0" max="100" value="70">70%</meter></li>
+          <li><label for="skill-pixi">PixiJS</label><meter id="skill-pixi" min="0" max="100" value="60">60%</meter></li>
+          <li><label for="skill-vue">Vue</label><meter id="skill-vue" min="0" max="100" value="30">30%</meter></li>
+          <li><label for="skill-photoshop">Photoshop</label><meter id="skill-photoshop" min="0" max="100" value="30">30%</meter></li>
+        </ul>
+      </section>
+    </div>
+  </main>
 
-              <h5>AJAX</h5>
-              <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
-
-              <h5>VUE JS</h5>
-              <div class="progress"><div class="progress-bar" style="width:30%"></div></div>
-
-              <h5>REACT JS</h5>
-              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6">
-              <h5>CSS / SASS</h5>
-              <div class="progress"><div class="progress-bar" style="width:100%"></div></div>
-
-              <h5>BOOTSTRAP</h5>
-              <div class="progress"><div class="progress-bar" style="width:70%"></div></div>
-
-              <h5>PIXI JS</h5>
-              <div class="progress"><div class="progress-bar" style="width:60%"></div></div>
-
-              <h5>PHOTOSHOP</h5>
-              <div class="progress"><div class="progress-bar" style="width:30%"></div></div>
-            </div>
-          </div>
-        </section>
-
-      </div><!-- /container -->
-    </div><!-- /module -->
-  </div><!-- /wrapper -->
-
-  <!-- To top button -->
-  <a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
-
-  <!-- Scripts -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/plugins.min.js"></script>
-  <script src="js/custom.min.js"></script>
-  <script src="js/typeit.js"></script>
-  <script src="js/index.js"></script>
+  <footer class="site-footer">
+    <div class="layout footer-inner">
+      <div>
+        <p class="footer-name">Ruby Wu</p>
+        <a class="footer-email" href="mailto:gn02527149@gmail.com">gn02527149@gmail.com</a>
+      </div>
+      <a class="footer-top" href="#top">回到頂部</a>
+    </div>
+  </footer>
 </body>
 </html>
