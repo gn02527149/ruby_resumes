@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Ruby Wu 的前端作品集。收錄前端開發經歷、網站專案、互動練習與自創網頁遊戲。">
-  <meta name="theme-color" content="#faf5ed">
+  <meta name="theme-color" content="#1c1411">
   <title>Ruby Wu｜前端工程師作品集</title>
   <link rel="preload" href="webfonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
@@ -28,43 +28,43 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="hero layout" aria-labelledby="intro-title">
-      <div class="hero-copy">
-        <p class="hero-role">FRONT-END DEVELOPER</p>
-        <h1 id="intro-title">Ruby Wu<span aria-hidden="true">.</span></h1>
-        <p class="hero-lead">從設計稿到上線，打造好用的網頁</p>
-        <p class="hero-description">近 8 年前端開發經驗，專注於直覺的互動介面與易於維護的程式碼。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#works">瀏覽作品</a>
-          <a class="button button-outline" href="#experience">查看經歷</a>
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="hero-inner layout">
+        <div class="hero-copy">
+          <p class="hero-role">FRONT-END DEVELOPER</p>
+          <h1 id="intro-title">Ruby Wu<span aria-hidden="true">.</span></h1>
+          <p class="hero-lead">從設計稿到上線，打造好用的網頁</p>
+          <p class="hero-description">近 8 年前端開發經驗，專注於直覺的互動介面與易於維護的程式碼。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#works">瀏覽作品</a>
+            <a class="button button-outline" href="#experience">查看經歷</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="images/portfolio/amber-circuit.webp"
+               srcset="images/portfolio/amber-circuit-small.webp 720w, images/portfolio/amber-circuit.webp 1440w"
+               sizes="(max-width: 720px) 90vw, 55vw"
+               alt="" width="1440" height="1080" fetchpriority="high" decoding="async">
         </div>
       </div>
-
-      <div class="portrait-panel">
-        <div class="portrait-frame">
-          <div class="portrait-top" aria-hidden="true">
-            <span class="portrait-controls"><i></i><i></i><i></i></span>
-            <span class="portrait-address"></span>
-          </div>
-          <img src="images/portfolio/ruby-wu.webp" alt="Ruby Wu 的個人照片" width="880" height="880" fetchpriority="high">
-        </div>
-        <span class="portrait-code" aria-hidden="true">&lt;/&gt;</span>
+      <div class="tech-strip layout">
+        <p>常用技術</p>
+        <ul>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Vue</li>
+          <li>Canvas</li>
+        </ul>
       </div>
     </section>
-
-    <div class="tech-strip layout">
-      <p>常用技術</p>
-      <ul>
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>Vue</li>
-        <li>Canvas</li>
-      </ul>
-    </div>
 
     <section class="layout content-section works" id="works" aria-labelledby="works-title">
       <div class="section-heading">
         <h2 id="works-title">作品集</h2>
+        <nav class="works-nav" aria-label="作品分類">
+          <a href="#work-projects">工作專案</a>
+          <a href="#practice-projects">練習作品</a>
+        </nav>
       </div>
 
       <article class="featured-project" aria-labelledby="game-title">
@@ -81,109 +81,97 @@
           <a class="button button-feature" href="https://fanwai-games.rgame.workers.dev/#support" target="_blank" rel="noopener" aria-label="造訪番外手作部（在新分頁開啟）">造訪番外手作部</a>
         </div>
         <div class="featured-visual" aria-hidden="true">
-          <div class="game-window">
-            <div class="game-window-bar"><span></span><span></span><span></span></div>
-            <img src="images/portfolio/fanwai-games.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
-          </div>
+          <img class="game-cover game-cover--doremi" src="images/portfolio/fanwai-doremi.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+          <img class="game-cover game-cover--sakura" src="images/portfolio/fanwai-sakura.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
+          <img class="game-emblem" src="images/portfolio/fanwai-games.webp" alt="" width="512" height="512" loading="lazy" decoding="async">
         </div>
       </article>
 
-      <div class="works-group">
+      <div class="works-group" id="work-projects">
         <h3 class="group-heading">工作專案</h3>
-        <div class="portfolio-grid">
-          <article class="project-card">
-            <a class="project-link" href="https://fruitshop-rhtn.onrender.com/" target="_blank" rel="noopener" aria-labelledby="project-job24">
-              <div class="project-preview">
-                <img src="images/portfolio/job24.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
+        <div class="recent-projects">
+          <article class="case-study case-study--lead" aria-labelledby="case-fruitshop">
+            <header class="case-copy">
+              <p class="case-role">接案 · 全端開發</p>
+              <h4 id="case-fruitshop">鮮果市集</h4>
+              <p class="case-description">全權負責整站開發，完成前台網站與後台管理系統。</p>
+              <ul class="tags" aria-label="使用技術">
+                <li>TypeScript</li>
+                <li>Vue</li>
+                <li>RWD</li>
+                <li>AI</li>
+              </ul>
+            </header>
+            <div class="case-demos">
+              <a class="project-link" href="https://fruitshop-rhtn.onrender.com/" target="_blank" rel="noopener" aria-label="查看前台（鮮果市集，在新分頁開啟）">
+                <div class="project-preview">
+                  <img src="images/portfolio/job24.webp" alt="" width="1200" height="607" loading="lazy" decoding="async">
+                </div>
+                <span class="case-demo-label" id="project-job24">查看前台</span>
+              </a>
+              <div>
+                <a class="project-link" href="https://fruitshop-rhtn.onrender.com/admin" target="_blank" rel="noopener" aria-label="查看後台（鮮果市集，在新分頁開啟）" aria-describedby="fruitshop-login-note">
+                  <div class="project-preview">
+                    <img src="images/portfolio/job25.webp" alt="" width="1200" height="657" loading="lazy" decoding="async">
+                  </div>
+                  <span class="case-demo-label" id="project-job25">查看後台</span>
+                </a>
+                <p class="case-demo-note" id="fruitshop-login-note">帳號與密碼皆為 <code>admin</code></p>
               </div>
-              <div class="project-copy">
-                <h4 id="project-job24">鮮果市集前台</h4>
-                <ul class="tags" aria-label="使用技術">
-                  <li>TypeScript</li>
-                  <li>Vue</li>
-                  <li>RWD</li>
-                  <li>AI</li>
-                </ul>
-              </div>
-            </a>
+            </div>
           </article>
-          <article class="project-card">
-            <a class="project-link" href="https://fruitshop-rhtn.onrender.com/admin" target="_blank" rel="noopener" aria-labelledby="project-job25">
-              <div class="project-preview">
-                <img src="images/portfolio/job25.webp" alt="" width="960" height="546" loading="lazy" decoding="async">
-              </div>
-              <div class="project-copy">
-                <h4 id="project-job25">鮮果市集後台</h4>
-                <ul class="tags" aria-label="使用技術">
-                  <li>TypeScript</li>
-                  <li>Vue</li>
-                  <li>RWD</li>
-                  <li>AI</li>
-                </ul>
-              </div>
-            </a>
+          <article class="case-study" aria-labelledby="case-chuangyu">
+            <header class="case-copy">
+              <p class="case-role">前端開發</p>
+              <h4 id="case-chuangyu">創宇</h4>
+              <p class="case-description">負責前後台各頁面的介面建置與功能實作，並進行前端問題排查與修正。</p>
+              <ul class="tags" aria-label="使用技術">
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>RWD</li>
+                <li>AI</li>
+              </ul>
+            </header>
+            <div class="case-demos">
+              <a class="project-link" href="https://drive.google.com/file/d/1T_2F2P6eSJ8yipdwmtZPSdkkJqbjoxJu/view?usp=sharing" target="_blank" rel="noopener" aria-label="查看前台（創宇，在新分頁開啟）">
+                <div class="project-preview">
+                  <img src="images/portfolio/job22.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
+                </div>
+                <span class="case-demo-label" id="project-job22">查看前台</span>
+              </a>
+              <a class="project-link" href="https://drive.google.com/file/d/1FaBEhrqCRX5tRBmK0ioyWh2cw81M9nof/view?usp=sharing" target="_blank" rel="noopener" aria-label="查看後台（創宇，在新分頁開啟）">
+                <div class="project-preview">
+                  <img src="images/portfolio/job23.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
+                </div>
+                <span class="case-demo-label" id="project-job23">查看後台</span>
+              </a>
+            </div>
           </article>
-          <article class="project-card">
-            <a class="project-link" href="https://drive.google.com/file/d/1T_2F2P6eSJ8yipdwmtZPSdkkJqbjoxJu/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job22">
-              <div class="project-preview">
-                <img src="images/portfolio/job22.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
-              </div>
-              <div class="project-copy">
-                <h4 id="project-job22">創宇前台</h4>
-                <ul class="tags" aria-label="使用技術">
-                  <li>TypeScript</li>
-                  <li>React</li>
-                  <li>RWD</li>
-                  <li>AI</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-          <article class="project-card">
-            <a class="project-link" href="https://drive.google.com/file/d/1FaBEhrqCRX5tRBmK0ioyWh2cw81M9nof/view?usp=sharing" target="_blank" rel="noopener" aria-labelledby="project-job23">
-              <div class="project-preview">
-                <img src="images/portfolio/job23.webp" alt="" width="960" height="543" loading="lazy" decoding="async">
-              </div>
-              <div class="project-copy">
-                <h4 id="project-job23">創宇後台</h4>
-                <ul class="tags" aria-label="使用技術">
-                  <li>TypeScript</li>
-                  <li>React</li>
-                  <li>RWD</li>
-                  <li>AI</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-          <article class="project-card">
-            <a class="project-link" href="https://drive.google.com/file/d/1ixGIL1GboWbKhLx5p9mRC0b8lU6GktKH/view?usp=drive_link" target="_blank" rel="noopener" aria-labelledby="project-job20">
-              <div class="project-preview">
-                <img src="images/portfolio/job20.webp" alt="" width="960" height="539" loading="lazy" decoding="async">
-              </div>
-              <div class="project-copy">
-                <h4 id="project-job20">SoarFun</h4>
-                <ul class="tags" aria-label="使用技術">
-                  <li>TypeScript</li>
-                  <li>React</li>
-                  <li>RWD</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-          <article class="project-card">
-            <a class="project-link" href="https://drive.google.com/file/d/1-R3CTtcY9-yGMTkbRKQMN_cMatEbmFiT/view?usp=drive_link" target="_blank" rel="noopener" aria-labelledby="project-job21">
-              <div class="project-preview">
-                <img src="images/portfolio/job21.webp" alt="" width="960" height="539" loading="lazy" decoding="async">
-              </div>
-              <div class="project-copy">
-                <h4 id="project-job21">SoarFun 後台</h4>
-                <ul class="tags" aria-label="使用技術">
-                  <li>TypeScript</li>
-                  <li>React</li>
-                  <li>RWD</li>
-                </ul>
-              </div>
-            </a>
+          <article class="case-study" aria-labelledby="case-soarfun">
+            <header class="case-copy">
+              <p class="case-role">前端開發</p>
+              <h4 id="case-soarfun">SoarFun</h4>
+              <p class="case-description">負責前後台各頁面的介面建置與功能實作，並進行前端問題排查與修正。</p>
+              <ul class="tags" aria-label="使用技術">
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>RWD</li>
+              </ul>
+            </header>
+            <div class="case-demos">
+              <a class="project-link" href="https://drive.google.com/file/d/1ixGIL1GboWbKhLx5p9mRC0b8lU6GktKH/view?usp=drive_link" target="_blank" rel="noopener" aria-label="查看前台（SoarFun，在新分頁開啟）">
+                <div class="project-preview">
+                  <img src="images/portfolio/job20.webp" alt="" width="960" height="539" loading="lazy" decoding="async">
+                </div>
+                <span class="case-demo-label" id="project-job20">查看前台</span>
+              </a>
+              <a class="project-link" href="https://drive.google.com/file/d/1-R3CTtcY9-yGMTkbRKQMN_cMatEbmFiT/view?usp=drive_link" target="_blank" rel="noopener" aria-label="查看後台（SoarFun，在新分頁開啟）">
+                <div class="project-preview">
+                  <img src="images/portfolio/job21.webp" alt="" width="960" height="539" loading="lazy" decoding="async">
+                </div>
+                <span class="case-demo-label" id="project-job21">查看後台</span>
+              </a>
+            </div>
           </article>
         </div>
 
@@ -348,7 +336,7 @@
         </details>
       </div>
 
-      <div class="works-group">
+      <div class="works-group" id="practice-projects">
         <h3 class="group-heading">練習作品</h3>
         <details class="project-group">
           <summary><span>CSS 動畫與 jQuery</span><span class="group-count">4 件作品</span></summary>
@@ -643,6 +631,7 @@
         <div class="section-heading">
           <h2 id="about-title">關於我</h2>
         </div>
+        <img class="about-portrait" src="images/portfolio/ruby-wu.webp" alt="Ruby Wu 的個人照片" width="880" height="880" loading="lazy" decoding="async">
         <div class="about-copy">
           <p>我畢業於德霖科技大學餐飲管理系，因為喜歡網頁技術而轉入前端開發，迄今累積近 8 年實務經驗。我擅長跨領域溝通與協作，熟悉從設計稿到上線的完整開發流程。</p>
           <p>曾參與線上一對一教學平台、線上課程預約系統、博弈開獎網站、企業形象網站和響應式活動頁等專案，把使用者需求轉化為直覺的互動體驗。</p>
@@ -662,7 +651,7 @@
           <li><label for="skill-ajax">AJAX</label><meter id="skill-ajax" min="0" max="100" value="70">70%</meter></li>
           <li><label for="skill-bootstrap">Bootstrap</label><meter id="skill-bootstrap" min="0" max="100" value="70">70%</meter></li>
           <li><label for="skill-pixi">PixiJS</label><meter id="skill-pixi" min="0" max="100" value="60">60%</meter></li>
-          <li><label for="skill-vue">Vue</label><meter id="skill-vue" min="0" max="100" value="30">30%</meter></li>
+          <li><label for="skill-vue">Vue</label><meter id="skill-vue" min="0" max="100" value="70">70%</meter></li>
           <li><label for="skill-photoshop">Photoshop</label><meter id="skill-photoshop" min="0" max="100" value="30">30%</meter></li>
         </ul>
       </section>
